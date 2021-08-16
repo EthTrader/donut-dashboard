@@ -1,0 +1,3950 @@
+[
+  {
+    "username": "u/dont_forget_canada",
+    "blockchain_address": "0x009af493e9A3a3Ba3DFfBF734E1B2a5B0352dF46",
+    "contributor_type": "contributor",
+    "points": 571372
+  },
+  {
+    "username": "u/salil19",
+    "blockchain_address": "0x59e9d2Aa9bE64Ea7C1E22a86e166BE6382B1ae91",
+    "contributor_type": "contributor",
+    "points": 189803
+  },
+  {
+    "username": "u/SerialMasticator",
+    "blockchain_address": "0x3d1Bff6CdC85605e3b9bBAb17a707de65599eC99",
+    "contributor_type": "contributor",
+    "points": 183182
+  },
+  {
+    "username": "u/Scouser360",
+    "blockchain_address": "0x0920c2B8bCBaF83C9d757fbE022b2d9f38E67829",
+    "contributor_type": "contributor",
+    "points": 162628
+  },
+  {
+    "username": "u/da_dreamerr",
+    "blockchain_address": "0xEe05858e4D9F363E3f3B5952c33D9dbB668c953c",
+    "contributor_type": "contributor",
+    "points": 137942
+  },
+  {
+    "username": "u/Basoosh",
+    "blockchain_address": "0x80148c5d2b61182107f43FAE67f8F2ec4b5dbcDE",
+    "contributor_type": "contributor",
+    "points": 124116
+  },
+  {
+    "username": "u/Roy1984",
+    "blockchain_address": "0x0cC7dAE1748e8E5371b2e2b47a5D9446E1D46546",
+    "contributor_type": "contributor",
+    "points": 110237
+  },
+  {
+    "username": "u/ethereum88",
+    "blockchain_address": "0x191692F362fC815F39ED894926cFd5E672e35B3E",
+    "contributor_type": "contributor",
+    "points": 88571
+  },
+  {
+    "username": "u/itsckomi",
+    "blockchain_address": "0xa9504f63F29F60cAB6F55816325e017e1A9466B0",
+    "contributor_type": "contributor",
+    "points": 79725
+  },
+  {
+    "username": "u/EthTraderCommunity",
+    "blockchain_address": "0xf7927bf0230c7b0E82376ac944AeedC3EA8dFa25",
+    "contributor_type": "contributor",
+    "points": 65369
+  },
+  {
+    "username": "u/fodes96",
+    "blockchain_address": "0x0e0acFa268E2aaD5E222511BE97679fc83E6CCb4",
+    "contributor_type": "contributor",
+    "points": 64574
+  },
+  {
+    "username": "u/Pandora_Key",
+    "blockchain_address": "0xB5e3F5A03308Cac8D0b47E42356C235934Ff9021",
+    "contributor_type": "contributor",
+    "points": 57900
+  },
+  {
+    "username": "u/Aldennnnnnnn",
+    "blockchain_address": "0xED1015359cfE966871eEADE7619B72daBa46c436",
+    "contributor_type": "contributor",
+    "points": 49901
+  },
+  {
+    "username": "u/Triadji",
+    "blockchain_address": "0xF694ffA78947d399eedF26855B8D2463ce8F8C81",
+    "contributor_type": "contributor",
+    "points": 46881
+  },
+  {
+    "username": "u/Fritz1818",
+    "blockchain_address": "0x713376C3BB65E786d8aA0FcFfFfB39472F23e6A6",
+    "contributor_type": "contributor",
+    "points": 45663
+  },
+  {
+    "username": "u/Tricky_Troll",
+    "blockchain_address": "0x368A2C0060f76B965F184A6d280A82a53B6434f8",
+    "contributor_type": "contributor",
+    "points": 45239
+  },
+  {
+    "username": "u/Danksop",
+    "blockchain_address": "0xCDCd1f066495C6F3BFCEeb61BA44904E628f4f95",
+    "contributor_type": "contributor",
+    "points": 44656
+  },
+  {
+    "username": "u/rustyben420",
+    "blockchain_address": "0x6f4AB16b00bd3658D21ec693FB8a5E7519Aa2a2e",
+    "contributor_type": "contributor",
+    "points": 43226
+  },
+  {
+    "username": "u/P1rak",
+    "blockchain_address": "0xCff4C4EdD9D08e9bC59A28d30422B56252E634b4",
+    "contributor_type": "contributor",
+    "points": 41372
+  },
+  {
+    "username": "u/adamix244",
+    "blockchain_address": "0xa917f72B30A7D49fcadFeEBFAAaFC3CacC1c2105",
+    "contributor_type": "contributor",
+    "points": 38564
+  },
+  {
+    "username": "u/UranusisGolden",
+    "blockchain_address": "0x7dc183550c4Ecae96B993891e9e77B5eB488363C",
+    "contributor_type": "contributor",
+    "points": 37981
+  },
+  {
+    "username": "u/Ropex007",
+    "blockchain_address": "0x9ae5BD9e66a71635E8a1a9feb210AE2851d2A0ae",
+    "contributor_type": "contributor",
+    "points": 36657
+  },
+  {
+    "username": "u/devboricha",
+    "blockchain_address": "0x1D63d569c1E02a9EA187905F95d47B7701AaE3A3",
+    "contributor_type": "contributor",
+    "points": 35386
+  },
+  {
+    "username": "u/kohrts",
+    "blockchain_address": "0x4EF0eae978Cc851aD05f90D34cE58D51D27EB096",
+    "contributor_type": "contributor",
+    "points": 34856
+  },
+  {
+    "username": "u/oneawesomewave",
+    "blockchain_address": "0x1Ae5B9D3DD5a7a3cDBc6bEc6B26cf7A73a3f3f58",
+    "contributor_type": "contributor",
+    "points": 33744
+  },
+  {
+    "username": "u/carlslarson",
+    "blockchain_address": "0x95D9bED31423eb7d5B68511E0352Eae39a3CDD20",
+    "contributor_type": "moderator",
+    "points": 33333
+  },
+  {
+    "username": "u/aminok",
+    "blockchain_address": "0xbEA18A39a1cEe253705eB5e966fe23F26dD109eF",
+    "contributor_type": "moderator",
+    "points": 33333
+  },
+  {
+    "username": "u/rustedpopcorn",
+    "blockchain_address": "0xd2D117e6dbbfdD74D6b865ff859a4611bD29F3Ed",
+    "contributor_type": "moderator",
+    "points": 33333
+  },
+  {
+    "username": "u/nootropicat",
+    "blockchain_address": "0x52727E01d666BeF35cEF630E14E096CA873d2783",
+    "contributor_type": "moderator",
+    "points": 33333
+  },
+  {
+    "username": "u/Basoosh",
+    "blockchain_address": "0x80148c5d2b61182107f43FAE67f8F2ec4b5dbcDE",
+    "contributor_type": "moderator",
+    "points": 33333
+  },
+  {
+    "username": "u/dont_forget_canada",
+    "blockchain_address": "0x009af493e9A3a3Ba3DFfBF734E1B2a5B0352dF46",
+    "contributor_type": "moderator",
+    "points": 33333
+  },
+  {
+    "username": "u/OnLY399_",
+    "blockchain_address": "0xBe4852Addc168aA9A6A1dfB09412d3a063375d88",
+    "contributor_type": "contributor",
+    "points": 31995
+  },
+  {
+    "username": "u/Itstooeasydude",
+    "blockchain_address": "0xb33efc72118319a03567c2934AaC3dd801D824C0",
+    "contributor_type": "contributor",
+    "points": 31254
+  },
+  {
+    "username": "u/Gh0sta",
+    "blockchain_address": "0xfd1e50BcDA3A1f9eBe6E50Bdf80cbd2c3D6a1fB0",
+    "contributor_type": "contributor",
+    "points": 28605
+  },
+  {
+    "username": "u/Jake123194",
+    "blockchain_address": "0x48AFb64D55c79A2E711c14a2Bf903A7C3842baCC",
+    "contributor_type": "contributor",
+    "points": 27175
+  },
+  {
+    "username": "u/cometothecaml",
+    "blockchain_address": "0x322F507835900A719a7760f8995973f5CC677965",
+    "contributor_type": "contributor",
+    "points": 27122
+  },
+  {
+    "username": "u/aircarbon",
+    "blockchain_address": "0x95b2d5cFE6a83878230E32b12b8Bf5E71545AE79",
+    "contributor_type": "contributor",
+    "points": 26804
+  },
+  {
+    "username": "u/green_0live",
+    "blockchain_address": "0x1c8b4Aaac623C079f8f529b3B1F1136be129ED17",
+    "contributor_type": "contributor",
+    "points": 25904
+  },
+  {
+    "username": "u/Renisa",
+    "blockchain_address": "0x648d1CF8cb8bdFf71b024A35f6545c6382CeFef2",
+    "contributor_type": "contributor",
+    "points": 24261
+  },
+  {
+    "username": "u/sam_kaushik",
+    "blockchain_address": "0x2c755388fB0e4ad36b1FbAc4911BEfc09A419608",
+    "contributor_type": "contributor",
+    "points": 24102
+  },
+  {
+    "username": "u/DaleInArlen",
+    "blockchain_address": "0x6360734184242d7B26C159677a0743D0b5788D8b",
+    "contributor_type": "contributor",
+    "points": 23414
+  },
+  {
+    "username": "u/k3surfacer",
+    "blockchain_address": "0xC68E90bB41dCC4b27325427B1ed3ca4fC3Edb4f1",
+    "contributor_type": "contributor",
+    "points": 23308
+  },
+  {
+    "username": "u/oaga_strizzi",
+    "blockchain_address": "0x23D5c0A5B215C360f1fc46bB2ebdc09f7C343602",
+    "contributor_type": "contributor",
+    "points": 22301
+  },
+  {
+    "username": "u/S1zo4",
+    "blockchain_address": "0xE0fD4436F95ff6c066c14F5Aa074a1d2D71C3246",
+    "contributor_type": "contributor",
+    "points": 21507
+  },
+  {
+    "username": "u/superworking",
+    "blockchain_address": "0x15BFE4123535DfC768Fd07F4aA5BFBAE23b074f1",
+    "contributor_type": "contributor",
+    "points": 20924
+  },
+  {
+    "username": "u/acenksz",
+    "blockchain_address": "0x13d75d9435C8A995AB869A64c6D1dDdaa57ACf88",
+    "contributor_type": "contributor",
+    "points": 20871
+  },
+  {
+    "username": "u/kitisgreat",
+    "blockchain_address": "0xA58435F4A1Dd4D86F29057d2EA729e4F364B0d42",
+    "contributor_type": "contributor",
+    "points": 19706
+  },
+  {
+    "username": "u/chucchinchilla",
+    "blockchain_address": "0x8D6eC6aBAfd2e5578d6F00584bB1F0492e702105",
+    "contributor_type": "contributor",
+    "points": 19441
+  },
+  {
+    "username": "u/whoyoufoo101",
+    "blockchain_address": "0x6E6641923Fe552933Da54AF7B03A02EbBdCC36d1",
+    "contributor_type": "contributor",
+    "points": 17322
+  },
+  {
+    "username": "u/Norisz666",
+    "blockchain_address": "0x5C31A6bAa7CE0A2f7b9388A9b89283C8bC12D0eB",
+    "contributor_type": "contributor",
+    "points": 17269
+  },
+  {
+    "username": "u/cryptoknowledgee",
+    "blockchain_address": "0xF9A3D66e8ef9B6b20F5e676da6f73E4c4d8a3B2f",
+    "contributor_type": "contributor",
+    "points": 15839
+  },
+  {
+    "username": "u/Danny-boy6030",
+    "blockchain_address": "0x375b0CE4dBF3E86D1C46559F2C277885c443dCfa",
+    "contributor_type": "contributor",
+    "points": 14885
+  },
+  {
+    "username": "u/Artificial8Wanderer",
+    "blockchain_address": "0x47311fcD99cfb2F0764054b2546cBE0467d98fD2",
+    "contributor_type": "contributor",
+    "points": 13985
+  },
+  {
+    "username": "u/Freimusic",
+    "blockchain_address": "0x828f2fceF4674Fa29a4611316760E503465F59e1",
+    "contributor_type": "contributor",
+    "points": 13985
+  },
+  {
+    "username": "u/demon0192",
+    "blockchain_address": "0x24dCDfccE42548B1055b5D360F6506BFEF4384eD",
+    "contributor_type": "contributor",
+    "points": 13985
+  },
+  {
+    "username": "u/nbr1bonehead",
+    "blockchain_address": "0x8Cbe06fAD615aC28659aa282Fe73Bed9f45b0cC3",
+    "contributor_type": "contributor",
+    "points": 13932
+  },
+  {
+    "username": "u/rustedpopcorn",
+    "blockchain_address": "0xd2D117e6dbbfdD74D6b865ff859a4611bD29F3Ed",
+    "contributor_type": "contributor",
+    "points": 13826
+  },
+  {
+    "username": "u/LagemiR17",
+    "blockchain_address": "0xaF7C76cB25D845F7A4bfcDfe2E1982cB5Ca8325d",
+    "contributor_type": "contributor",
+    "points": 13614
+  },
+  {
+    "username": "u/BangAball23",
+    "blockchain_address": "0x488D6C8f17254108bC3968CfC55dfaC8fed57a38",
+    "contributor_type": "contributor",
+    "points": 13296
+  },
+  {
+    "username": "u/-0-O-",
+    "blockchain_address": "0xD549A42b5dd6E06d6145ba65F99df4a0f282AdEf",
+    "contributor_type": "contributor",
+    "points": 13137
+  },
+  {
+    "username": "u/retsuvls123456",
+    "blockchain_address": "0xDB42267fb7B0368CA2b1B2c7Ed27F5510275Cd06",
+    "contributor_type": "contributor",
+    "points": 13084
+  },
+  {
+    "username": "u/CantillionEffect",
+    "blockchain_address": "0x71c201BA9007672477c88AC003AA051D11309303",
+    "contributor_type": "contributor",
+    "points": 12872
+  },
+  {
+    "username": "u/mybed54",
+    "blockchain_address": "0x77527d41FABB23994b4192C8a2fDAc939E106A0B",
+    "contributor_type": "contributor",
+    "points": 12766
+  },
+  {
+    "username": "u/Cryptojanne",
+    "blockchain_address": "0x1289374eB8d84aB9bcFf23f2F63a926f2E718883",
+    "contributor_type": "contributor",
+    "points": 12395
+  },
+  {
+    "username": "u/PersonYouHaveCalled",
+    "blockchain_address": "0x1450aE52604B1136Bd1a8F3312e29d56F612A5fA",
+    "contributor_type": "contributor",
+    "points": 12183
+  },
+  {
+    "username": "u/SoupyDolphin",
+    "blockchain_address": "0x365602c70d09B1CD0a02bD198D7343a6a14fD860",
+    "contributor_type": "contributor",
+    "points": 11389
+  },
+  {
+    "username": "u/Clash_My_Clans",
+    "blockchain_address": "0x057aAB7C9Ad66301C970fCe79c1D984BA51695f3",
+    "contributor_type": "contributor",
+    "points": 11336
+  },
+  {
+    "username": "u/coinfeeds-bot",
+    "blockchain_address": "0xd056666321700092B032b2571431B2478cD6512E",
+    "contributor_type": "contributor",
+    "points": 11336
+  },
+  {
+    "username": "u/Enschede2",
+    "blockchain_address": "0x08598F4E7Db2F310C8Ef1e5E31F7f1bB2830Fa82",
+    "contributor_type": "contributor",
+    "points": 10912
+  },
+  {
+    "username": "u/MostPopularDude",
+    "blockchain_address": "0x93a4d87B6008b53927269F77b05Fa1eE33Ad7A2d",
+    "contributor_type": "contributor",
+    "points": 10594
+  },
+  {
+    "username": "u/SusanForeman",
+    "blockchain_address": "0xd1297Fbc37295462322f28881DBD9a557d4317e0",
+    "contributor_type": "contributor",
+    "points": 10382
+  },
+  {
+    "username": "u/aminok",
+    "blockchain_address": "0xbEA18A39a1cEe253705eB5e966fe23F26dD109eF",
+    "contributor_type": "contributor",
+    "points": 10276
+  },
+  {
+    "username": "u/ETHWarrior0",
+    "blockchain_address": "0xf2B70c5D0AD665aE4038c02F142a0bE4D3143A5A",
+    "contributor_type": "contributor",
+    "points": 10064
+  },
+  {
+    "username": "u/adequate_redditor",
+    "blockchain_address": "0x95C00298c85A517bF0d81522EdE5A9E5d7793206",
+    "contributor_type": "contributor",
+    "points": 9588
+  },
+  {
+    "username": "u/graszitrone",
+    "blockchain_address": "0x36395aeE5C1107DD199B6FBbc5936822448d6dC3",
+    "contributor_type": "contributor",
+    "points": 9482
+  },
+  {
+    "username": "u/s8ean",
+    "blockchain_address": "0xd18e8a97d9Cd76c6eEC603C625fc4DB947c858D4",
+    "contributor_type": "contributor",
+    "points": 9111
+  },
+  {
+    "username": "u/carlslarson",
+    "blockchain_address": "0x95D9bED31423eb7d5B68511E0352Eae39a3CDD20",
+    "contributor_type": "contributor",
+    "points": 8528
+  },
+  {
+    "username": "u/bro_can_u_even_carve",
+    "blockchain_address": "0x4aAF915967B41A77D11adca432a1a2779937e71C",
+    "contributor_type": "contributor",
+    "points": 8422
+  },
+  {
+    "username": "u/BestStonks",
+    "blockchain_address": "0xe7DA6176b239AA5fC237db1A22F19f50fA950f9E",
+    "contributor_type": "contributor",
+    "points": 8263
+  },
+  {
+    "username": "u/jjaymay29",
+    "blockchain_address": "0x8AfcEE41a79541fb220682dbb406f474EC1F22A7",
+    "contributor_type": "contributor",
+    "points": 7416
+  },
+  {
+    "username": "u/Mean_Cauliflower_261",
+    "blockchain_address": "0x434CAf6838237DFD863e854477F5a3c16b7EfDFb",
+    "contributor_type": "contributor",
+    "points": 7257
+  },
+  {
+    "username": "u/Adnanzzz",
+    "blockchain_address": "0x7f96243Fb705D5d5E018A680adE1013995992e2c",
+    "contributor_type": "contributor",
+    "points": 7204
+  },
+  {
+    "username": "u/GarlicAffectionate69",
+    "blockchain_address": "0x9bA7C24038A44D340D34876ee3ba5BcBA805dfd8",
+    "contributor_type": "contributor",
+    "points": 7151
+  },
+  {
+    "username": "u/Dream8bit",
+    "blockchain_address": "0x65689e5c7d0e1E932f4785C4C896259faa539e82",
+    "contributor_type": "contributor",
+    "points": 7045
+  },
+  {
+    "username": "u/KingNanoBunny",
+    "blockchain_address": "0xc5FEbf6ba108a277a7d8c1a58A618B0eB6c54537",
+    "contributor_type": "contributor",
+    "points": 6992
+  },
+  {
+    "username": "u/tchildthemajestic",
+    "blockchain_address": "0xc9A146786F18e8323b1dea6002e32413053eA2F2",
+    "contributor_type": "contributor",
+    "points": 6727
+  },
+  {
+    "username": "u/pxyvqr74",
+    "blockchain_address": "0xF27609eC4E4C5AD1ae505b3DC2b2B1817d3D1daE",
+    "contributor_type": "contributor",
+    "points": 6621
+  },
+  {
+    "username": "u/crptonite",
+    "blockchain_address": "0x15499b9e56c40EC96e32db1B549c6Dc48D45D131",
+    "contributor_type": "contributor",
+    "points": 6621
+  },
+  {
+    "username": "u/Solstice_Projekt",
+    "blockchain_address": "0x38600AD0e62F7Cc75ff3115d5377DE0DD0F300E1",
+    "contributor_type": "contributor",
+    "points": 6409
+  },
+  {
+    "username": "u/NoDesinformatziya",
+    "blockchain_address": "0xc4C87313e79d7d7f91Ae75692b5D1aeD253B118a",
+    "contributor_type": "contributor",
+    "points": 6250
+  },
+  {
+    "username": "u/towjamb",
+    "blockchain_address": "0x6AA08E1E39958055836F31906C6ff8c072e8C0F3",
+    "contributor_type": "contributor",
+    "points": 6144
+  },
+  {
+    "username": "u/greenmansavinglives",
+    "blockchain_address": "0x7870A26b7C9F521e184136324De1C2fD0d714DD8",
+    "contributor_type": "contributor",
+    "points": 6144
+  },
+  {
+    "username": "u/grannyte",
+    "blockchain_address": "0x79AFF8CcFD94B6ca2041aFbAB3027b7E0DD330De",
+    "contributor_type": "contributor",
+    "points": 5880
+  },
+  {
+    "username": "u/ScorseseTheGoat86",
+    "blockchain_address": "0x1517F6fC042E38C7eb22575c5FFE4cA8093F2Cfd",
+    "contributor_type": "contributor",
+    "points": 5456
+  },
+  {
+    "username": "u/alicenekocat",
+    "blockchain_address": "0x5f3CF2Be0c4df420d2f9aa1a7DB1b27a74f5e5Cf",
+    "contributor_type": "contributor",
+    "points": 5350
+  },
+  {
+    "username": "u/M_arkLoL",
+    "blockchain_address": "0x0E66c6113e00e3B00C43754d1C226BCE99819423",
+    "contributor_type": "contributor",
+    "points": 5350
+  },
+  {
+    "username": "u/DDDUnit2990",
+    "blockchain_address": "0x5eD32F30c6429418Bb4aa23b25be2F37CF621179",
+    "contributor_type": "contributor",
+    "points": 5191
+  },
+  {
+    "username": "u/ponder_that",
+    "blockchain_address": "0xcE626Ae23e49CE0a052781af576A5527374d7B81",
+    "contributor_type": "contributor",
+    "points": 5191
+  },
+  {
+    "username": "u/digbickjimmy69",
+    "blockchain_address": "0xD469D5421F35c0171DDF8993268D36a5A92def74",
+    "contributor_type": "contributor",
+    "points": 5138
+  },
+  {
+    "username": "u/Weaver96",
+    "blockchain_address": "0x01De86465A780De0B3c6d46Baa6524f89C8cBa6a",
+    "contributor_type": "contributor",
+    "points": 5085
+  },
+  {
+    "username": "u/b1nocry",
+    "blockchain_address": "0x89e554555013c00985b019Cb45f32E4Fa39f4d86",
+    "contributor_type": "contributor",
+    "points": 5085
+  },
+  {
+    "username": "u/deluded_soul",
+    "blockchain_address": "0xB04d7EFfdEDCcFAa405BC68C5bF73153F31e0b1b",
+    "contributor_type": "contributor",
+    "points": 4979
+  },
+  {
+    "username": "u/neverl3ss",
+    "blockchain_address": "0xc6208608241B1573a1AE186f4340a59C57f45b93",
+    "contributor_type": "contributor",
+    "points": 4979
+  },
+  {
+    "username": "u/TheKwaZ01",
+    "blockchain_address": "0x92aB44bdf1EFD074755725eD65D7b23A29712e44",
+    "contributor_type": "contributor",
+    "points": 4926
+  },
+  {
+    "username": "u/cchaser92",
+    "blockchain_address": "0x17cc5E0c606A076ccD1041d59F4512376039aEf7",
+    "contributor_type": "contributor",
+    "points": 4873
+  },
+  {
+    "username": "u/conscious4400",
+    "blockchain_address": "0xaCc1B70129de4157026E99B70B77B0d59F7CFEf5",
+    "contributor_type": "contributor",
+    "points": 4873
+  },
+  {
+    "username": "u/d3tra",
+    "blockchain_address": "0x5138363CE4D32a264C640eaAc8E15420724AFea3",
+    "contributor_type": "contributor",
+    "points": 4820
+  },
+  {
+    "username": "u/split41",
+    "blockchain_address": "0x54f38f4E33e47BD13e7A0F46Ed7AfAD61A40BFc1",
+    "contributor_type": "contributor",
+    "points": 4714
+  },
+  {
+    "username": "u/Travelociti",
+    "blockchain_address": "0x34606E4d14bfdA85C5f8314931C833755fb964DF",
+    "contributor_type": "contributor",
+    "points": 4714
+  },
+  {
+    "username": "u/TechHodler",
+    "blockchain_address": "0x4829C05C493D5A73c3CFEef737BE5c5E7D1A264c",
+    "contributor_type": "contributor",
+    "points": 4714
+  },
+  {
+    "username": "u/3me_owen",
+    "blockchain_address": "0x417D5307A075c264AB5269Cc3e367a531F8d665E",
+    "contributor_type": "contributor",
+    "points": 4714
+  },
+  {
+    "username": "u/bdub85",
+    "blockchain_address": "0xCD33e30C0238D9c294531828beDb1d1eBC8e1333",
+    "contributor_type": "contributor",
+    "points": 4502
+  },
+  {
+    "username": "u/Cryptonault",
+    "blockchain_address": "0x226E9dA4B9C4DCbda571B5a01646C55AE0b5a52a",
+    "contributor_type": "contributor",
+    "points": 4396
+  },
+  {
+    "username": "u/thelonius_funkk",
+    "blockchain_address": "0x605eC442948B3cDE8837187886D99FD5aB631bB3",
+    "contributor_type": "contributor",
+    "points": 4396
+  },
+  {
+    "username": "u/TenCoinsShort",
+    "blockchain_address": "0xa4a9D3d2aE203c29a003176E02E863F0b888485E",
+    "contributor_type": "contributor",
+    "points": 4290
+  },
+  {
+    "username": "u/verity519",
+    "blockchain_address": "0x9b89202Fc32c294Df4B2b52830fF40B3EC0F0369",
+    "contributor_type": "contributor",
+    "points": 4184
+  },
+  {
+    "username": "u/revisionaire",
+    "blockchain_address": "0xa0961aa91B07efd6B542836d341E070Ca55826e7",
+    "contributor_type": "contributor",
+    "points": 4184
+  },
+  {
+    "username": "u/Key-Cucumber-1919",
+    "blockchain_address": "0xb260537cAdD802B71B9FEC7D48D3545fC61C9971",
+    "contributor_type": "contributor",
+    "points": 4131
+  },
+  {
+    "username": "u/superfilthz",
+    "blockchain_address": "0x4FeC01BB629b2c2b8C6441b54B8d4B4af4EC9F84",
+    "contributor_type": "contributor",
+    "points": 4131
+  },
+  {
+    "username": "u/Oxygenjacket",
+    "blockchain_address": "0x577989d4B0E3313EfCDd4c7413475458F0442F26",
+    "contributor_type": "contributor",
+    "points": 4131
+  },
+  {
+    "username": "u/tresslessone",
+    "blockchain_address": "0xC6f6cE5D290BEf1CAf2845e5A3177B76e965f44a",
+    "contributor_type": "contributor",
+    "points": 4131
+  },
+  {
+    "username": "u/Wheeler_Dealer1",
+    "blockchain_address": "0xE596B99Eece300F0BA4b0311Dc57337661aD4B68",
+    "contributor_type": "contributor",
+    "points": 4078
+  },
+  {
+    "username": "u/JannGuerrero",
+    "blockchain_address": "0xd0a78e08d412a1CD10186D8e4592529E19726617",
+    "contributor_type": "contributor",
+    "points": 3920
+  },
+  {
+    "username": "u/IHaventEvenGotADog",
+    "blockchain_address": "0xf404C300d704C358ab2933D3203c238C337CB1b7",
+    "contributor_type": "contributor",
+    "points": 3867
+  },
+  {
+    "username": "u/lakerz690",
+    "blockchain_address": "0x1fDfCd723bb021190E8f38bC4325e93FCb1D9E6c",
+    "contributor_type": "contributor",
+    "points": 3814
+  },
+  {
+    "username": "u/na3than",
+    "blockchain_address": "0x88c9Af16a88487e43F3A8fDbf1580Ab6399FcDFF",
+    "contributor_type": "contributor",
+    "points": 3761
+  },
+  {
+    "username": "u/pensionado83629",
+    "blockchain_address": "0xf1c7D701C15Ae0F59E794dff438e7e843AAC8CC6",
+    "contributor_type": "contributor",
+    "points": 3761
+  },
+  {
+    "username": "u/jvdizzle",
+    "blockchain_address": "0x75f5864f395C4c728921a8B3583eE36aaB59E248",
+    "contributor_type": "contributor",
+    "points": 3708
+  },
+  {
+    "username": "u/The-Future-is-AI",
+    "blockchain_address": "0x1CC8cb26C21117fbfBF2832293B48c705cD29e26",
+    "contributor_type": "contributor",
+    "points": 3655
+  },
+  {
+    "username": "u/Truffle_Shuffle_85",
+    "blockchain_address": "0x8e7a423C605dCff1FE5d1388Ee5e310cC8321631",
+    "contributor_type": "contributor",
+    "points": 3602
+  },
+  {
+    "username": "u/pegcity",
+    "blockchain_address": "0xB2FF35A8457B74bbBE8BBB703c9d10f5E554506B",
+    "contributor_type": "contributor",
+    "points": 3602
+  },
+  {
+    "username": "u/doge102",
+    "blockchain_address": "0x838f546e7BB26Ab2A87000BF231c7a033605eAf0",
+    "contributor_type": "contributor",
+    "points": 3549
+  },
+  {
+    "username": "u/MemeyCurmudgeon",
+    "blockchain_address": "0x7f25555A0C85B53Cb8934960D0e4ae2DF65CeCaB",
+    "contributor_type": "contributor",
+    "points": 3549
+  },
+  {
+    "username": "u/Waldoisdead",
+    "blockchain_address": "0xCbAbdde8697342a8FcA5c1B2245913DDE2af05Da",
+    "contributor_type": "contributor",
+    "points": 3496
+  },
+  {
+    "username": "u/oaplox",
+    "blockchain_address": "0x29c261c0576A9d4b2e1D79F53b4dC219D9b29EB6",
+    "contributor_type": "contributor",
+    "points": 3337
+  },
+  {
+    "username": "u/TheBoneSmasher",
+    "blockchain_address": "0x80Bd265F97913b05b366354DD35F98a6DA58Df22",
+    "contributor_type": "contributor",
+    "points": 3337
+  },
+  {
+    "username": "u/wenxuan27",
+    "blockchain_address": "0x3df65EAF60F2470e4A581f1b065769eFF1cB8baE",
+    "contributor_type": "contributor",
+    "points": 3337
+  },
+  {
+    "username": "u/L0CHN3SS13",
+    "blockchain_address": "0xb5Da9873d6E5E275dFA50b381e8E43c3C8827Def",
+    "contributor_type": "contributor",
+    "points": 3337
+  },
+  {
+    "username": "u/iProXi",
+    "blockchain_address": "0x6013d6d120Ed8aD8e60bEdE6360fEcAdbE9b6667",
+    "contributor_type": "contributor",
+    "points": 3284
+  },
+  {
+    "username": "u/HomeWreckerJorge",
+    "blockchain_address": "0xE1224f35443aBa0ec103F3E7E294f28125A40237",
+    "contributor_type": "contributor",
+    "points": 3231
+  },
+  {
+    "username": "u/ExcellentNoThankYou",
+    "blockchain_address": "0xf27BdcD155cC9f5e90baFE616D2E8cEe47609A7A",
+    "contributor_type": "contributor",
+    "points": 3231
+  },
+  {
+    "username": "u/stedgyson",
+    "blockchain_address": "0xe2dAf0e33492720d5Fc29749CDfbEe46b46B27cc",
+    "contributor_type": "contributor",
+    "points": 3178
+  },
+  {
+    "username": "u/yaseen889",
+    "blockchain_address": "0xc85Ba1D0a063d05e42b1aba307B89cAe6128F301",
+    "contributor_type": "contributor",
+    "points": 3125
+  },
+  {
+    "username": "u/Tigeroic",
+    "blockchain_address": "0x8626d082eC2E195D28c2eAe5fEe089Fc173c3823",
+    "contributor_type": "contributor",
+    "points": 3072
+  },
+  {
+    "username": "u/OrangeLambo",
+    "blockchain_address": "0xBE4c88AB98da7B4Ff787608Cb25F3BbEb087ef43",
+    "contributor_type": "contributor",
+    "points": 3072
+  },
+  {
+    "username": "u/evil_betty_",
+    "blockchain_address": "0x1A86440fD49a1e85C46c66ba64C46b98b0e3b6Ab",
+    "contributor_type": "contributor",
+    "points": 3019
+  },
+  {
+    "username": "u/jdero",
+    "blockchain_address": "0x16D1AC6Cee17477920a5A50283F83f73030034dD",
+    "contributor_type": "contributor",
+    "points": 3019
+  },
+  {
+    "username": "u/vinnie5451",
+    "blockchain_address": "0x5a8FC2D5F9C270eb6cf4768f79ecCAefbcdFcDFb",
+    "contributor_type": "contributor",
+    "points": 2913
+  },
+  {
+    "username": "u/LadyKillaByte",
+    "blockchain_address": "0xc63168E13Bf5C1e6aCEF55E42B92BF247CFBefb6",
+    "contributor_type": "contributor",
+    "points": 2860
+  },
+  {
+    "username": "u/Neocarbunkle",
+    "blockchain_address": "0x20813EFAFE3E12795Fc13706FF4FEb9119311014",
+    "contributor_type": "contributor",
+    "points": 2860
+  },
+  {
+    "username": "u/Robdeprop",
+    "blockchain_address": "0x7971Aa75bDF95C36A5106f5a292A74d4a38b278F",
+    "contributor_type": "contributor",
+    "points": 2860
+  },
+  {
+    "username": "u/aripsetiawan24",
+    "blockchain_address": "0x22C49aa1d539B8fD738B7FD33A256b212f03C012",
+    "contributor_type": "contributor",
+    "points": 2754
+  },
+  {
+    "username": "u/WTWIV",
+    "blockchain_address": "0xeaa67d7ee6Ad69D6734b6a82019985eDd3c8e476",
+    "contributor_type": "contributor",
+    "points": 2754
+  },
+  {
+    "username": "u/DonDiegoSanchez",
+    "blockchain_address": "0x6a01D2aDE51c22dFBC356e4aB62D0F328EefE45E",
+    "contributor_type": "contributor",
+    "points": 2701
+  },
+  {
+    "username": "u/AnderBRO2",
+    "blockchain_address": "0x82485d20f27C7A41eC430F6344B53D3E4089F15b",
+    "contributor_type": "contributor",
+    "points": 2701
+  },
+  {
+    "username": "u/Johnhemlock",
+    "blockchain_address": "0xe4C5b34069B58E9F5B4807D4c918B987177fdA39",
+    "contributor_type": "contributor",
+    "points": 2648
+  },
+  {
+    "username": "u/hagr",
+    "blockchain_address": "0x67C07CD384e506CEC02c0290AA89fE1E997ec80A",
+    "contributor_type": "contributor",
+    "points": 2648
+  },
+  {
+    "username": "u/JulWaech",
+    "blockchain_address": "0x5127C8d44aFfC893f7cc169091f74CEa1FA4F6Cb",
+    "contributor_type": "contributor",
+    "points": 2648
+  },
+  {
+    "username": "u/do_thethrowaway",
+    "blockchain_address": "0xD47e5c095231780f563E8E91f592754E9ac6357F",
+    "contributor_type": "contributor",
+    "points": 2595
+  },
+  {
+    "username": "u/PolymorphicProduct",
+    "blockchain_address": "0x9182Bb31a3f7c34389f6B2cD27cBA69926026545",
+    "contributor_type": "contributor",
+    "points": 2595
+  },
+  {
+    "username": "u/islyfe",
+    "blockchain_address": "0x72513c82198a8fC08bcf48473f9238CfbDd5a299",
+    "contributor_type": "contributor",
+    "points": 2542
+  },
+  {
+    "username": "u/Am9080",
+    "blockchain_address": "0x8370BfE58C573B4af2d9Cf8C1f25511BB8d87358",
+    "contributor_type": "contributor",
+    "points": 2489
+  },
+  {
+    "username": "u/Juswatchingthis",
+    "blockchain_address": "0xB88Aa522Df13d3b7E35fEBEdeCdBf93C6ea31BdA",
+    "contributor_type": "contributor",
+    "points": 2436
+  },
+  {
+    "username": "u/CJ96Syd",
+    "blockchain_address": "0xB6280442E41ECf42417486A1DC51662bB5656b3d",
+    "contributor_type": "contributor",
+    "points": 2436
+  },
+  {
+    "username": "u/DappRadar",
+    "blockchain_address": "0x7A2842cD3117637a9eFc05f71dEA7Bc3B79d36D3",
+    "contributor_type": "contributor",
+    "points": 2436
+  },
+  {
+    "username": "u/YoungStillOurWorld",
+    "blockchain_address": "0xb6899193B3448Ef0878A612fa3865224d100B3e7",
+    "contributor_type": "contributor",
+    "points": 2436
+  },
+  {
+    "username": "u/swearimnotabot420_69",
+    "blockchain_address": "0x4280A4d640D9DB011e81dc5Ce0EE31f0e695D23b",
+    "contributor_type": "contributor",
+    "points": 2383
+  },
+  {
+    "username": "u/Gringo4",
+    "blockchain_address": "0xfBF4dc6044f1823A054aFd8d5d9a0397B6F0063D",
+    "contributor_type": "contributor",
+    "points": 2277
+  },
+  {
+    "username": "u/Eth_Man",
+    "blockchain_address": "0x0e066ED845a6853557A0d580b3BA998b0283ACA8",
+    "contributor_type": "contributor",
+    "points": 2224
+  },
+  {
+    "username": "u/btc_clueless",
+    "blockchain_address": "0x0Cd822754099976A1Dc597501207cCc0Eab55e58",
+    "contributor_type": "contributor",
+    "points": 2224
+  },
+  {
+    "username": "u/BanklessHQ",
+    "blockchain_address": "0xfDaaE0c5a7A56C8265b9f86cF8cd934A494E3733",
+    "contributor_type": "contributor",
+    "points": 2224
+  },
+  {
+    "username": "u/ImTinyRick7",
+    "blockchain_address": "0x99D51Ea255f229a9048cD30FFeB267e5C2e17a74",
+    "contributor_type": "contributor",
+    "points": 2224
+  },
+  {
+    "username": "u/joyeous13",
+    "blockchain_address": "0xf0cCc0d3712d256Def028532764A07954f960191",
+    "contributor_type": "contributor",
+    "points": 2171
+  },
+  {
+    "username": "u/tycooperaow",
+    "blockchain_address": "0xA64a6272F55Dc8D8f0f324d7e42869813Bc16F1F",
+    "contributor_type": "contributor",
+    "points": 2171
+  },
+  {
+    "username": "u/okrim_cro",
+    "blockchain_address": "0x1C436BAc13260249d3dB55CcfC7A1630e62e2EEE",
+    "contributor_type": "contributor",
+    "points": 2171
+  },
+  {
+    "username": "u/Spartacus90",
+    "blockchain_address": "0xdbee52F1f8936b2746FaB325C96B58aCa835AA79",
+    "contributor_type": "contributor",
+    "points": 2171
+  },
+  {
+    "username": "u/MrMawlz",
+    "blockchain_address": "0xF66CBcd7bA00F78fF8CDB9c052e8B0d62A7d8A11",
+    "contributor_type": "contributor",
+    "points": 2171
+  },
+  {
+    "username": "u/Always_Question",
+    "blockchain_address": "0xD159a70c987f7200637E197714826B2160F3c5D1",
+    "contributor_type": "contributor",
+    "points": 2171
+  },
+  {
+    "username": "u/FuzzyOneAdmin",
+    "blockchain_address": "0x14387E6A7E79d28340fd78Ea3ac2243F4f511CAD",
+    "contributor_type": "contributor",
+    "points": 2118
+  },
+  {
+    "username": "u/HiveGrind",
+    "blockchain_address": "0x319dCf4FFE35b7e620afCE071Fdb63c394Abe3B0",
+    "contributor_type": "contributor",
+    "points": 2118
+  },
+  {
+    "username": "u/studdmufin",
+    "blockchain_address": "0x4991eF523C86F02B76963e7c04dF084EccF2995e",
+    "contributor_type": "contributor",
+    "points": 2118
+  },
+  {
+    "username": "u/Aroostic",
+    "blockchain_address": "0x372558Ebf0dA313dA4F90A33FF6F2D03fAb24949",
+    "contributor_type": "contributor",
+    "points": 2118
+  },
+  {
+    "username": "u/Jakeron",
+    "blockchain_address": "0x5157911175522c2a7A4b07057A999f56590716E4",
+    "contributor_type": "contributor",
+    "points": 2065
+  },
+  {
+    "username": "u/dv8silencer",
+    "blockchain_address": "0x4BF36E74661Fac173a4686A1b334ADa4F6FbA40D",
+    "contributor_type": "contributor",
+    "points": 2065
+  },
+  {
+    "username": "u/lokojones",
+    "blockchain_address": "0x6a7948B5579321f86C7Ffb6CF2035Dcf3AC7Fe2E",
+    "contributor_type": "contributor",
+    "points": 2065
+  },
+  {
+    "username": "u/Buying100K",
+    "blockchain_address": "0xf10BCE3F0Dc07A17ed64107dF5d9575Fb5fcDb0F",
+    "contributor_type": "contributor",
+    "points": 2065
+  },
+  {
+    "username": "u/dont_hate_scienceguy",
+    "blockchain_address": "0x453646b0AD86697F3bfbE61F086F10FBf9954c72",
+    "contributor_type": "contributor",
+    "points": 1960
+  },
+  {
+    "username": "u/-bawb405-",
+    "blockchain_address": "0x539E9952775F3Ae485e293FDC4c8Fec4fe669ecc",
+    "contributor_type": "contributor",
+    "points": 1960
+  },
+  {
+    "username": "u/PoliticsRealityTV",
+    "blockchain_address": "0xaa3eb65d6D4843A4b15DE6c18E69d3030a1B8C2C",
+    "contributor_type": "contributor",
+    "points": 1907
+  },
+  {
+    "username": "u/Yoldark",
+    "blockchain_address": "0x1542cBd59A301e8b8bceD150c752e5a49D196F04",
+    "contributor_type": "contributor",
+    "points": 1907
+  },
+  {
+    "username": "u/BigDeezerrr",
+    "blockchain_address": "0x9eA0b418E2ece314C96AdA4353999601902DE6C1",
+    "contributor_type": "contributor",
+    "points": 1907
+  },
+  {
+    "username": "u/cryptotarian",
+    "blockchain_address": "0xFBb05840f992396e1Aaaa34A6d25CCcE86a27559",
+    "contributor_type": "contributor",
+    "points": 1907
+  },
+  {
+    "username": "u/thepaypay",
+    "blockchain_address": "0x83f6fe95067E24AF601b1B822430c72C0098d208",
+    "contributor_type": "contributor",
+    "points": 1854
+  },
+  {
+    "username": "u/stripedredwallpaper",
+    "blockchain_address": "0x26ee8a5e26C770A83E6a98D1C3Ee6e72135A238d",
+    "contributor_type": "contributor",
+    "points": 1854
+  },
+  {
+    "username": "u/econoDoge",
+    "blockchain_address": "0xD2468b070e27138525ae347410A5cFFcEDc3d0E7",
+    "contributor_type": "contributor",
+    "points": 1854
+  },
+  {
+    "username": "u/ddbek",
+    "blockchain_address": "0x805136EE7aBF37B1F98e44CA18b9149Dfd8f62ac",
+    "contributor_type": "contributor",
+    "points": 1854
+  },
+  {
+    "username": "u/DaTrickster",
+    "blockchain_address": "0xfa4d69bAc7Bd71a40567E869Ec4afa7865A4F7ee",
+    "contributor_type": "contributor",
+    "points": 1801
+  },
+  {
+    "username": "u/LetsGoBayBay79",
+    "blockchain_address": "0x389Ba508a8767ff56c6d358596AB79eBE9450b34",
+    "contributor_type": "contributor",
+    "points": 1748
+  },
+  {
+    "username": "u/turpajouhipukki",
+    "blockchain_address": "0xEe5D859def95fDcf30d488972A5385763AD4Cd40",
+    "contributor_type": "contributor",
+    "points": 1748
+  },
+  {
+    "username": "u/RogerWilco357",
+    "blockchain_address": "0x3Ac12a776685aD358E9454De0C657C1C4C8Bfb99",
+    "contributor_type": "contributor",
+    "points": 1748
+  },
+  {
+    "username": "u/notfrankie16",
+    "blockchain_address": "0x20542DBb2d5e54a0F5CeA4E3fEfd96ba128e6C17",
+    "contributor_type": "contributor",
+    "points": 1748
+  },
+  {
+    "username": "u/robotpoet",
+    "blockchain_address": "0x8cA67c940791a4e461F579b1f90E886875162F0D",
+    "contributor_type": "contributor",
+    "points": 1748
+  },
+  {
+    "username": "u/dipto7",
+    "blockchain_address": "0x8DdD9bEA0C2e8b7bFd9F267e566B09d9E0F2857f",
+    "contributor_type": "contributor",
+    "points": 1695
+  },
+  {
+    "username": "u/-Just_Another_Guy-",
+    "blockchain_address": "0x7136a26860b94D880fC35E36e601BD4ef22db1dB",
+    "contributor_type": "contributor",
+    "points": 1695
+  },
+  {
+    "username": "u/Fl1kz",
+    "blockchain_address": "0x38A474daBc27D1b09D238B4D70B13599418DACd5",
+    "contributor_type": "contributor",
+    "points": 1642
+  },
+  {
+    "username": "u/p4t0k",
+    "blockchain_address": "0x5dC0aa3E4C014b39C7f30caDD6a945cac59176E5",
+    "contributor_type": "contributor",
+    "points": 1642
+  },
+  {
+    "username": "u/dead4586",
+    "blockchain_address": "0xC7743371C4d972FCA62B1abB4De1FF954bD983e9",
+    "contributor_type": "contributor",
+    "points": 1642
+  },
+  {
+    "username": "u/Tenoke",
+    "blockchain_address": "0xbd2651977D62307175298f6C946Efc05B991D395",
+    "contributor_type": "contributor",
+    "points": 1642
+  },
+  {
+    "username": "u/FuckFaceGG",
+    "blockchain_address": "0x1Aa7ea3d40e11127fa2CdaF19C1f89c82F2481aD",
+    "contributor_type": "contributor",
+    "points": 1589
+  },
+  {
+    "username": "u/seer93",
+    "blockchain_address": "0xA7836Fd114bd317DA1dFC1699E40118569840264",
+    "contributor_type": "contributor",
+    "points": 1589
+  },
+  {
+    "username": "u/ArtigoQ",
+    "blockchain_address": "0xB5F0D8E551bEa8346B44B46bEA3E7b5C4350e994",
+    "contributor_type": "contributor",
+    "points": 1589
+  },
+  {
+    "username": "u/bruce_low",
+    "blockchain_address": "0x6169a329434E101B371aACE78D769dd91ff93106",
+    "contributor_type": "contributor",
+    "points": 1536
+  },
+  {
+    "username": "u/Crypto_is_neat",
+    "blockchain_address": "0x074852401918631377CF2FF57cbECEbC2a0084bE",
+    "contributor_type": "contributor",
+    "points": 1536
+  },
+  {
+    "username": "u/bullygrass",
+    "blockchain_address": "0x9BeEF295F61713b17838B1889aEF87a7B692Be47",
+    "contributor_type": "contributor",
+    "points": 1483
+  },
+  {
+    "username": "u/roox911",
+    "blockchain_address": "0xCAde9B1AF275c3FeeA32DB180746eAd7D7ab87a1",
+    "contributor_type": "contributor",
+    "points": 1483
+  },
+  {
+    "username": "u/TragedyStruck",
+    "blockchain_address": "0x9103BEaAb5316Ed961C190C30fFB7C8d5d36CC73",
+    "contributor_type": "contributor",
+    "points": 1483
+  },
+  {
+    "username": "u/ilaunchpad",
+    "blockchain_address": "0x68A2F0986607D655bD722cd60b9932B5C8ac6260",
+    "contributor_type": "contributor",
+    "points": 1483
+  },
+  {
+    "username": "u/nootropicat",
+    "blockchain_address": "0x52727E01d666BeF35cEF630E14E096CA873d2783",
+    "contributor_type": "contributor",
+    "points": 1430
+  },
+  {
+    "username": "u/Rxpert83",
+    "blockchain_address": "0xaE2Cf55823Ba4fC1Ce82A412B3f06ef3FA64CeD4",
+    "contributor_type": "contributor",
+    "points": 1430
+  },
+  {
+    "username": "u/Pr0insias",
+    "blockchain_address": "0x67cd08Ff02217D1762350fDc44e13E1BF7D3D03f",
+    "contributor_type": "contributor",
+    "points": 1430
+  },
+  {
+    "username": "u/NoMaans",
+    "blockchain_address": "0x8C0943FE0c7B0d73f0f839999F89b591104055c3",
+    "contributor_type": "contributor",
+    "points": 1430
+  },
+  {
+    "username": "u/Anouar25",
+    "blockchain_address": "0xAf60102F5532732Fd56436C103Db9614acc77351",
+    "contributor_type": "contributor",
+    "points": 1430
+  },
+  {
+    "username": "u/daototpyrc",
+    "blockchain_address": "0xD4F8fdD249ba41323880CefECEBca2Ab590D571F",
+    "contributor_type": "contributor",
+    "points": 1430
+  },
+  {
+    "username": "u/Maswasnos",
+    "blockchain_address": "0xd931dd40Be868d2F95bA251a6c399dfc6E883a38",
+    "contributor_type": "contributor",
+    "points": 1377
+  },
+  {
+    "username": "u/timadome",
+    "blockchain_address": "0xd2866dDC766481eF616F81481c52191755e280B9",
+    "contributor_type": "contributor",
+    "points": 1377
+  },
+  {
+    "username": "u/ben_efx",
+    "blockchain_address": "0xDB40aE9e2CBaF17bBE68d2aE221Fa499f8E42C85",
+    "contributor_type": "contributor",
+    "points": 1377
+  },
+  {
+    "username": "u/GaiaPariah",
+    "blockchain_address": "0xD2a3F28cD3f3825567e53773C341688E6afa12EC",
+    "contributor_type": "contributor",
+    "points": 1377
+  },
+  {
+    "username": "u/purpleyak0",
+    "blockchain_address": "0xE4077b1E2C850c0291378194a4D963CFAb07bC5b",
+    "contributor_type": "contributor",
+    "points": 1324
+  },
+  {
+    "username": "u/MaltMilchek",
+    "blockchain_address": "0x2aac7B8da45c989EBaA79e32824CB1A2b697aaf3",
+    "contributor_type": "contributor",
+    "points": 1324
+  },
+  {
+    "username": "u/nameicaa",
+    "blockchain_address": "0x1e94bE42d68c7Ab59A516fc79149DD27152eBAA7",
+    "contributor_type": "contributor",
+    "points": 1324
+  },
+  {
+    "username": "u/ElCorbusier",
+    "blockchain_address": "0x1B47234f4946EfC1ab4ad798B960cbc3186eBebC",
+    "contributor_type": "contributor",
+    "points": 1324
+  },
+  {
+    "username": "u/TripleReward",
+    "blockchain_address": "0x9E7105436F494938814E5a0bd9284C82c52f9766",
+    "contributor_type": "contributor",
+    "points": 1271
+  },
+  {
+    "username": "u/beep_bop_boop_4",
+    "blockchain_address": "0x4B7C0Da1C299Ce824f55A0190Efb13663442FA2c",
+    "contributor_type": "contributor",
+    "points": 1271
+  },
+  {
+    "username": "u/Nooku",
+    "blockchain_address": "0x7094Cc126fe9792734474134d8cC50715281f831",
+    "contributor_type": "contributor",
+    "points": 1271
+  },
+  {
+    "username": "u/mcfearsome",
+    "blockchain_address": "0xa9c126983b0260484ea3983dCC5906F106aB3ccc",
+    "contributor_type": "contributor",
+    "points": 1271
+  },
+  {
+    "username": "u/Longjumping-Door9714",
+    "blockchain_address": "0x50f636A7aeC0Bdb61a0510EC801DbAE3071E3f20",
+    "contributor_type": "contributor",
+    "points": 1271
+  },
+  {
+    "username": "u/plutoegg",
+    "blockchain_address": "0x14d06788090769F669427B6AEA1c0240d2321f34",
+    "contributor_type": "contributor",
+    "points": 1271
+  },
+  {
+    "username": "u/bitcoinsky",
+    "blockchain_address": "0x480643103b8cf1D3eBAe96dA922e3ce79F5A8E72",
+    "contributor_type": "contributor",
+    "points": 1165
+  },
+  {
+    "username": "u/fractionofawhole",
+    "blockchain_address": "0xc25c912Efce700Ad1042CFaCaeF145195217BDC8",
+    "contributor_type": "contributor",
+    "points": 1165
+  },
+  {
+    "username": "u/LilDrillBoy",
+    "blockchain_address": "0x103e33c32Bae8E43bfd5a5B8060E1bB9c3A6632C",
+    "contributor_type": "contributor",
+    "points": 1165
+  },
+  {
+    "username": "u/jeremiahkinklepoo",
+    "blockchain_address": "0x33Cf332Ef4c1Efdf572F97eB3679D641433eB299",
+    "contributor_type": "contributor",
+    "points": 1165
+  },
+  {
+    "username": "u/Phantom_Engine",
+    "blockchain_address": "0x6EF00Fddb98F65150D54F9355A22e4ECEDE30FdA",
+    "contributor_type": "contributor",
+    "points": 1165
+  },
+  {
+    "username": "u/thanksbastards_",
+    "blockchain_address": "0x3f7D1580862aA750C26980C944A03ECF57019e9f",
+    "contributor_type": "contributor",
+    "points": 1165
+  },
+  {
+    "username": "u/Lupi_X",
+    "blockchain_address": "0x428d86F246Bf7F4B4E1B8777311dB1a1d05807D2",
+    "contributor_type": "contributor",
+    "points": 1165
+  },
+  {
+    "username": "u/jkwon7",
+    "blockchain_address": "0xD931c09a561FD766FC703565DCF16Ede8a352aF0",
+    "contributor_type": "contributor",
+    "points": 1112
+  },
+  {
+    "username": "u/Dreampopgazer",
+    "blockchain_address": "0x156176bd9A30a8f3B2bf6FA25c733CA6426ed639",
+    "contributor_type": "contributor",
+    "points": 1112
+  },
+  {
+    "username": "u/reluctantly_positive",
+    "blockchain_address": "0xda33d3aac58c7a2D554C1B10C00A33556dC63C84",
+    "contributor_type": "contributor",
+    "points": 1112
+  },
+  {
+    "username": "u/WhatMixedFeelings",
+    "blockchain_address": "0x670e9695099bFd8bacDb66d7dd947ab6257A2Ff4",
+    "contributor_type": "contributor",
+    "points": 1112
+  },
+  {
+    "username": "u/synergy99_eth",
+    "blockchain_address": "0xC61b1c0d49eeB856732c2b22f9bbd868507586e7",
+    "contributor_type": "contributor",
+    "points": 1112
+  },
+  {
+    "username": "u/dwkp",
+    "blockchain_address": "0x77470001dEDB2C92b6e247c37934F6247377259c",
+    "contributor_type": "contributor",
+    "points": 1059
+  },
+  {
+    "username": "u/-AndyDufresne-",
+    "blockchain_address": "0x3579D9aebd730C2a6291104ba04B3e3BddbAdD87",
+    "contributor_type": "contributor",
+    "points": 1059
+  },
+  {
+    "username": "u/Independent_Shop_378",
+    "blockchain_address": "0x436D1c7B647ea5FEbf5bEd6ACd0AF253c70C972D",
+    "contributor_type": "contributor",
+    "points": 1059
+  },
+  {
+    "username": "u/torontoglutton",
+    "blockchain_address": "0xA25b4F46aD56652Adb5761FEB0cccCb960F0B044",
+    "contributor_type": "contributor",
+    "points": 1059
+  },
+  {
+    "username": "u/semiosly",
+    "blockchain_address": "0xde000791d45B0447466F82EB8F2577999D20d870",
+    "contributor_type": "contributor",
+    "points": 1059
+  },
+  {
+    "username": "u/coranos2",
+    "blockchain_address": "0xBCaA6C7C4ceDC5437c1560Ea96dE83593376D76d",
+    "contributor_type": "contributor",
+    "points": 1059
+  },
+  {
+    "username": "u/whitebaseball99",
+    "blockchain_address": "0xe8f4760342Db662055eAf53535293A505674e721",
+    "contributor_type": "contributor",
+    "points": 1059
+  },
+  {
+    "username": "u/LordKrondore",
+    "blockchain_address": "0x4991e49D44b20f783f5EEcf17777b0B9e033acB9",
+    "contributor_type": "contributor",
+    "points": 1059
+  },
+  {
+    "username": "u/byeos",
+    "blockchain_address": "0x9b9d934BE314827e854c2481b4F0dC8320eb61A1",
+    "contributor_type": "contributor",
+    "points": 1059
+  },
+  {
+    "username": "u/perchero",
+    "blockchain_address": "0x645aAbA39185d6F2d2c9e63Ec1c50a31bF633DA8",
+    "contributor_type": "contributor",
+    "points": 1059
+  },
+  {
+    "username": "u/topcontender",
+    "blockchain_address": "0xe921c7ba928dBA3846C379d9Eed15bC134e81168",
+    "contributor_type": "contributor",
+    "points": 1006
+  },
+  {
+    "username": "u/Vo1ture",
+    "blockchain_address": "0xB1EE651E868Eb6064cE4D734514496Fb99B8904f",
+    "contributor_type": "contributor",
+    "points": 1006
+  },
+  {
+    "username": "u/Cheezel_X",
+    "blockchain_address": "0x59A31B5BFFA93C4301181532707c4191961131A1",
+    "contributor_type": "contributor",
+    "points": 953
+  },
+  {
+    "username": "u/Icy-Text-7705",
+    "blockchain_address": "0x956Ea003A77CA9fB8121Ae99Abe3334dD21bA9D8",
+    "contributor_type": "contributor",
+    "points": 953
+  },
+  {
+    "username": "u/420everytime",
+    "blockchain_address": "0xE7D9DdA269FdDB4ca4d6cbCe3017277Efc19741c",
+    "contributor_type": "contributor",
+    "points": 953
+  },
+  {
+    "username": "u/Heisenberg044",
+    "blockchain_address": "0x2525703d6FB1B6D65934550e3b6107Ee888faE65",
+    "contributor_type": "contributor",
+    "points": 953
+  },
+  {
+    "username": "u/Draconius0013",
+    "blockchain_address": "0xAE3Cde713B4259DDdeA086602186d5E282F4c9c7",
+    "contributor_type": "contributor",
+    "points": 953
+  },
+  {
+    "username": "u/Stobie",
+    "blockchain_address": "0xC3a20A2fB5A02A588f09aD94f55e395040F667C0",
+    "contributor_type": "contributor",
+    "points": 953
+  },
+  {
+    "username": "u/i_love_donuts_eth",
+    "blockchain_address": "0x24A89B83183C760BB9C7679828854A2A2142138b",
+    "contributor_type": "contributor",
+    "points": 900
+  },
+  {
+    "username": "u/FlexSlatkin",
+    "blockchain_address": "0x862c73738a3988095887Bf2892D5bC7DEdb86754",
+    "contributor_type": "contributor",
+    "points": 900
+  },
+  {
+    "username": "u/r3dxv1rus",
+    "blockchain_address": "0x4728334BD397123b2F4C403C9DA3A3bA8d903d4C",
+    "contributor_type": "contributor",
+    "points": 900
+  },
+  {
+    "username": "u/tearductduck",
+    "blockchain_address": "0x6f34718d212a2D45f583830CCf0aa43197adE7c2",
+    "contributor_type": "contributor",
+    "points": 847
+  },
+  {
+    "username": "u/CryptoAdptor",
+    "blockchain_address": "0x9A933f4BD6eEb72797cA15B8208130fE7A8cc5A5",
+    "contributor_type": "contributor",
+    "points": 847
+  },
+  {
+    "username": "u/banada-eme",
+    "blockchain_address": "0x2d75Fede764BC170Cca8Cc493B529113a1e67eE6",
+    "contributor_type": "contributor",
+    "points": 847
+  },
+  {
+    "username": "u/Crypto_is_love",
+    "blockchain_address": "0x02Fb9E53b13dF7092e76820F399A79499Fb34dE9",
+    "contributor_type": "contributor",
+    "points": 847
+  },
+  {
+    "username": "u/Kekaronio",
+    "blockchain_address": "0x736e29874c53979C0C6a2Cc1B90b91cD270138cA",
+    "contributor_type": "contributor",
+    "points": 847
+  },
+  {
+    "username": "u/DogecoinLover69",
+    "blockchain_address": "0xAa682fc0a3033a1f0C37143a89a8EE5D1B29bc83",
+    "contributor_type": "contributor",
+    "points": 847
+  },
+  {
+    "username": "u/fire_chasing",
+    "blockchain_address": "0xca2825FcdCf608745c7c3eC446a48177fE6eE989",
+    "contributor_type": "contributor",
+    "points": 794
+  },
+  {
+    "username": "u/ramxrp",
+    "blockchain_address": "0x08254aE3989f697df95F0a5002AcE7F4adc4419E",
+    "contributor_type": "contributor",
+    "points": 794
+  },
+  {
+    "username": "u/FermiGBM",
+    "blockchain_address": "0x9AE9Eab20767EEdA3714fa3EfEFc93b5291da614",
+    "contributor_type": "contributor",
+    "points": 794
+  },
+  {
+    "username": "u/Lockheed_Martini",
+    "blockchain_address": "0x933B2D1CB2cB8c7c7Ca7D30abE4AA68988e97A1D",
+    "contributor_type": "contributor",
+    "points": 794
+  },
+  {
+    "username": "u/LelxDing",
+    "blockchain_address": "0x5c025EB4A572F62144fF4a6a55005D55787324C8",
+    "contributor_type": "contributor",
+    "points": 794
+  },
+  {
+    "username": "u/hideshimori__",
+    "blockchain_address": "0x46A33271282c37Bb2164BEa7853b9Cd98ce1b1e6",
+    "contributor_type": "contributor",
+    "points": 794
+  },
+  {
+    "username": "u/mongo_pawn_in_life",
+    "blockchain_address": "0x1D3D62349C3a9b05219E748EED036E2fA13eC48c",
+    "contributor_type": "contributor",
+    "points": 741
+  },
+  {
+    "username": "u/CalvitiumAquila",
+    "blockchain_address": "0x3ef8f3ccc5ce33050a709b01e81E6aAC8de44c6B",
+    "contributor_type": "contributor",
+    "points": 741
+  },
+  {
+    "username": "u/martelaxe",
+    "blockchain_address": "0x895708Fe6Fb1309Dc9e76Dbf88968691E82862b8",
+    "contributor_type": "contributor",
+    "points": 741
+  },
+  {
+    "username": "u/der_chiller",
+    "blockchain_address": "0x8a5932cD246f40282C5a5eB0fb3246b5F4a8001D",
+    "contributor_type": "contributor",
+    "points": 741
+  },
+  {
+    "username": "u/xCrapyx",
+    "blockchain_address": "0xFC6Cf8390Dcd81a649e47cA62cf0C04638c732D4",
+    "contributor_type": "contributor",
+    "points": 741
+  },
+  {
+    "username": "u/ianazch",
+    "blockchain_address": "0xef91ECd0142aE4C5163B2CF060c0563d49188C82",
+    "contributor_type": "contributor",
+    "points": 741
+  },
+  {
+    "username": "u/4rch3r",
+    "blockchain_address": "0x7340Dc89d5F60B5ca71357370363101D4839822F",
+    "contributor_type": "contributor",
+    "points": 741
+  },
+  {
+    "username": "u/Tweakp7",
+    "blockchain_address": "0xf5684f2795F0FC0aEC7a00E8D65D4D64C397C459",
+    "contributor_type": "contributor",
+    "points": 741
+  },
+  {
+    "username": "u/Clemo4Ever",
+    "blockchain_address": "0x932AD07C3a7aa1F1B08b54f6abE6aC25B49273AB",
+    "contributor_type": "contributor",
+    "points": 741
+  },
+  {
+    "username": "u/rocketeer56734",
+    "blockchain_address": "0xBD41BaCb0bD84eBeE84fC08C2103ad3cb03B891c",
+    "contributor_type": "contributor",
+    "points": 741
+  },
+  {
+    "username": "u/StatisticalMan",
+    "blockchain_address": "0x7C34395289c45b7235E48ACE318C50d6acc986F8",
+    "contributor_type": "contributor",
+    "points": 741
+  },
+  {
+    "username": "u/ElVerdaderoArgento",
+    "blockchain_address": "0x8854e3aBeEC708E2348CB695241DA8d171aD5D03",
+    "contributor_type": "contributor",
+    "points": 688
+  },
+  {
+    "username": "u/blackout24",
+    "blockchain_address": "0x2D3fac643f3d8779cfab5A17153e3cDb096c76F2",
+    "contributor_type": "contributor",
+    "points": 688
+  },
+  {
+    "username": "u/FrankyThreeFingers",
+    "blockchain_address": "0xbF891074d21660d538ca0911a76c705ca236d844",
+    "contributor_type": "contributor",
+    "points": 688
+  },
+  {
+    "username": "u/iwenttothelocalshop",
+    "blockchain_address": "0x4ed9621c88ab46d335B4c2c9acbd144d57AA5bc3",
+    "contributor_type": "contributor",
+    "points": 688
+  },
+  {
+    "username": "u/UnknownGuyAround",
+    "blockchain_address": "0x5213C547cE26F739db75006c0Eae8763393e93EA",
+    "contributor_type": "contributor",
+    "points": 688
+  },
+  {
+    "username": "u/itimetravelwell",
+    "blockchain_address": "0x4eFb7Cf003a5Fb499F857461881258c5376fD3c8",
+    "contributor_type": "contributor",
+    "points": 688
+  },
+  {
+    "username": "u/psswrd12345",
+    "blockchain_address": "0x2ca7F11055C919748F10b1991B6Ba6D4CC58d3f3",
+    "contributor_type": "contributor",
+    "points": 688
+  },
+  {
+    "username": "u/Dissidius95",
+    "blockchain_address": "0x4218DcD767ea92b139e4bcDaa5392B2f42015F70",
+    "contributor_type": "contributor",
+    "points": 688
+  },
+  {
+    "username": "u/finesse_finesse",
+    "blockchain_address": "0x9Ee8266fF73160Ba30514530731076542bB4ac9c",
+    "contributor_type": "contributor",
+    "points": 688
+  },
+  {
+    "username": "u/InsideTheSimulation",
+    "blockchain_address": "0xEf8B14f169501e1d9dDe701166ABc19db1530869",
+    "contributor_type": "contributor",
+    "points": 635
+  },
+  {
+    "username": "u/Logical-Hovercraft73",
+    "blockchain_address": "0x15303d109a05b3D6f8E32B339a68bd4817b5cfc0",
+    "contributor_type": "contributor",
+    "points": 635
+  },
+  {
+    "username": "u/Cartosys",
+    "blockchain_address": "0x32a2d3EaAAD78Bcf17841AE49f24e678E2b32Bc3",
+    "contributor_type": "contributor",
+    "points": 635
+  },
+  {
+    "username": "u/DingusKhan418",
+    "blockchain_address": "0xeAA182f57DEa360EBeFd61Fa2928a366aE8379dB",
+    "contributor_type": "contributor",
+    "points": 635
+  },
+  {
+    "username": "u/kevo888",
+    "blockchain_address": "0xE2fBb2F9F2F541FE6dc496CFf727B217994b2B31",
+    "contributor_type": "contributor",
+    "points": 635
+  },
+  {
+    "username": "u/Donut_liking_person",
+    "blockchain_address": "0xE4941d0fE896e25CC4D03dFD6F61c2A21Ed4E121",
+    "contributor_type": "contributor",
+    "points": 635
+  },
+  {
+    "username": "u/Mkkoll",
+    "blockchain_address": "0xA72511883e1d69B63eC7C744dCA756A7A698D0Ae",
+    "contributor_type": "contributor",
+    "points": 635
+  },
+  {
+    "username": "u/imaketech",
+    "blockchain_address": "0x6a48cf313173601AF29A43E53eBeC1D59D59C075",
+    "contributor_type": "contributor",
+    "points": 635
+  },
+  {
+    "username": "u/Basercist",
+    "blockchain_address": "0xbB5e9f954FB0B190225f1b0f9f946D78Ff0FA0e6",
+    "contributor_type": "contributor",
+    "points": 635
+  },
+  {
+    "username": "u/John_Pratt",
+    "blockchain_address": "0xb9A65fA1E200D2582100b4c9bF8c36280E14F23a",
+    "contributor_type": "contributor",
+    "points": 582
+  },
+  {
+    "username": "u/buttcoin_lol",
+    "blockchain_address": "0xf64cd5588A82180F32596CF2bb6FfEceb0647A49",
+    "contributor_type": "contributor",
+    "points": 582
+  },
+  {
+    "username": "u/Kuroverse",
+    "blockchain_address": "0x1C42F2fCc9c7F4a30dC15ACf9C047DDeCF39de06",
+    "contributor_type": "contributor",
+    "points": 582
+  },
+  {
+    "username": "u/hwaite",
+    "blockchain_address": "0x19dCB05BDc5226eEa5d908Db0DfC94E3bd755b50",
+    "contributor_type": "contributor",
+    "points": 582
+  },
+  {
+    "username": "u/lawlm",
+    "blockchain_address": "0x78C5Dc062a541dAE7AeC891575B8e66321EeC848",
+    "contributor_type": "contributor",
+    "points": 582
+  },
+  {
+    "username": "u/lenopix",
+    "blockchain_address": "0xB391AE8Fc7483770930d1dEAb5a898206E9cDb3F",
+    "contributor_type": "contributor",
+    "points": 582
+  },
+  {
+    "username": "u/ethbullrun",
+    "blockchain_address": "0x9F822B3109BF243565C5123d8A614838668F06f1",
+    "contributor_type": "contributor",
+    "points": 582
+  },
+  {
+    "username": "u/Mcgillby",
+    "blockchain_address": "0xA99F898530dF1514A566f1a6562D62809e99557D",
+    "contributor_type": "contributor",
+    "points": 582
+  },
+  {
+    "username": "u/christianjpberg",
+    "blockchain_address": "0xF65f99FcB0d7CeFb6062F23065868F7e3897655A",
+    "contributor_type": "contributor",
+    "points": 582
+  },
+  {
+    "username": "u/wertercatt",
+    "blockchain_address": "0x290974Fa40eA447D620C2035BD30934FfcBF789E",
+    "contributor_type": "contributor",
+    "points": 582
+  },
+  {
+    "username": "u/TheLastDumpling",
+    "blockchain_address": "0xc292297d914f15EF7ffCa014274EDb4E2eE4976A",
+    "contributor_type": "contributor",
+    "points": 582
+  },
+  {
+    "username": "u/VoodooReload",
+    "blockchain_address": "0x8000f0E6b2349a1554a88830E2e38F47B2fac889",
+    "contributor_type": "contributor",
+    "points": 582
+  },
+  {
+    "username": "u/EtherMyFirstLove",
+    "blockchain_address": "0x4023AFe6889aA3721E16Ad4E53fFC9BBCAdaf517",
+    "contributor_type": "contributor",
+    "points": 529
+  },
+  {
+    "username": "u/machinecraig",
+    "blockchain_address": "0xc5Fb1EE1872f0d5AA3FE4E23E3E0e829f3B032A2",
+    "contributor_type": "contributor",
+    "points": 529
+  },
+  {
+    "username": "u/kikithewondermonkey",
+    "blockchain_address": "0x6474c823aE7df364925b16b6bfCA1292A4eb01B6",
+    "contributor_type": "contributor",
+    "points": 529
+  },
+  {
+    "username": "u/V0fonCmIa4",
+    "blockchain_address": "0xB55087C22E12CB0CBc5C61233DD0487c19a02078",
+    "contributor_type": "contributor",
+    "points": 529
+  },
+  {
+    "username": "u/rd303",
+    "blockchain_address": "0x1A8d321328043eB159Fffd5dD27f0B3Eb1aDb868",
+    "contributor_type": "contributor",
+    "points": 529
+  },
+  {
+    "username": "u/p4madeus",
+    "blockchain_address": "0x63b7B1A497F864794b4b96306a07f08F8C557723",
+    "contributor_type": "contributor",
+    "points": 529
+  },
+  {
+    "username": "u/voidfactory",
+    "blockchain_address": "0xd99Ef190A8Db6AaBbA084a2ea65EC915645BDa22",
+    "contributor_type": "contributor",
+    "points": 529
+  },
+  {
+    "username": "u/CryptoSurf3r",
+    "blockchain_address": "0x0748C476c1f90dB3fEa8b37c52c8971e55E07384",
+    "contributor_type": "contributor",
+    "points": 529
+  },
+  {
+    "username": "u/ilkali",
+    "blockchain_address": "0xD319Db01EE7022e8D6d4511c5E0dDe921f2De96F",
+    "contributor_type": "contributor",
+    "points": 529
+  },
+  {
+    "username": "u/OriginalGravity8",
+    "blockchain_address": "0xb38a2009F54167cB13C894E51ab27b728B2D4fcb",
+    "contributor_type": "contributor",
+    "points": 529
+  },
+  {
+    "username": "u/typhoon90",
+    "blockchain_address": "0x851Ca7c9E795C117567E1d321Af47fBb2a3a4B00",
+    "contributor_type": "contributor",
+    "points": 529
+  },
+  {
+    "username": "u/nirvanabuds",
+    "blockchain_address": "0xE26a051d2dc3C250F89291c346fa0F141482A05f",
+    "contributor_type": "contributor",
+    "points": 529
+  },
+  {
+    "username": "u/CryptTiddies",
+    "blockchain_address": "0xbcF2E56eefCE3A4fD9494c061D213B5531620b47",
+    "contributor_type": "contributor",
+    "points": 529
+  },
+  {
+    "username": "u/Nova06Ball",
+    "blockchain_address": "0x6B254f8a91E255a4FB916501F896E15522799D82",
+    "contributor_type": "contributor",
+    "points": 529
+  },
+  {
+    "username": "u/elliottlarson",
+    "blockchain_address": "0xC02A0001C29Df2B44670d04D22D61b9C49bD5666",
+    "contributor_type": "contributor",
+    "points": 529
+  },
+  {
+    "username": "u/oldskool47",
+    "blockchain_address": "0x730A2995814d1EecE46a7b71c1cfd1E46554247c",
+    "contributor_type": "contributor",
+    "points": 476
+  },
+  {
+    "username": "u/AntiTeammate",
+    "blockchain_address": "0x29818624564A9f745390209820d69464b84c5B42",
+    "contributor_type": "contributor",
+    "points": 476
+  },
+  {
+    "username": "u/Mr_Blah_Blah1234",
+    "blockchain_address": "0x9D040B1FC9b8A5E568247134050B0F583560B45C",
+    "contributor_type": "contributor",
+    "points": 476
+  },
+  {
+    "username": "u/TryBobby",
+    "blockchain_address": "0xF8ef9409e2a9aD8fAB79c63A31E8E696Bb0Ab63A",
+    "contributor_type": "contributor",
+    "points": 476
+  },
+  {
+    "username": "u/kishore1988",
+    "blockchain_address": "0x1b6571958B1676728abdDf0864d4713B368A8979",
+    "contributor_type": "contributor",
+    "points": 476
+  },
+  {
+    "username": "u/InitialFocus2",
+    "blockchain_address": "0x4fD64B4A65bc00Dcc787E5a95e87A8100e2109A1",
+    "contributor_type": "contributor",
+    "points": 476
+  },
+  {
+    "username": "u/Lexsteel11",
+    "blockchain_address": "0xc8B6ee0463144A18465024E0C7578579c033bB61",
+    "contributor_type": "contributor",
+    "points": 476
+  },
+  {
+    "username": "u/DeadlyViperA_Squad",
+    "blockchain_address": "0xd174a34489a854b31f7B39C46B4112628D26e1Ef",
+    "contributor_type": "contributor",
+    "points": 476
+  },
+  {
+    "username": "u/keatonatron",
+    "blockchain_address": "0x7c80435964Bde8071e1D3Df76Da870C2F03b44F2",
+    "contributor_type": "contributor",
+    "points": 476
+  },
+  {
+    "username": "u/Letter7",
+    "blockchain_address": "0x6B78778F83327311511A810408652614e84366F4",
+    "contributor_type": "contributor",
+    "points": 476
+  },
+  {
+    "username": "u/Kekraks",
+    "blockchain_address": "0xaf8405bf57607a0572e7E783D927710B714DC01e",
+    "contributor_type": "contributor",
+    "points": 476
+  },
+  {
+    "username": "u/JohnnyK10",
+    "blockchain_address": "0xE48D580Fb83Ba8537fBc85F31507dB288a5c1494",
+    "contributor_type": "contributor",
+    "points": 476
+  },
+  {
+    "username": "u/Mathje",
+    "blockchain_address": "0x1B8420682A549C9c4915DD5ac3573A2b1B363DB5",
+    "contributor_type": "contributor",
+    "points": 476
+  },
+  {
+    "username": "u/beyondelectricdream",
+    "blockchain_address": "0xF6C049eac20Cf57E3e600F83D4FA194cbb4266aF",
+    "contributor_type": "contributor",
+    "points": 476
+  },
+  {
+    "username": "u/kekehippo",
+    "blockchain_address": "0x617637032b551B3AD720bD334B9c5B38EA27780A",
+    "contributor_type": "contributor",
+    "points": 476
+  },
+  {
+    "username": "u/danylostefan",
+    "blockchain_address": "0x344863fAd665633c49A1DA24154f44290Fd3c30f",
+    "contributor_type": "contributor",
+    "points": 476
+  },
+  {
+    "username": "u/spilbo_baggins",
+    "blockchain_address": "0x1C7143F2F25f7f50E2b27373a503ae2796575B9b",
+    "contributor_type": "contributor",
+    "points": 476
+  },
+  {
+    "username": "u/Zeranor",
+    "blockchain_address": "0x9526818A8F5d997652c213A28CC532Cf6B709aa4",
+    "contributor_type": "contributor",
+    "points": 476
+  },
+  {
+    "username": "u/etheraider",
+    "blockchain_address": "0x1dAe45d4a51e0456967CEf698D7f6387e320c599",
+    "contributor_type": "contributor",
+    "points": 476
+  },
+  {
+    "username": "u/ramonvls926",
+    "blockchain_address": "0xC49941131C9e035EbaE688c5EFC73a03032f309E",
+    "contributor_type": "contributor",
+    "points": 423
+  },
+  {
+    "username": "u/AvocadosAreMeh",
+    "blockchain_address": "0x9F607A042b2b34B70817D7E749778ad9939941aE",
+    "contributor_type": "contributor",
+    "points": 423
+  },
+  {
+    "username": "u/LefterisJP",
+    "blockchain_address": "0x2B888954421b424C5D3D9Ce9bB67c9bD47537d12",
+    "contributor_type": "contributor",
+    "points": 423
+  },
+  {
+    "username": "u/blackrabbit2999",
+    "blockchain_address": "0xA428aa1F5dCd558F2f3027d708B086a8CB769FE3",
+    "contributor_type": "contributor",
+    "points": 423
+  },
+  {
+    "username": "u/Aurtach",
+    "blockchain_address": "0xd950b9a4f667184c386b0C57311784C762D591b6",
+    "contributor_type": "contributor",
+    "points": 423
+  },
+  {
+    "username": "u/Wreckxpert",
+    "blockchain_address": "0x5248F4c01C6043619869CcAE8C6C5d12929E5314",
+    "contributor_type": "contributor",
+    "points": 423
+  },
+  {
+    "username": "u/cuiet_",
+    "blockchain_address": "0x5622E87f0e6F588aC704DE13727EB1f21a08070f",
+    "contributor_type": "contributor",
+    "points": 423
+  },
+  {
+    "username": "u/FSpeshalXO",
+    "blockchain_address": "0xC6A6469368e4752FD6546d26956D5dfA37EB1488",
+    "contributor_type": "contributor",
+    "points": 423
+  },
+  {
+    "username": "u/alive_consequence",
+    "blockchain_address": "0x080eB56A0a5BbB3a8bf2E3dc6bf64a05DAa82116",
+    "contributor_type": "contributor",
+    "points": 423
+  },
+  {
+    "username": "u/MaconBacon01",
+    "blockchain_address": "0xC05cFB4fa62BB3C9dF7Ac65fE77d28345aFa3485",
+    "contributor_type": "contributor",
+    "points": 423
+  },
+  {
+    "username": "u/CowboyNuggets",
+    "blockchain_address": "0x260534ac7D99C0C7d75dbAfE8397E76D05F92bcc",
+    "contributor_type": "contributor",
+    "points": 423
+  },
+  {
+    "username": "u/CAT6_",
+    "blockchain_address": "0xEF25f303d9d13414839959c66335FF822F6e5e42",
+    "contributor_type": "contributor",
+    "points": 423
+  },
+  {
+    "username": "u/coinsquad",
+    "blockchain_address": "0xD7327A6EAE17A5bCbb59d6CD4D8F67900CE33245",
+    "contributor_type": "contributor",
+    "points": 423
+  },
+  {
+    "username": "u/Sata4Samsara",
+    "blockchain_address": "0x955eEC8E868e0CacbFfDf85BA322A3A8E5d31dD6",
+    "contributor_type": "contributor",
+    "points": 423
+  },
+  {
+    "username": "u/bitdex",
+    "blockchain_address": "0xD0be01171B75fC23A938E28d5B3064DC3Cdb14BD",
+    "contributor_type": "contributor",
+    "points": 423
+  },
+  {
+    "username": "u/Glitchmstr",
+    "blockchain_address": "0x61c69B2138B53177DF375C165ea8F56aD7B13067",
+    "contributor_type": "contributor",
+    "points": 423
+  },
+  {
+    "username": "u/GrilledCheezzy",
+    "blockchain_address": "0x5A825C64df9DEe1E35Fe9041CA8D69509414C4a7",
+    "contributor_type": "contributor",
+    "points": 423
+  },
+  {
+    "username": "u/malikrys",
+    "blockchain_address": "0x3eaf3557fF2A6347B84dacf1aF96709F77f9A8Ac",
+    "contributor_type": "contributor",
+    "points": 423
+  },
+  {
+    "username": "u/astoneta",
+    "blockchain_address": "0x9240D4B5B51Fe17091D74E8BB5BE6655eAAb794B",
+    "contributor_type": "contributor",
+    "points": 423
+  },
+  {
+    "username": "u/Comprehensive_Farm_7",
+    "blockchain_address": "0xF752AF74A5F090a857Dc985d3F606De1c0477C63",
+    "contributor_type": "contributor",
+    "points": 423
+  },
+  {
+    "username": "u/aqouta",
+    "blockchain_address": "0x09E9aB9dDa075439A1dD7990Cd53495B52036a1C",
+    "contributor_type": "contributor",
+    "points": 423
+  },
+  {
+    "username": "u/captainmidday",
+    "blockchain_address": "0xafe8d48DeFC7B96912C638C8900CB71dDB1acEC4",
+    "contributor_type": "contributor",
+    "points": 370
+  },
+  {
+    "username": "u/ramzysalem96",
+    "blockchain_address": "0xC2dfD7F36F739eeC07F1886Fd765EB40AC7a5377",
+    "contributor_type": "contributor",
+    "points": 370
+  },
+  {
+    "username": "u/fabreeze",
+    "blockchain_address": "0x63a1d135676Cc3FDDd8761641A14c3339F6C4920",
+    "contributor_type": "contributor",
+    "points": 370
+  },
+  {
+    "username": "u/Safranina",
+    "blockchain_address": "0x8240Ca808bDf173e46045e0AA82EE02F08B2DC6c",
+    "contributor_type": "contributor",
+    "points": 370
+  },
+  {
+    "username": "u/mati22123",
+    "blockchain_address": "0x3f2b5D181218bDee9311dc21aDbc53D09dA0E976",
+    "contributor_type": "contributor",
+    "points": 370
+  },
+  {
+    "username": "u/vanguard_sean",
+    "blockchain_address": "0xf28c26d1b45724077eDF23e65409e7D8e339430b",
+    "contributor_type": "contributor",
+    "points": 370
+  },
+  {
+    "username": "u/iiJokerzace",
+    "blockchain_address": "0x3F32f262CF3052c1Adc5AE32D2114870F255BF22",
+    "contributor_type": "contributor",
+    "points": 370
+  },
+  {
+    "username": "u/donniedarkero",
+    "blockchain_address": "0x5fc6E06E1a3C123B60B7F122496c3f683772F431",
+    "contributor_type": "contributor",
+    "points": 370
+  },
+  {
+    "username": "u/Yoggy52",
+    "blockchain_address": "0x83B8aC90E98B07136fa4412f2d1C161B292b240a",
+    "contributor_type": "contributor",
+    "points": 370
+  },
+  {
+    "username": "u/Exercin",
+    "blockchain_address": "0x268a7Fd99E4Da945a7c88F6A04F0E590F8D24Ec3",
+    "contributor_type": "contributor",
+    "points": 370
+  },
+  {
+    "username": "u/tAyFoP",
+    "blockchain_address": "0xDd4Fd1952335531aa4228f37658E97d24e2EEe82",
+    "contributor_type": "contributor",
+    "points": 370
+  },
+  {
+    "username": "u/EngelShooter",
+    "blockchain_address": "0xF1512c73CA76034154EB41666DBf6fF0BEaDcfaf",
+    "contributor_type": "contributor",
+    "points": 370
+  },
+  {
+    "username": "u/Angga456",
+    "blockchain_address": "0x1fcdFE384eBa31DB76440368AA3405e43598611f",
+    "contributor_type": "contributor",
+    "points": 370
+  },
+  {
+    "username": "u/Oninteressant123",
+    "blockchain_address": "0x92fb0726799C746175360B7cB438f8b4D864443B",
+    "contributor_type": "contributor",
+    "points": 370
+  },
+  {
+    "username": "u/headsallrelative",
+    "blockchain_address": "0x71205eF0fC331fB5Cf783138288c51514584ACFe",
+    "contributor_type": "contributor",
+    "points": 370
+  },
+  {
+    "username": "u/gynoplasty",
+    "blockchain_address": "0x1b7df0Efb5B552a3f87E85710E4580C84355991A",
+    "contributor_type": "contributor",
+    "points": 370
+  },
+  {
+    "username": "u/Bb-beluga",
+    "blockchain_address": "0x75b93b7B3dF723A73BF9E33d8700712159e53491",
+    "contributor_type": "contributor",
+    "points": 370
+  },
+  {
+    "username": "u/SevenCroutons",
+    "blockchain_address": "0xcd8D424e25E1Aa201091F855a81f28d2556988dD",
+    "contributor_type": "contributor",
+    "points": 370
+  },
+  {
+    "username": "u/Thisisvexx",
+    "blockchain_address": "0x7b5C441D118F37eDECc182b48c5e450F239D39D7",
+    "contributor_type": "contributor",
+    "points": 370
+  },
+  {
+    "username": "u/kushkloudzz",
+    "blockchain_address": "0x1C6A0Efe4258f888eaE7dA6BABd52c9F8791D3D7",
+    "contributor_type": "contributor",
+    "points": 370
+  },
+  {
+    "username": "u/mojo8675309",
+    "blockchain_address": "0x719a0625B748af216c37Bb2579323fAF89e59808",
+    "contributor_type": "contributor",
+    "points": 370
+  },
+  {
+    "username": "u/ev1501",
+    "blockchain_address": "0xD4f718c4CB3969AaaA9790ade3d1cF7dbB3Fc3C0",
+    "contributor_type": "contributor",
+    "points": 370
+  },
+  {
+    "username": "u/GoodCoffeee",
+    "blockchain_address": "0xae6Dc75D64C8550E6FA924654aeC43D64915094F",
+    "contributor_type": "contributor",
+    "points": 370
+  },
+  {
+    "username": "u/noweezernoworld",
+    "blockchain_address": "0x867Ee8FCaD0e363fc99a78b9dDAE468140a989dA",
+    "contributor_type": "contributor",
+    "points": 317
+  },
+  {
+    "username": "u/BlackPresident",
+    "blockchain_address": "0x7095983e2112401585d0beC5061bdd9CeFf6d91E",
+    "contributor_type": "contributor",
+    "points": 317
+  },
+  {
+    "username": "u/Ihad2saythat",
+    "blockchain_address": "0x4701B8e23e7A221F1B0C95310E358F4c4C2535f5",
+    "contributor_type": "contributor",
+    "points": 317
+  },
+  {
+    "username": "u/e3ee3",
+    "blockchain_address": "0xE4e3F09459166bE1044926370e2dd44b926CfA96",
+    "contributor_type": "contributor",
+    "points": 317
+  },
+  {
+    "username": "u/sdmikecfc",
+    "blockchain_address": "0x45f3d2BB22d9FEFbd2aF292833dAcf727Ab19dd7",
+    "contributor_type": "contributor",
+    "points": 317
+  },
+  {
+    "username": "u/bitsquishington2",
+    "blockchain_address": "0x5BfE4018fbe2Ae7fD6e2bEB9eBb920e5D4A589b8",
+    "contributor_type": "contributor",
+    "points": 317
+  },
+  {
+    "username": "u/braincrowd",
+    "blockchain_address": "0xf0b242985Ecfa3f2E1f3e511CBC6dBe3CD38CE14",
+    "contributor_type": "contributor",
+    "points": 317
+  },
+  {
+    "username": "u/WeLiveInaBubble",
+    "blockchain_address": "0x58f8D61405716095759D7167445428314BBC1Ad8",
+    "contributor_type": "contributor",
+    "points": 317
+  },
+  {
+    "username": "u/WoodsWolf",
+    "blockchain_address": "0x3832b35995D4eeDB1e4D79f95a38412F42a0F2CD",
+    "contributor_type": "contributor",
+    "points": 317
+  },
+  {
+    "username": "u/AvantiusMaximus",
+    "blockchain_address": "0x18f0e4a2E99cc8362fE9c9876934Efdd7461d519",
+    "contributor_type": "contributor",
+    "points": 317
+  },
+  {
+    "username": "u/cryptoislife_k",
+    "blockchain_address": "0x30cB261c804bA4DF98B764d36097b5D31AD5c1C0",
+    "contributor_type": "contributor",
+    "points": 317
+  },
+  {
+    "username": "u/South_Valuable4733",
+    "blockchain_address": "0xEb0b664f1C5f171BBc1C45E332a753f45bBc56D2",
+    "contributor_type": "contributor",
+    "points": 317
+  },
+  {
+    "username": "u/tech_consultant",
+    "blockchain_address": "0x5178D41Eb44fe879792F993379A20D8CA72A2c9C",
+    "contributor_type": "contributor",
+    "points": 317
+  },
+  {
+    "username": "u/mikron2",
+    "blockchain_address": "0xAec8e6ad2913ba73c413f6D617aA5aE588C7F1d0",
+    "contributor_type": "contributor",
+    "points": 317
+  },
+  {
+    "username": "u/otorongonoir",
+    "blockchain_address": "0x8E1Eb85E69B6C8f876aBB55036B30C823C9D69Dc",
+    "contributor_type": "contributor",
+    "points": 317
+  },
+  {
+    "username": "u/looonymoony",
+    "blockchain_address": "0x72D794cf1B0c52152ab5ab584a1c0A12BcD74aa5",
+    "contributor_type": "contributor",
+    "points": 317
+  },
+  {
+    "username": "u/CoreyGilligan",
+    "blockchain_address": "0x9edBE531F90Ca577b224c67127Bbb0F4E096413b",
+    "contributor_type": "contributor",
+    "points": 317
+  },
+  {
+    "username": "u/Waving_from_heights",
+    "blockchain_address": "0x0D389aa79159030f4c7651eA98F56193f448C3F9",
+    "contributor_type": "contributor",
+    "points": 317
+  },
+  {
+    "username": "u/Reddit_zod",
+    "blockchain_address": "0xcb60F4ae69C58b507DEEDe0dB562B129E53304Ae",
+    "contributor_type": "contributor",
+    "points": 317
+  },
+  {
+    "username": "u/Clam_Newton",
+    "blockchain_address": "0x72Ea334eC0d4629C333383Da9C8AafF4338A89D2",
+    "contributor_type": "contributor",
+    "points": 317
+  },
+  {
+    "username": "u/make_me_think",
+    "blockchain_address": "0xfff172cDECd5D3fe6A79D6F586D75a977D4ED31B",
+    "contributor_type": "contributor",
+    "points": 317
+  },
+  {
+    "username": "u/The_Doctor_Bear",
+    "blockchain_address": "0x0595EAd488E47dB9558ce4a0619bcAb799A84b4C",
+    "contributor_type": "contributor",
+    "points": 317
+  },
+  {
+    "username": "u/OatyGoat",
+    "blockchain_address": "0xaDA586EC28DEfe73DF6681AC2169a804901aDe6B",
+    "contributor_type": "contributor",
+    "points": 317
+  },
+  {
+    "username": "u/adamix24",
+    "blockchain_address": "0xE916E9de28ceBaa09F2baAa4699F877FA3B57804",
+    "contributor_type": "contributor",
+    "points": 317
+  },
+  {
+    "username": "u/kowasaur",
+    "blockchain_address": "0xB67D4dd9F0E25760dC0f373d79588Bd0169b2335",
+    "contributor_type": "contributor",
+    "points": 317
+  },
+  {
+    "username": "u/wolfiemoz",
+    "blockchain_address": "0xb9D7A04caed5e7A4A90EEDAcC0ca600b3BE7481E",
+    "contributor_type": "contributor",
+    "points": 264
+  },
+  {
+    "username": "u/DarthVaderIzBack",
+    "blockchain_address": "0xa94e3f627D6356291391d9d8CBaefd0BD1C6B9fa",
+    "contributor_type": "contributor",
+    "points": 264
+  },
+  {
+    "username": "u/Colmado_Bacano",
+    "blockchain_address": "0x9447BfceD50c4ee604cbE2110BFc39cdD779fa63",
+    "contributor_type": "contributor",
+    "points": 264
+  },
+  {
+    "username": "u/hikaru2309",
+    "blockchain_address": "0x0BF341C86A180ae8d12f0E7102dAC253CC656810",
+    "contributor_type": "contributor",
+    "points": 264
+  },
+  {
+    "username": "u/Sal_T_Nuts",
+    "blockchain_address": "0x7A5fF908a46EA288AC15a1324ee55A15B52808DA",
+    "contributor_type": "contributor",
+    "points": 264
+  },
+  {
+    "username": "u/shortwhiteguy",
+    "blockchain_address": "0x79c28e7e5C9FA5193D3e3076EBE86994417fbe43",
+    "contributor_type": "contributor",
+    "points": 264
+  },
+  {
+    "username": "u/PwnerMan5000",
+    "blockchain_address": "0x7021632aFDb90D6D1eC3CF2a663f7D251b6425Ce",
+    "contributor_type": "contributor",
+    "points": 264
+  },
+  {
+    "username": "u/phanrok",
+    "blockchain_address": "0x47c6Fd9AE880152E1D732a13eB0aC78c2656a3ee",
+    "contributor_type": "contributor",
+    "points": 264
+  },
+  {
+    "username": "u/FluxTape",
+    "blockchain_address": "0x1E8484197D374798aef69D5f1D8a3fb01b7dC358",
+    "contributor_type": "contributor",
+    "points": 264
+  },
+  {
+    "username": "u/ellessone23",
+    "blockchain_address": "0xCe6D46C69d42FFf41778C12C7F32649529766F18",
+    "contributor_type": "contributor",
+    "points": 264
+  },
+  {
+    "username": "u/ral_miramar",
+    "blockchain_address": "0x518Bf83A3Dfb6f0Fde87a6B6a6e91a88277af1CA",
+    "contributor_type": "contributor",
+    "points": 264
+  },
+  {
+    "username": "u/rustyburrito",
+    "blockchain_address": "0x7A045cD4AF5513ce4fB17a988c68c2725bb65f8F",
+    "contributor_type": "contributor",
+    "points": 264
+  },
+  {
+    "username": "u/Suishou",
+    "blockchain_address": "0x68De51b8A5A53fE8E62705fDcFedd7B243245D26",
+    "contributor_type": "contributor",
+    "points": 264
+  },
+  {
+    "username": "u/xlog4n",
+    "blockchain_address": "0x3335D9B94cDcE005f24750cB1f04922BE3610304",
+    "contributor_type": "contributor",
+    "points": 264
+  },
+  {
+    "username": "u/NefariousNaz",
+    "blockchain_address": "0xAA39937AD52e1925c02D4D13EfD0A04AD260b0f5",
+    "contributor_type": "contributor",
+    "points": 264
+  },
+  {
+    "username": "u/confusedprawn",
+    "blockchain_address": "0x5210Fb987B6b19b006fDAEbBE284b061B30CE8AE",
+    "contributor_type": "contributor",
+    "points": 264
+  },
+  {
+    "username": "u/intothecryptoverse",
+    "blockchain_address": "0x736EE9bE03cA2AFEB2CB794b4C39061114a21C6E",
+    "contributor_type": "contributor",
+    "points": 264
+  },
+  {
+    "username": "u/owolf8",
+    "blockchain_address": "0x79c84d864E0300a2baC3F632961594C8F48dF65d",
+    "contributor_type": "contributor",
+    "points": 264
+  },
+  {
+    "username": "u/mlevin7",
+    "blockchain_address": "0x25e505E984aFB4CE6320F879d0cA5cDD145e2893",
+    "contributor_type": "contributor",
+    "points": 264
+  },
+  {
+    "username": "u/FollowMe22",
+    "blockchain_address": "0x5d72e3a257114eC0422813222D57D16C9a1B80e8",
+    "contributor_type": "contributor",
+    "points": 264
+  },
+  {
+    "username": "u/sggts04",
+    "blockchain_address": "0x14a2F78D7bb33C81784f0a602c3c986448c9C473",
+    "contributor_type": "contributor",
+    "points": 264
+  },
+  {
+    "username": "u/anthonymacp",
+    "blockchain_address": "0x291877c4B39193E7e05a5C820bc7c6bf13cE30F4",
+    "contributor_type": "contributor",
+    "points": 264
+  },
+  {
+    "username": "u/dreamerzz",
+    "blockchain_address": "0x921fC132d2fd075C694f89704059762e5AE94031",
+    "contributor_type": "contributor",
+    "points": 264
+  },
+  {
+    "username": "u/CarsonRoscoe",
+    "blockchain_address": "0xf264702573aF3C71675C9AbfcEAAd6D4AB5d336b",
+    "contributor_type": "contributor",
+    "points": 264
+  },
+  {
+    "username": "u/Memeboidad3",
+    "blockchain_address": "0xCd909F639eD2b6942CdED406010575D0b58123d0",
+    "contributor_type": "contributor",
+    "points": 211
+  },
+  {
+    "username": "u/werd22190",
+    "blockchain_address": "0x03E03cfdd5C75719ae436F3BC4C7085756E29c45",
+    "contributor_type": "contributor",
+    "points": 211
+  },
+  {
+    "username": "u/Vandal36",
+    "blockchain_address": "0x1637d7cd1ab7cAa8cDBB079E94529adC52292AAc",
+    "contributor_type": "contributor",
+    "points": 211
+  },
+  {
+    "username": "u/Coinplex",
+    "blockchain_address": "0x1704e52c0B081b4B9293AFfC6dBd50Eaee688745",
+    "contributor_type": "contributor",
+    "points": 211
+  },
+  {
+    "username": "u/frasola93",
+    "blockchain_address": "0x914A75ba335ecc4670c42FF37A8B2EC8128af554",
+    "contributor_type": "contributor",
+    "points": 211
+  },
+  {
+    "username": "u/Buzzcoin",
+    "blockchain_address": "0xeC70bb67123ddb67C7210faFab5fd709f21a2B93",
+    "contributor_type": "contributor",
+    "points": 211
+  },
+  {
+    "username": "u/RoyalOGKush",
+    "blockchain_address": "0xcd81Ca3468575AFd68D5dB5F1F3f7ee821C9A178",
+    "contributor_type": "contributor",
+    "points": 211
+  },
+  {
+    "username": "u/juxtaposezen",
+    "blockchain_address": "0x832E460b37b2964d016B7c0674032929fE0AF7d0",
+    "contributor_type": "contributor",
+    "points": 211
+  },
+  {
+    "username": "u/pas32",
+    "blockchain_address": "0x5B78f06123eE99dC8B21D4e1Ef51afE08059d5Ec",
+    "contributor_type": "contributor",
+    "points": 211
+  },
+  {
+    "username": "u/grubobeats",
+    "blockchain_address": "0xb956624FD00377DBE5ce1c5dc43f5d3fA4e97f38",
+    "contributor_type": "contributor",
+    "points": 211
+  },
+  {
+    "username": "u/ObiTwoKenobi",
+    "blockchain_address": "0xA8F6947250D8e0C4FD886803eC0b518053577C55",
+    "contributor_type": "contributor",
+    "points": 211
+  },
+  {
+    "username": "u/rsblk",
+    "blockchain_address": "0xF08E242722aF03F5575A50E8bFbA0c56EFF6D134",
+    "contributor_type": "contributor",
+    "points": 211
+  },
+  {
+    "username": "u/macx333",
+    "blockchain_address": "0xec5a60349cD98cE03595b6f19f7865ce06C8d644",
+    "contributor_type": "contributor",
+    "points": 211
+  },
+  {
+    "username": "u/z6joker9",
+    "blockchain_address": "0x96c32AC9F3fCf1077C25453BF85a7af3276D84c0",
+    "contributor_type": "contributor",
+    "points": 211
+  },
+  {
+    "username": "u/blackdowney",
+    "blockchain_address": "0x54836c08Ba9c3b6036ec66E3F5d21199BC721C23",
+    "contributor_type": "contributor",
+    "points": 211
+  },
+  {
+    "username": "u/ethervescent",
+    "blockchain_address": "0x9959E0E36C857eeb5A87fee8800af8a6a119f5E4",
+    "contributor_type": "contributor",
+    "points": 211
+  },
+  {
+    "username": "u/um-i-forget",
+    "blockchain_address": "0x06287d2f6408DD99D6EA1f591E7C23ec014733F0",
+    "contributor_type": "contributor",
+    "points": 211
+  },
+  {
+    "username": "u/Lawyer_Cat_2020",
+    "blockchain_address": "0x79Eae3DA4eB30f3d673C2c8A49389De6D98adbf3",
+    "contributor_type": "contributor",
+    "points": 211
+  },
+  {
+    "username": "u/zulugrid",
+    "blockchain_address": "0x627A5e671051A9BDB7a7604b001B0385a888E3Da",
+    "contributor_type": "contributor",
+    "points": 211
+  },
+  {
+    "username": "u/wellsphil",
+    "blockchain_address": "0x6a93946254899A34FdcB7fBf92dfd2e4eC1399e7",
+    "contributor_type": "contributor",
+    "points": 211
+  },
+  {
+    "username": "u/Kotek81",
+    "blockchain_address": "0x689E700EaF54B4041D0a52FF6fae89d6146dB412",
+    "contributor_type": "contributor",
+    "points": 211
+  },
+  {
+    "username": "u/thinkpaduser2000",
+    "blockchain_address": "0xa95fA283EA0f64A684c670B8c2B7724070E89ea6",
+    "contributor_type": "contributor",
+    "points": 211
+  },
+  {
+    "username": "u/__CRUSH__",
+    "blockchain_address": "0x44bB448bF6E82D72B393F9a3549Af378C8ddcF32",
+    "contributor_type": "contributor",
+    "points": 211
+  },
+  {
+    "username": "u/junak66",
+    "blockchain_address": "0x4fDB5692005f802165AD7F6b3f58Dca4Ad1BE5e9",
+    "contributor_type": "contributor",
+    "points": 211
+  },
+  {
+    "username": "u/Davejoy117",
+    "blockchain_address": "0x71f35825a3B1528859dFa1A64b24242BC0d12990",
+    "contributor_type": "contributor",
+    "points": 211
+  },
+  {
+    "username": "u/bozzie4",
+    "blockchain_address": "0x5aC81eC3457a71DDA2Af0e15688d04dA9a98Df3C",
+    "contributor_type": "contributor",
+    "points": 211
+  },
+  {
+    "username": "u/Dxsty98",
+    "blockchain_address": "0xCE01855A2ab2294885D679A8f4e7D6D5F1aa66F5",
+    "contributor_type": "contributor",
+    "points": 211
+  },
+  {
+    "username": "u/KaladinBellona",
+    "blockchain_address": "0xae78f60Ac0568c86f7f9C8CF4635cDD7990E665B",
+    "contributor_type": "contributor",
+    "points": 211
+  },
+  {
+    "username": "u/gilfjord",
+    "blockchain_address": "0xB963A533f4654F7BBA3135d4f3E5e3DE075682c8",
+    "contributor_type": "contributor",
+    "points": 211
+  },
+  {
+    "username": "u/mohiemen",
+    "blockchain_address": "0xA5BCE25cf13Ee5c98CB428f2f9b423c3690A2ABd",
+    "contributor_type": "contributor",
+    "points": 158
+  },
+  {
+    "username": "u/BountyExpert",
+    "blockchain_address": "0xaC39fA883d4f90ef0b12A208b202D22a62d38e41",
+    "contributor_type": "contributor",
+    "points": 158
+  },
+  {
+    "username": "u/ThenOwl9",
+    "blockchain_address": "0xC9d48fDAF3Dde28B23c5151B690b0438EdF82BC2",
+    "contributor_type": "contributor",
+    "points": 158
+  },
+  {
+    "username": "u/mati221232",
+    "blockchain_address": "0x0aFC59CfF4246EfceCE392AEAd6b6db2e42bBAee",
+    "contributor_type": "contributor",
+    "points": 158
+  },
+  {
+    "username": "u/samwaytla",
+    "blockchain_address": "0xCc5cDFD933a7Af7978115a86aF7a76D0200666F6",
+    "contributor_type": "contributor",
+    "points": 158
+  },
+  {
+    "username": "u/tastypic",
+    "blockchain_address": "0x26F37E0C37E68be28a6C42Ef5D2cB048e1ACF409",
+    "contributor_type": "contributor",
+    "points": 158
+  },
+  {
+    "username": "u/icofreak",
+    "blockchain_address": "0xD01c67f633Acd89538c3035c85C240E62FAc0547",
+    "contributor_type": "contributor",
+    "points": 158
+  },
+  {
+    "username": "u/sora_imperial",
+    "blockchain_address": "0x01077FCf4180EB68Fc341Bbe68B3ae3cE63D977a",
+    "contributor_type": "contributor",
+    "points": 158
+  },
+  {
+    "username": "u/nevrote",
+    "blockchain_address": "0x1B79069a182C229D029A4ed4d4Ac8C1ff128Fe95",
+    "contributor_type": "contributor",
+    "points": 158
+  },
+  {
+    "username": "u/seanyo",
+    "blockchain_address": "0x4e8455A139Cc6ded3019b72dA359aF6a16F7250d",
+    "contributor_type": "contributor",
+    "points": 158
+  },
+  {
+    "username": "u/k3tten",
+    "blockchain_address": "0x231c70a550AD61fB29cA9983b80881bb13695cFd",
+    "contributor_type": "contributor",
+    "points": 158
+  },
+  {
+    "username": "u/taythesleepyguyy",
+    "blockchain_address": "0xF632366A32fA049a41663558bd4aBCCeD94527B7",
+    "contributor_type": "contributor",
+    "points": 158
+  },
+  {
+    "username": "u/JustAnotherKrn",
+    "blockchain_address": "0x88faB58f618f82AfbAFF623ff19a60572a1a60A3",
+    "contributor_type": "contributor",
+    "points": 158
+  },
+  {
+    "username": "u/BakedEnt",
+    "blockchain_address": "0x53f47266CB0677F8d0D28Cf4e6A4C714182787aE",
+    "contributor_type": "contributor",
+    "points": 158
+  },
+  {
+    "username": "u/john3298",
+    "blockchain_address": "0xCBBa9D9531a0ff828C75026E3bF15D6A2dEaf43b",
+    "contributor_type": "contributor",
+    "points": 158
+  },
+  {
+    "username": "u/LOONGMOVIE22",
+    "blockchain_address": "0xBCfef4aA5F9776a7035ee852Bcd4110B5B118dE9",
+    "contributor_type": "contributor",
+    "points": 158
+  },
+  {
+    "username": "u/PhysicalAstronaut4",
+    "blockchain_address": "0x4438767155537c3eD7696aeea2C758f9cF1DA82d",
+    "contributor_type": "contributor",
+    "points": 158
+  },
+  {
+    "username": "u/ask_for_pgp",
+    "blockchain_address": "0x85CD2e2F186015fc56a2066885b16d44c0bC164B",
+    "contributor_type": "contributor",
+    "points": 158
+  },
+  {
+    "username": "u/saiballs",
+    "blockchain_address": "0xd32fB991E3d42388A3715dc0C2AEaAfB022d0C4E",
+    "contributor_type": "contributor",
+    "points": 158
+  },
+  {
+    "username": "u/Dajukz",
+    "blockchain_address": "0xff4163F1ef7C65fb11b5Fb231013f9ab3795b8E0",
+    "contributor_type": "contributor",
+    "points": 158
+  },
+  {
+    "username": "u/heyheoy",
+    "blockchain_address": "0xB4ACa4d18C3F3AD9Bfddd0A0dc8F669d51798dEA",
+    "contributor_type": "contributor",
+    "points": 158
+  },
+  {
+    "username": "u/jurassicgrass",
+    "blockchain_address": "0xbeaAB084A7ea36bd3737e732f49fEfd21464398A",
+    "contributor_type": "contributor",
+    "points": 158
+  },
+  {
+    "username": "u/Buzz_Sensei",
+    "blockchain_address": "0x2b8Fcb480f1c426C276328Dc36C3543e73FC1EfD",
+    "contributor_type": "contributor",
+    "points": 158
+  },
+  {
+    "username": "u/Guzzfa",
+    "blockchain_address": "0x1947135057B73081075b14793bAdDda87E47CcD7",
+    "contributor_type": "contributor",
+    "points": 158
+  },
+  {
+    "username": "u/Vladver13",
+    "blockchain_address": "0xcF38489141eF9eBc7db7C53704472AA9Ef24c621",
+    "contributor_type": "contributor",
+    "points": 158
+  },
+  {
+    "username": "u/boodle_noodle",
+    "blockchain_address": "0xB93A0562Ff8E6Ad8602A1Eef1f2C37FDa9007eF2",
+    "contributor_type": "contributor",
+    "points": 158
+  },
+  {
+    "username": "u/FurFaceMcBeard",
+    "blockchain_address": "0x821241AbDaEaa39262cf60c219B424c54A5c4E1d",
+    "contributor_type": "contributor",
+    "points": 158
+  },
+  {
+    "username": "u/nowyoucannotseeme",
+    "blockchain_address": "0x3ecA998Bf32Ec09a304D9D5A807D7deAc4278b8f",
+    "contributor_type": "contributor",
+    "points": 158
+  },
+  {
+    "username": "u/coffeehouse11",
+    "blockchain_address": "0x9903cB94A493B62E7BB054F3624E8b78421b3F87",
+    "contributor_type": "contributor",
+    "points": 158
+  },
+  {
+    "username": "u/sheazle",
+    "blockchain_address": "0xb72df0b0bc7976d76C7f3F5368d199f8ceEC25A5",
+    "contributor_type": "contributor",
+    "points": 158
+  },
+  {
+    "username": "u/Homunculistic",
+    "blockchain_address": "0xd092769f5374Cdbf01C5547A85aCAfEEe9e8d41a",
+    "contributor_type": "contributor",
+    "points": 158
+  },
+  {
+    "username": "u/Longtime_Lurker_420",
+    "blockchain_address": "0xceBb19F884350BE6B7D4e182e58c01e52310219B",
+    "contributor_type": "contributor",
+    "points": 158
+  },
+  {
+    "username": "u/NicoleJamson",
+    "blockchain_address": "0xc7F7D2e248a16B49273D4DDe825E48447c838CBD",
+    "contributor_type": "contributor",
+    "points": 158
+  },
+  {
+    "username": "u/BoGGy5m4ll5",
+    "blockchain_address": "0x97430f3192E87881fD44D28f451f12AEeFfFaD49",
+    "contributor_type": "contributor",
+    "points": 158
+  },
+  {
+    "username": "u/Nickel62",
+    "blockchain_address": "0x68d2E117B2297e5161209788f9915D301d3cE532",
+    "contributor_type": "contributor",
+    "points": 158
+  },
+  {
+    "username": "u/neo-caridina",
+    "blockchain_address": "0x9365a7fb2fdBDF285C617efff86ae4CC0B2D13A8",
+    "contributor_type": "contributor",
+    "points": 158
+  },
+  {
+    "username": "u/ShootAndSayKobe",
+    "blockchain_address": "0xB317342405e9433EA98eA5485bEaB937FC48A979",
+    "contributor_type": "contributor",
+    "points": 158
+  },
+  {
+    "username": "u/Conscious_Patience54",
+    "blockchain_address": "0xcb569a2A5EeA40c6aC763C8e731a8C9be8bc1A86",
+    "contributor_type": "contributor",
+    "points": 158
+  },
+  {
+    "username": "u/Kriifrux",
+    "blockchain_address": "0x13AFFfD1efF5CfbA607122021B6a15AB6201cB16",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/Kompottkopf",
+    "blockchain_address": "0x954184AD0Fbc67332Bab62a6c5958c4C5E2CFeC2",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/LavoP",
+    "blockchain_address": "0x5A9e792143bf2708b4765C144451dCa54f559a19",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/ristoman",
+    "blockchain_address": "0x69469d25B5FE2d672E3F335ff092b30596a21353",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/wtf--dude",
+    "blockchain_address": "0xD095AF292123eBF5e30d3ef6BDA1AB1A27E251d1",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/cryptoCIO",
+    "blockchain_address": "0xA0e8E76524D6dFfe6e755EFfbE3BcFb9F18DB47f",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/Shamptoni0",
+    "blockchain_address": "0x6e670C90Ebe77220351DA976466aE25Ff6e32F21",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/stockeepops",
+    "blockchain_address": "0xa54637aC0db095c20e725C0ee107A7D66Dfc3E3d",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/Prof_Void",
+    "blockchain_address": "0x2c6d7304dF9e0e7687d9Ad72a7770d96eB2fD174",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/imhereforthedonut",
+    "blockchain_address": "0xfd424D7Bf72Af63884A882C19c67b3fcc37822f3",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/iambabyjesus90",
+    "blockchain_address": "0xF33DA141a1612Dc60B6C52c08e57e9Ed9E8c5f7b",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/cleisthenes-alpha",
+    "blockchain_address": "0xF16D87CE8c0F48Ed1Ba51457dA407ecc4c6a46F8",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/ProudBitcoiner",
+    "blockchain_address": "0xCB5087251aEE160ffaEdE3dC75C91B8002bd9F05",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/ActualComfort6",
+    "blockchain_address": "0x269d312F04F848D25C12f5bc7e76b9118b666ca2",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/iamsumorai",
+    "blockchain_address": "0x2F5cA3373eCbb3d0bB8f58BD9548F1Ba73a271B0",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/Advanced-Arachnid411",
+    "blockchain_address": "0xC921fB0186993d2a2b1c86223BA899c0F9932984",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/altdrone",
+    "blockchain_address": "0xB8f843FEfE2ED8024aB9C0bd00e7872AD00CA7C4",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/seblt",
+    "blockchain_address": "0x4aF973f9c9A8404F43980362ed0096Ff521845Ef",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/mstrkit",
+    "blockchain_address": "0x1E81C5A32f8d8C72E6bA6ac0E8CB024D729977E5",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/IsoOverIt",
+    "blockchain_address": "0x425d583C3b7a94d97d3a623566Ab98d838B83813",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/bastardicus",
+    "blockchain_address": "0x3AEfe5A8CC88F577DaB3571d035FDf4F2ECB9B97",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/criscito",
+    "blockchain_address": "0xc11cb1EB21773583F2699aCE04a57609Eea43929",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/Zulunation101",
+    "blockchain_address": "0x8B1510D9aaF015F23ACF13E328Ffb5AB065C5bd9",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/kybarnet",
+    "blockchain_address": "0x54EF9edEC2014786885bbB78a187CfE3Fc7Ad217",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/ElectricClub2",
+    "blockchain_address": "0x91793c2e120139C451533D69307879F5d6227CC9",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/DemCrypTho",
+    "blockchain_address": "0x51f0Cab750eFFf18921a788eed8d87413fC4d419",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/cointpe",
+    "blockchain_address": "0xe64b1A000b931080A73546d4ED5d742495Ce2a92",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/flygoing",
+    "blockchain_address": "0xEC3281124d4c2FCA8A88e3076C1E7749CfEcb7F2",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/ethiossaga",
+    "blockchain_address": "0xf64BC8DC46138016b79cF440014047679D6E2B78",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/wolfman278",
+    "blockchain_address": "0x9B0d1c14B6fd5fA373BdC04249FeB49cF8E81951",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/a_soggy_alternative",
+    "blockchain_address": "0xb21eC220b36542867cbD27F9Da37257534F0251e",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/herethananywhere",
+    "blockchain_address": "0x036C9214761D2142cB1e689240a45528afdd9E30",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/LactatingJello",
+    "blockchain_address": "0x08144F5357ad4cDe70C6C80EeC49e65F8CcE2F90",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/AlethiaArete",
+    "blockchain_address": "0x3c152CDd162A8a92258ce87BCaE815f8ef393756",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/FirebaseZ",
+    "blockchain_address": "0xCd42a5FE94aec769B6e47e47863306eeE882c7F7",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/BoyScout22",
+    "blockchain_address": "0xe8657d11eE168e7Bea98552132E4CEeD798C6a00",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/IamHereForDonuts",
+    "blockchain_address": "0x8d6ecAE7f5E7EaF05a0cEbE52e5FD572B4d90aEb",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/tipsyonthemic",
+    "blockchain_address": "0x7b090999Fdc470A8d469A2644D281Cc3262f7211",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/Robbachief",
+    "blockchain_address": "0xb16Cf6Bc6A933A4cD9d6b3612C706ea77fDAC023",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/Cryptolosopher",
+    "blockchain_address": "0x7970Cb7587983FeEEaaB91317f920Ea3e345AB02",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/Zebracakes2009",
+    "blockchain_address": "0xd7C54Ead6f8de7Ad1034659Fe06Bb9FfE9119454",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/ricardo0139",
+    "blockchain_address": "0xF1020e96E42734c1f805bD852d20C20AF1167Fb1",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/HCloridric",
+    "blockchain_address": "0x3547849e463c44830A7cFB2FdE692b7B185D2afC",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/khaosic_lord",
+    "blockchain_address": "0x2D2440260b155Cd7dbe38414b42E2d5D493a31b0",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/murlidhara",
+    "blockchain_address": "0xB7570970aDE4B850bD5c61Bb333dC11705FEDbcF",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/BaconRaven",
+    "blockchain_address": "0xDF3D3BE6a15B9b1004b4cb8B1aa862388B51F137",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/mpow",
+    "blockchain_address": "0x7a331F60fF7EDA98574aD419624991ff50F738e3",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/mirandanielcz",
+    "blockchain_address": "0x20D3c078958A2b866F9F423a722aF5a92bc7e08b",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/JustTryinToLearn",
+    "blockchain_address": "0xdB3b2B35A3Ad4B1293E91DffC8384a8f2d57c73E",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/cryptochas",
+    "blockchain_address": "0x6e28BAE826e39d8002942edd80E5Fa8Dfa115d4a",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/Gotigers811",
+    "blockchain_address": "0xb2010b3B9e1d60933df001a30bC2A8fc523B2241",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/CoinedPrince",
+    "blockchain_address": "0x22209c193e5F41A0f1A455F098AeE2896C70AD67",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/Bumerang007",
+    "blockchain_address": "0x3Cdfb7011F97F80E24010D0E349d8701aAa197CB",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/Dontmememe420",
+    "blockchain_address": "0xe7aC4E611Ee9BF06792F40Ec85FdeB0F5fA32bEd",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/Draekus",
+    "blockchain_address": "0x0C8dE2AdA8717266EF393b2d98dA3Dc98cabE992",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/JSkii",
+    "blockchain_address": "0x800B605F429651e728A63198313Ef9a3AC0C42C0",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/Cryptomoolah",
+    "blockchain_address": "0x7b53F00F79f1536E5Ac0d781C83168932f188b49",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/LuckyLeprachaun",
+    "blockchain_address": "0x3e369A73E9e0d3Ed62AD7C245Edc46C09EF371e4",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/peppers_",
+    "blockchain_address": "0x32498e61176646Dee8DbC56f642bDa4cAc31AC6a",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/ChunderPrince",
+    "blockchain_address": "0x6d6d59Fdb384d04A4f095Da0f6e937c94F50Fdff",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/madfires",
+    "blockchain_address": "0x3f5518A0636959DA8CC4B310722316ff5C1F42ea",
+    "contributor_type": "contributor",
+    "points": 105
+  },
+  {
+    "username": "u/chrisek",
+    "blockchain_address": "0x610351848efBB815A500d9dac2Fb15b0a51727b3",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/shellwhale",
+    "blockchain_address": "0x28f795Ac082Cd5008E8eFB54B1B7f2B4b136a89d",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/mikeblue7",
+    "blockchain_address": "0x7Af7cA67AA827F58e0659C52a641aeE55a43B535",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/freecollegeguy",
+    "blockchain_address": "0xE4858769dA34B4ad54dAe96549EBD3eA45762f78",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/Sirtato",
+    "blockchain_address": "0xDccd201Ea92fAC3b61F8FF77102261edbf0e7CF2",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/LargeBlu0x",
+    "blockchain_address": "0xf15bDFf7a1f2F5D7C4f7cFdAbfB669Cb2630f86b",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/l3rian",
+    "blockchain_address": "0xe5C6f43b743F794d77D103cAE2077EDD3276d203",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/Plenix",
+    "blockchain_address": "0x702DFa5428b7f0c7520F19DD65590b55370f99b4",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/ILoveWashBucket",
+    "blockchain_address": "0x51B553a31Cf3027f9F5a212027Ac1717B21782B6",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/Pklawitter",
+    "blockchain_address": "0x090371f18A635fB3d7C21190C13a9B6A8d2b5E8B",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/PiekinPump",
+    "blockchain_address": "0x77DDf2C6Abd558C95F50b256Df856Ea615d4b611",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/Helpful-Alps-5320",
+    "blockchain_address": "0xB9b93bF2DB3678b010E71Ef701d763Aee144E93E",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/New_Diet",
+    "blockchain_address": "0xBE04dFA8274182DF66bEC801A53Ba7f781CA7861",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/DrPoptarts22",
+    "blockchain_address": "0x416CBDb27547d4830c4dE6bCcd43f4d9a8161845",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/cannabis_breath",
+    "blockchain_address": "0xf31a23F04aF40B32808ac07B2E1B75Bb731f577a",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/xyus",
+    "blockchain_address": "0x85eD0eDc69102B28839a8a27BFC6CAcBEa435f28",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/Liskatz",
+    "blockchain_address": "0x9E40309F765553cbe1b29dd7B3c1fCeD5883E946",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/bora_ach",
+    "blockchain_address": "0x5cF5121DD0A9145D1DCf922935f5DeF26d639C5E",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/Amic58",
+    "blockchain_address": "0xA1aBafDbA5FbA424A0A156C26413154e90C2f363",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/jacksonobrian",
+    "blockchain_address": "0x38ab2e1EB06Bd1c7D398c12EACF582091BCCC8DE",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/EthanPhan",
+    "blockchain_address": "0x6E3FF35d5b72480C5D064cD84708Bbd35dfE5c4B",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/billenburger",
+    "blockchain_address": "0x63F0d7dBC13b396501B14116253B8e292eBe8021",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/smokeone234566",
+    "blockchain_address": "0x29aebF1904A5b38746017d0317C0666eC36cad84",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/goncalo899",
+    "blockchain_address": "0x98AE7Cc0E5f4659D346BBdca96eA54D94Be2aDEF",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/erikwithaknotac",
+    "blockchain_address": "0x23D20496CC7C3088C3F9640fbfCc3d44195eb8c3",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/blankey1337",
+    "blockchain_address": "0xa1c3b10176929177c480112130161B4f7d714369",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/LE_POOR_MERIT",
+    "blockchain_address": "0xD21256eA1B1e31AE22A9C66d18C8095613b9f6cc",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/yzy2020",
+    "blockchain_address": "0xaB11A37397486De6C3F302693Af527C40555Ac0e",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/SirDaveSilva",
+    "blockchain_address": "0xcF247E65cdF2CAe040B320177c0D980f4aCBF5Ea",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/sonOfPlutus",
+    "blockchain_address": "0xaCCF2E0548450425F0764dDb70bae67c759126f5",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/ChaosCouncil",
+    "blockchain_address": "0x0371a0e9b0C04A0585dA5719058537B2cBC4DcD4",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/SpacePirateM",
+    "blockchain_address": "0x6FD35d2221F673DeEE6aa332E643FB63671da072",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/BullGeneral",
+    "blockchain_address": "0xE5FF3A7aAB4494ef6479f11d85B5531A4052be52",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/theultimatecryptoman",
+    "blockchain_address": "0xBc0a5Ca6Ed317c6d021599F88AD52c052efe5D93",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/DriveLamboToTheMoon",
+    "blockchain_address": "0x36638B58b62ea30e0050D3dE2f0B79873ae625ad",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/le_maman",
+    "blockchain_address": "0x9E12F62e14f347FF1B5950739b07Aeb5Ca079b92",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/jokerfrk",
+    "blockchain_address": "0x5D574D17132a10EE06936fa3cf8286F86550cEAD",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/Davelaw5",
+    "blockchain_address": "0xd17752af6C9c8E489CA452bFED3D51AeA3673938",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/loganchoi",
+    "blockchain_address": "0x2eB7Ac78CD0AD7aBbeAA6AA1b6c434DDAd7435A2",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/JayWelsh",
+    "blockchain_address": "0xDE7e3ec4442Ba87247797BEA433985449EDEA893",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/mmul",
+    "blockchain_address": "0x18EE5f41FF432eCB84ed0Eb210f95906A32b3D42",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/RockwellJacobs",
+    "blockchain_address": "0x62F5E9A76f9DEd2B465656C1083134224DFCB1c5",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/yahehe",
+    "blockchain_address": "0x3Afa9f9a5F53984Da89Bfb51A632C4a890eFe2D4",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/rmrln",
+    "blockchain_address": "0x6fA4F2c8382300850d9a5C8Cc30c6975AE3c2EDB",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/infernal_toast",
+    "blockchain_address": "0xC2D45eB3D2aA49472fAf2C7603c87f16559B1254",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/Angoram",
+    "blockchain_address": "0xF116Ba6f60f45616c891a5a762002a04495aE973",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/tormentosarosa",
+    "blockchain_address": "0xDFbC0EE5f3FDac6fECE1f2FCBc4ED69b6de51855",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/hakanaruba",
+    "blockchain_address": "0x260d5caDD205C8C758B7cebb31b03FC14D6451fB",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/C5_Xenial",
+    "blockchain_address": "0x72523fBb064D2698b06481c19a90151F0a65440d",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/ImanuellKantDestroye",
+    "blockchain_address": "0x23EEBb090C430783Bf0665478ea6d5793B44a3c3",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/hblask",
+    "blockchain_address": "0xA7d03101A0024a6Ce3D094076535b15C0915E23d",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/Herkyjerkygatorade",
+    "blockchain_address": "0x51165026d91E9f4F7A985babC38abc15e6DDb578",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/Gaverfraxz",
+    "blockchain_address": "0xD19f8d82daBFd703A1fd7dDE3AdBc6C49E5E2965",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/Spacesider",
+    "blockchain_address": "0x4CA0baF32146c1169E0D8Ed700e689C80195E2BC",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/Pkickel92",
+    "blockchain_address": "0x3399D85e85A48F5CfF4b5F59d6fbceF94B7E0C37",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/Don-Tron",
+    "blockchain_address": "0x213A9c08fAdcd5406F81d6D4a40dA1c7De68805c",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/Coenbrg",
+    "blockchain_address": "0xbA17aEC8043D2011eBaD47d2af78FB0A5d6Ba4e9",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/Atlasstorm",
+    "blockchain_address": "0xaD1388B8ea2617c8683B4797c67B396901d699De",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/lostrapt",
+    "blockchain_address": "0xc8eC20f2D835D861C3391A5dc20bb614b399d66e",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/kilmarta",
+    "blockchain_address": "0xDda2D57aa2CB55aF90E42cC8c71f6C63fae58A56",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/domingo6220",
+    "blockchain_address": "0x5aa85afFD9271a22AC7e2704C68fD50A421D7A26",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/thegtabmx",
+    "blockchain_address": "0x55e559C974346ED3aE4F8B1b1B6C87b6506ccaBC",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/Soldrakon",
+    "blockchain_address": "0xA6c53d79cbC85A7f934dF9a7383d14B203f6c6a2",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/derpaderp_flaps",
+    "blockchain_address": "0xED661aCfc3804eD0dA22C266F88bCa4fDf91Eb0c",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/PoisenArrows",
+    "blockchain_address": "0xe219AdE6aEE5dfCD99fb3AFda791defE538221C4",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/tomorrows-dust",
+    "blockchain_address": "0xaED3a9DE49a4790A773e69497Ae1007cB2aE0E2F",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/sendmorechuckberry",
+    "blockchain_address": "0x1e8994FaB0648dbCB7D6f0bC5b6415Cca99C79B7",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/Unossa",
+    "blockchain_address": "0x0d1F015725A9c0623965de4dF195e2f90d44d8Cc",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/DonutPed",
+    "blockchain_address": "0xd196EeeA6C057452a213b6914F0D475cdA4A4e69",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/JessicaRabbit05661",
+    "blockchain_address": "0xFCf8cdCBE7d2239355a0751674915b2E1131C132",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/hellnukes",
+    "blockchain_address": "0x92Db8AAfa715D31EF12275e985A6fbb00f948b05",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/urgirlsmomsdaddy",
+    "blockchain_address": "0x4084C3866b5047E9297388e07626F468CC681DCb",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/Marc4120",
+    "blockchain_address": "0xA71441CD1a966C40ffB999Ee6e6776bCAb3ffEBE",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/Fabianb1221",
+    "blockchain_address": "0xfae8EDa9702ff1dD1996E68B01545C8d37fDb549",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/gryxitl",
+    "blockchain_address": "0x036e6ee4Fac9C94a6ae7C8E267d10130303B80E2",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/MoreWindow",
+    "blockchain_address": "0x32844FD085d7A974f8eDEE1DF287DE82F5CB0d1D",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/Born_Efficient8081",
+    "blockchain_address": "0xf1B4c47Fe9f1ae220EC2283d1E642d30D397e23E",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/Apalapa",
+    "blockchain_address": "0x3FBAa4462ab2F1A60b69BB9370432bEe5e768045",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/mmushymouf",
+    "blockchain_address": "0x73870A0231b8d859f56bA6Bc91F433bbFFbf5c7B",
+    "contributor_type": "contributor",
+    "points": 52
+  },
+  {
+    "username": "u/johnpaulcas",
+    "blockchain_address": "0xa6Eb22f8228c074DDeBd759B7Aba8aB521376064",
+    "contributor_type": "contributor",
+    "points": 52
+  }
+]

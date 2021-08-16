@@ -1,0 +1,769 @@
+html { 
+  background-color: #271422;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.topnav-group {
+  background-color: #1e151c;
+  overflow: hidden;
+}
+
+.topnav {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .topnav {    
+    margin-left: 5px;
+    margin-right: 5px;   
+  }               
+}
+
+.topnav a {
+  float:initial;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  margin: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+@media only screen and (max-width: 768px) {
+  .topnav a {    
+    padding: 5px;
+    margin: 5px; 
+  }               
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: rgb(255,182,222);
+  color: #1e151c;
+}
+
+.green-arrow {
+  height: 15px;
+  filter: invert(31%) sepia(90%) saturate(3488%) hue-rotate(128deg) brightness(90%) contrast(102%);
+}
+
+.red-arrow {
+  height: 15px;
+  filter: invert(8%) sepia(92%) saturate(6264%) hue-rotate(9deg) brightness(92%) contrast(115%);
+}
+
+.highlight {
+  color: rgb(255,182,222);
+  font-weight: bold;
+  word-wrap: break-word;
+}
+
+.highlight-large {
+  color: rgb(255,182,222);
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+.upArrow {
+  margin-left: 4px;
+  color: rgb(0, 142, 33);
+  font-weight: bold;
+}
+
+.downArrow {
+  margin-left: 4px;
+  color: rgb(175, 0, 0);
+  font-weight: bold;
+}
+
+.ticker-table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  table-layout: fixed;
+}
+
+.ticker-column {
+  font-weight: normal;
+  height: 21px;
+  overflow: hidden;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.ticker-column-logo {
+  font-weight: normal;
+  height: 21px;
+  overflow: hidden;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.ticker-container {
+  margin: auto;
+  display: grid;
+  border-style: solid;
+  border-width: 1px;
+  border-image: linear-gradient(to left, #fe6d72 1%, #fe6dda 50%, #fe6d72 100%) 
+                100% 0 0% 0/1px 0 1px 0 stretch;
+}
+
+.ticker-logo {
+  height: 20px;
+}
+
+.tcontainer {
+  width: 100%;
+  overflow: hidden; /* Hide scroll bar */
+}
+ 
+/* MIDDLE CONTAINER */
+.ticker-wrap {
+  width: 100%;
+  padding-left: 100%; /* Push contents to right side of screen */
+  background-color: #1e151c;
+  padding-top: 2px;
+  border-style: solid;
+  border-width: 1px;
+  border-image: linear-gradient(to left, #fe6d72 1%, #fe6dda 50%, #fe6d72 100%) 
+                100% 0 0% 0/1px 0 1px 0 stretch;
+}
+
+/* INNER CONTAINER */
+@keyframes ticker {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-100%, 0, 0); }
+}
+.ticker-move {
+  /* Basically move items from right side of screen to left in infinite loop */
+  display: inline-block;
+  white-space: nowrap;
+  padding-right: 100%;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: ticker;
+  animation-duration: 60s;
+}
+.ticker-move:hover{
+  animation-play-state: paused; /* Pause scroll on mouse hover */
+}
+
+/* ITEMS */
+.ticker-item{
+  display: inline-block; /* Lay items in a horizontal line */
+  padding: 0 2rem;
+}
+
+.content-table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .content-table tr {    display: table;  width:100%;    }               
+  .content-table th {    display: table-row-group;  }        
+}
+
+.content-middle-table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.content-center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.btn-active {background-image: linear-gradient(to right, #fe6dda 0%, #f7a597  51%, #fe6dda  100%)}
+.btn-active {
+   margin: 10px;
+   padding: 10px;
+   font-size: 16px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   font-weight: bold;
+   color: white;            
+   border-radius: 10px;
+   width: 260px;
+   height: 80px;
+ }
+
+ .btn-active:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+ .btn-main-net {background-image: linear-gradient(to right, #1a2ca3 0%, #1634fb  51%, #1a2ca3  100%)}
+.btn-main-net {
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;            
+  border-radius: 10px;
+  width: 300px;
+  display: block;
+ }
+
+ .btn-main-net:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+ .btn-xdai {background-image: linear-gradient(to right, #21921f 0%, #04d700  51%, #21921f  100%)}
+.btn-xdai {
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;            
+  border-radius: 10px;
+  width: 300px;
+  display: block;
+ }
+
+ .network-account {
+  background: rgb(83, 31, 68);
+  color: white;
+  font-weight: bold;
+  border-radius: 25px;
+  display: inline-block;
+  padding: 10px;
+ }
+
+ .btn-xdai:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+.btn-withdraw {background-image: linear-gradient(to right, #fe6dda 0%, #f7a597  51%, #fe6dda  100%)}
+.btn-withdraw {
+   margin: 10px;
+   padding: 10px;
+   font-size: 16px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   font-weight: bold;
+   color: white;            
+   border-radius: 10px;
+   width: 260px;
+   height: 80px;
+ }
+
+ .btn-withdraw:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+ .three-col {
+   width: 33%
+ }
+
+.btn-harvest {background-image: linear-gradient(to right, #68c47c 0%, #6191c6  51%, #68c47c  100%)}
+.btn-harvest {
+   margin: 10px;
+   padding: 10px;
+   font-size: 16px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   font-weight: bold;
+   color: white;            
+   border-radius: 10px;
+   width: 260px;
+   height: 80px;
+   display: block;
+   float: middle;
+ }
+
+ .btn-harvest:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+ .harvest-table {
+   margin-left: auto;
+   margin-right: auto;
+   width: 80%;
+   padding: 0px;
+ }
+
+ .stake-header {
+   color: #fe6dda;
+   font-weight: bold;
+ }
+
+ .stake-your-info-header {
+  color: #f7a597;
+  font-weight: bold;
+}
+
+ @media only screen and (max-width: 768px) {
+  .harvest-table tr {    display: table;  width:100%;    }               
+  .harvest-table th {    display: table-row-group;  }        
+}
+
+ .rate-table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 0px;
+}
+
+.rate-table th {
+  vertical-align: top;
+}
+
+@media only screen and (max-width: 768px) {
+  .rate-table tr {   display: table;  width:100%;    }               
+  .rate-table th {   display: table-row-group;  }     
+}
+
+ .rate-number {
+  font-size: 40px;
+  font-weight: bold;
+ }
+
+ .harvest-number {
+  font-size: 70px;
+  font-weight: bold;
+ }
+
+ .staking-table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+.staking-table th {
+  vertical-align: top;
+}
+
+@media only screen and (max-width: 768px) {
+  .staking-table tr {    display: table;  width:100%;    }               
+  .staking-table th {    display: table-row-group;  }        
+}
+
+.staking-number {
+  font-weight: bold
+} 
+
+.btn-disable {background-image: linear-gradient(to right, #818181 0%, #404040  51%, #818181  100%)}
+.btn-disable {
+   margin: 10px;
+   padding: 15px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   font-weight: bold;
+   font-size: 16px;
+   color: white;            
+   border-radius: 10px;
+   width: 300px;
+   display: block;
+ }
+
+.spacer-row {
+  margin-bottom: 50px;
+}
+
+.how-to-table {
+  margin-top: 5vmin;
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .how-to-table tr {    display: table;  width:100%;    }               
+  .how-to-table th {    display: table-row-group;  }        
+}
+
+.donut-table {
+  margin-top: 5vmin;
+  margin-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: #fe6d72;
+  text-decoration: none;
+}
+
+.title-text {
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+.left-body {
+  text-align: left;
+  margin: 20px;
+  background-color: #1e151c;
+}
+
+.faq-odd {
+  text-align: left;
+  margin: 20px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 35px;
+  background-color: #232529;
+  border:1px solid rgb(255,182,222)
+}
+
+.faq-even {
+  text-align: left;
+  margin: 20px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 35px;
+  background-color: #3e434b;
+  border:1px solid rgb(255,182,222)
+}
+
+.faq-q {
+  font-weight: bold;
+  font-size: 18px;
+  color: rgb(255,182,222);
+}
+
+.faq-a {
+  word-wrap: break-word;
+}
+
+.container {
+  width: 100%;
+  background-color: #1e151c;
+  margin: auto;
+  border-style: solid;
+  border-width: 1px;
+  border-image: linear-gradient(to left, #fe6d72 1%, #fe6dda 50%, #fe6d72 100%) 
+                100% 0 100% 0/1px 0 1px 0 stretch;
+}
+
+.content {
+  margin: auto;
+  width: 65%;
+  background-color: #1e151c;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  .content {
+    width: 95%;
+  }
+}
+
+.container-middle {
+  width: 100%;
+  background-color: #271422;
+  margin: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-style: solid;
+  border-width: 1px;
+  border-image: linear-gradient(to left, #fe6d72 1%, #fe6dda 50%, #fe6d72 100%) 
+                100% 0 100% 0/1px 0 1px 0 stretch;
+}
+
+.content-middle {
+  margin: auto;
+  width: 65%;
+}
+
+@media only screen and (max-width: 768px) {
+  .content-middle {
+    width: 95%;
+  }
+}
+
+.left-body-middle {
+  text-align: left;
+  margin: 20px;
+}
+
+.distribute-header {
+  text-align: right;
+}
+
+.distribute-body {
+  font-weight: normal;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.distribute-body-burn {
+  font-weight: normal;
+  text-align: left;
+  padding-left: 25px;
+}
+
+.howToImg {
+  margin: auto;
+  width: 65%;
+  padding-top: 10px;
+}
+
+.howToImgMetamask {
+  margin: auto;
+  padding-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .howToImgMetamask {
+    width: 95%;
+  }
+}
+
+.break-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  height: 50px;
+  text-align: left;
+  width: 100%;
+  background-color: #1e151c;
+}
+
+.links-container {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  width: 100%;
+}
+
+.links {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 60%;
+}
+
+@media only screen and (max-width: 768px) {
+  .links {
+    display: none;
+  }
+}
+
+.header {
+  font-weight: normal;
+  padding-top: 15px;
+  padding-left: 50px; 
+  padding-right: 50px;
+}
+
+.moderator {
+  color: rgb(255,182,222);
+}
+
+.donut-header {
+  font-weight: bold;
+  padding-top: 15px;
+  padding-left: 50px; 
+  padding-right: 50px;
+}
+
+.contentColumn {
+  font-weight: normal;
+}
+
+.caption-heading {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.faq-title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #fe6d72;
+  text-align: left;
+}
+
+.caption-body {
+  font-weight: normal;
+  font-style: italic;
+  color:rgb(175, 175, 175);
+  margin: auto;
+  width: 80%;
+}
+
+.caption-link {
+  font-weight: normal;
+}
+
+.footer-text {
+  font-weight: normal;
+  font-style: italic;
+  color:rgb(175, 175, 175)
+}
+
+.logo-column {
+  font-weight: normal;
+  vertical-align: top;
+  width: 20%;
+  padding-left: 20px; 
+  padding-right: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo-column {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.numColumn {
+  padding-top: 21px;
+  color: #7e7e7e;
+  width: 10%;
+  vertical-align: top;
+}
+
+.App {
+  text-align: center;
+  background-color: #271422;
+  color: white;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  margin-top: 15px;
+  margin-right: 15px;
+  height: 200px;
+}
+
+@media only screen and (max-width: 768px) {
+  .App-logo {
+    height: 128px;
+    width: 128px;
+    pointer-events: none;
+    margin-top: 15px;
+    margin-right: 15px;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 40s linear;
+  }
+}
+
+.donut-dashboard-logo {
+  width: 520px;
+}
+
+@media only screen and (max-width: 768px) {
+  .donut-dashboard-logo {
+    width: 60%;
+  }
+}
+
+.logo-image {
+  height: 30px;
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo-image {
+    width: 95%;
+    height: 20px;
+  }
+}
+
+.logo-image-large {
+  height: 160px;
+  width: 160px
+}
+
+@media only screen and (max-width: 768px) {
+  .logo-image-large {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.logo-image-medium {
+  height: 100px;
+  width: 100px
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.header-style {
+  text-align: center;
+  background-color: #271422;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.body-style {
+  text-align: center;
+  background-color: #271422;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
