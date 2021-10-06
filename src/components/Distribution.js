@@ -12,7 +12,11 @@ class Distribution extends React.Component {
         }
     }
 
-    async componentDidMount() {        
+    async componentDidMount() {  
+        distribution.sort(function (a,b) {
+            return b.donut - a.donut;
+        });
+        
         this.setState({ 
             distribution: distribution
         });
@@ -23,7 +27,7 @@ class Distribution extends React.Component {
             <div className="content">
                 <img src={Title} alt="Fresh Donuts" className="logo-image" />
                 <br></br>
-                <i>The most recent distribution occurred on August 11th, 2021.</i>
+                <i>Distrubition #102 - September 2021</i>
                 <br></br>
                 
                 
@@ -36,9 +40,6 @@ class Distribution extends React.Component {
                             <th className="donut-header">
                                 Donuts Received
                             </th>
-                            <th className="donut-header">
-                                Contributor / Moderator
-                            </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -50,10 +51,7 @@ class Distribution extends React.Component {
                                     {row.username}
                                 </th>
                                 <th className="contentColumn">
-                                    {row.points.toFixed(0)}
-                                </th>
-                                <th className="contentColumn">
-                                    {row.contributor_type === "moderator" ? <span className="moderator">{row.contributor_type}</span> : <span>{row.contributor_type}</span> }
+                                    {row.donut.toFixed(0)}
                                 </th>
                             </tr>)
                         })}
