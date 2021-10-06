@@ -72,17 +72,29 @@ class Donuts extends React.Component {
                     <table className="content-middle-table">
                         <tbody>
                             <tr>
-                                <th rowSpan="6"><img src={DonutLogo} className="logo-image-large" alt="Distribution" /></th>
+                                <th rowSpan="9"><img src={DonutLogo} className="logo-image-large" alt="Distribution" /></th>
                                 <th colSpan="2" className="highlight-large">Donut Distributions</th>
                             </tr>
                             <tr>
-                                <th className="distribute-header">Posts and Comments:</th>
-                                <th className="distribute-body">3,200K Donuts per distribution</th>
+                                <th className="distribute-header">Posts:</th>
+                                <th className="distribute-body">1.02M Donuts per distribution</th>
                             </tr>
                             <tr>
-                                <th className="distribute-header">Donut Development:</th>
-                                <th className="distribute-body">600K Donuts per distribution</th>
+                                <th className="distribute-header">Comments:</th>
+                                <th className="distribute-body">680K Donuts per distribution</th>
                             </tr>
+                            <tr>
+                                <th className="distribute-header">Bonus to posts, as awarded by receiving tips:</th>
+                                <th className="distribute-body">680K Donuts per distribution</th>
+                            </tr>
+                            <tr>
+                                <th className="distribute-header">Community Treasury Funds:</th>
+                                <th className="distribute-body">510K Donuts per distribution</th>
+                            </tr>
+                            <tr>
+                                <th className="distribute-header">Donut Tipping & Content Curation:</th>
+                                <th className="distribute-body">340K Donuts per distribution</th>
+                            </tr>                            
                             <tr>
                                 <th className="distribute-header">Uniswap Liquidity Incentives:</th>
                                 <th className="distribute-body">400K Donuts per distribution</th>
@@ -93,7 +105,7 @@ class Donuts extends React.Component {
                             </tr>
                             <tr>
                                 <th className="distribute-header">Moderation:</th>
-                                <th className="distribute-body">200K Donuts per distribution</th>
+                                <th className="distribute-body">170K Donuts per distribution</th>
                             </tr>
                             <tr className="spacer-row"><br /><br /><br /></tr>
                             <tr>

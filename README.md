@@ -16,9 +16,9 @@ To run locally:
 - Open a browser and navigate to localhost:3000
 
 To update the most recent donut distribution:
-1. Convert the spreadsheet from /user/CommunityPoints from a CSV to a JSON file
+1. Pull in the most recent output JSON file from the donut.distribution project
 1. Replace /distribution/most_recent.json with the new JSON file
-1. `git push` the repo.
+1. Commit changes and push to start a redeploy of the site
 
 This project is deployed using Fleek on IPFS.  It will build and deploy automatically upon `git push`
 
