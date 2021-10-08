@@ -1,6 +1,6 @@
 import React from 'react';
 import Title from '../img/title-distributions.png';
-import distribution from '../distribution/most_recent.json';
+import full_distribution from '../distribution/most_recent.json';
 
 class Distribution extends React.Component {
 
@@ -12,9 +12,11 @@ class Distribution extends React.Component {
         }
     }
 
-    async componentDidMount() {  
+    async componentDidMount() { 
+        let distribution = full_distribution.awards;     
+        // Sort the output array
         distribution.sort(function (a,b) {
-            return b.donut - a.donut;
+            return b.amount0 - a.amount0;
         });
         
         this.setState({ 
@@ -27,7 +29,7 @@ class Distribution extends React.Component {
             <div className="content">
                 <img src={Title} alt="Fresh Donuts" className="logo-image" />
                 <br></br>
-                <i>Distrubition #102 - September 2021</i>
+                <i>Distribution #102: September 2021</i>
                 <br></br>
                 
                 
@@ -46,12 +48,12 @@ class Distribution extends React.Component {
                         <tr></tr>
                         <tr></tr>
                     {this.state.distribution.map((row) => {
-                            return (<tr key={row.username + row.contributor_type}>
+                            return (<tr key={row.username}>
                                 <th className="contentColumn">
                                     {row.username}
                                 </th>
                                 <th className="contentColumn">
-                                    {row.donut.toFixed(0)}
+                                    {(row.amount0/1e18).toFixed(0)}
                                 </th>
                             </tr>)
                         })}
