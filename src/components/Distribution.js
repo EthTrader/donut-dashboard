@@ -32,7 +32,7 @@ class Distribution extends React.Component {
 
         let distribution = full_distribution.awards;
         
-        let filteredDistribution = distribution.filter(item => item.username.includes(filter));  
+        let filteredDistribution = distribution.filter(item => item.username.toLowerCase().includes(filter.toLowerCase()));  
         this.setState({
             filter: filter,
             distribution: filteredDistribution,

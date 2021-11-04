@@ -32,7 +32,7 @@ class Governance extends React.Component {
 
         let governance = governance_scores;
         
-        let filteredGovernance = governance.filter(item => item.username.includes(filter));  
+        let filteredGovernance = governance.filter(item => item.username.toLowerCase().includes(filter.toLowerCase()));  
         this.setState({
             filter: filter,
             governance: filteredGovernance,
