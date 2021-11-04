@@ -203,6 +203,7 @@ html {
    border-radius: 10px;
    width: 260px;
    height: 80px;
+   border: none;
  }
 
  .btn-active:hover {
@@ -213,7 +214,7 @@ html {
 
  .btn-main-net {background-image: linear-gradient(to right, #1a2ca3 0%, #1634fb  51%, #1a2ca3  100%)}
 .btn-main-net {
-  margin: 10px;
+  margin-top: 10px;
   padding: 15px;
   text-align: center;
   text-transform: uppercase;
@@ -224,7 +225,7 @@ html {
   color: white;            
   border-radius: 10px;
   width: 300px;
-  display: block;
+  border: none;
  }
 
  .btn-main-net:hover {
@@ -235,7 +236,7 @@ html {
 
  .btn-xdai {background-image: linear-gradient(to right, #21921f 0%, #04d700  51%, #21921f  100%)}
 .btn-xdai {
-  margin: 10px;
+  margin-top: 10px;
   padding: 15px;
   text-align: center;
   text-transform: uppercase;
@@ -246,7 +247,7 @@ html {
   color: white;            
   border-radius: 10px;
   width: 300px;
-  display: block;
+  border: none;
  }
 
  .network-account {
@@ -259,6 +260,39 @@ html {
  }
 
  .btn-xdai:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+
+ .btn-xdai-network {background-image: linear-gradient(to right, #b14400 0%, #bb642f  51%, #b14400  100%)}
+.btn-xdai-network {
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;            
+  border-radius: 10px;
+  width: 300px;
+  border: none;
+ }
+
+ .filter-box {
+   background:rgb(83, 31, 68);
+   color: white;
+   border-radius: 14px;
+   padding-left: 20px; 
+   padding-top: 5px; 
+   padding-bottom: 5px; 
+   height: 20px;
+   border: none;
+ }
+
+ .btn-xdai-network:hover {
    background-position: right center; /* change the direction of the change here */
    color: #fff;
    text-decoration: none;
@@ -278,6 +312,7 @@ html {
    border-radius: 10px;
    width: 260px;
    height: 80px;
+   border: none;
  }
 
  .btn-withdraw:hover {
@@ -306,6 +341,7 @@ html {
    height: 80px;
    display: block;
    float: middle;
+   border: none;
  }
 
  .btn-harvest:hover {
@@ -395,6 +431,23 @@ html {
    border-radius: 10px;
    width: 300px;
    display: block;
+   border: none;
+ }
+
+ .btn-disable-track {background-image: linear-gradient(to right, #818181 0%, #404040  51%, #818181  100%)}
+.btn-disable-track {
+   margin-top: 10px;
+   padding: 15px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   font-weight: bold;
+   font-size: 16px;
+   color: white;            
+   border-radius: 10px;
+   width: 300px;
+   border: none;
  }
 
 .spacer-row {

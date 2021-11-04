@@ -1,55 +1,55 @@
 import React from 'react';
-import Title from '../img/title-distributions.png';
-import full_distribution from '../distribution/most_recent.json';
+import Title from '../img/title-governance.png';
+import governance_scores from '../governance/most_recent.json';
 
-class Distribution extends React.Component {
+class Governance extends React.Component {
 
     constructor(props) {
         super(props);
 
         this.state = {
-            distribution: [],
-            filter: ""
+            filter: "",
+            governance: []
         }
 
         this.handleFilterChange = this.handleFilterChange.bind(this);
     }
 
     async componentDidMount() { 
-        let distribution = full_distribution.awards;     
+        let governance = governance_scores;     
         // Sort the output array
-        distribution.sort(function (a,b) {
-            return b.amount0 - a.amount0;
+        governance.sort(function (a,b) {
+            return b.weight - a.weight;
         });
         
         this.setState({ 
-            distribution: distribution
+            governance: governance
         });
     }
 
     async handleFilterChange(event) {        
         let filter = event.target.value;
 
-        let distribution = full_distribution.awards;
+        let governance = governance_scores;
         
-        let filteredDistribution = distribution.filter(item => item.username.includes(filter));  
+        let filteredGovernance = governance.filter(item => item.username.includes(filter));  
         this.setState({
             filter: filter,
-            distribution: filteredDistribution,
+            governance: filteredGovernance,
         });
     }
-
-    
 
     render() {
         return (
             <div className="content">
-                <img src={Title} alt="Fresh Donuts" className="logo-image" />
+                <img src={Title} alt="Governance Scores" className="logo-image" />
                 <br />
-                <i>Distribution #102: September 2021</i>
-                <br /><br />
-
-                <input type="text" className="filter-box" value={this.state.filter} onChange={this.handleFilterChange} placeholder="Username filter"/>                
+                <p className="left-body">Governance scores are calculated by taking the lesser value of DONUT and CONTRIB tokens held by each user.  DONUTs held on both Ethereum main net and the xDai network are counted in this score,
+                as well as DONUTs held in liquidity pools and staking contracts.  Unclaimed DONUTs and CONTRIB are also considered in this score.</p>    
+                <p className="left-body">Governance scores currently affect tip weight bonuses.</p>
+                <br />
+                                
+                <input type="text" className="filter-box" value={this.state.filter} onChange={this.handleFilterChange} placeholder="Username filter"/>                                   
                 
                 <table className="donut-table">
                     <thead>
@@ -58,20 +58,20 @@ class Distribution extends React.Component {
                                 Username
                             </th>
                             <th className="donut-header">
-                                Donuts Received
+                                Governance Score
                             </th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr></tr>
                         <tr></tr>
-                    {this.state.distribution.map((row) => {
+                    {this.state.governance.map((row) => {
                             return (<tr key={row.username}>
                                 <th className="contentColumn">
                                     {row.username}
                                 </th>
                                 <th className="contentColumn">
-                                    {parseInt(row.amount0/1e18.toFixed(0)).toLocaleString()}
+                                    {parseInt(row.weight).toLocaleString()}
                                 </th>
                             </tr>)
                         })}
@@ -85,4 +85,4 @@ class Distribution extends React.Component {
 
 }
 
-export default Distribution;
+export default Governance;

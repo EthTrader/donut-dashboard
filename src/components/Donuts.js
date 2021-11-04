@@ -64,7 +64,7 @@ class Donuts extends React.Component {
             </div>
             <div className="container-middle">
             <div className="content-middle">
-                <p className="left-body-middle">New Donuts are baked and distributed every 4 weeks to registered users, based off of 
+            <p className="left-body-middle">New Donuts are baked and distributed every 4 weeks to registered users, based off of 
                 their contribution to the /r/ethtrader subreddit. There is a correlation between karma earned and how many Donuts 
                 a user will receive, though it is not 1:1.  Donuts are also distributed for other purposes, such as liquidity incentives,
                 further development of Donuts, and subreddit moderation.</p>   
@@ -84,7 +84,7 @@ class Donuts extends React.Component {
                                 <th className="distribute-body">680K Donuts per distribution</th>
                             </tr>
                             <tr>
-                                <th className="distribute-header">Bonus to posts, as awarded by receiving tips:</th>
+                                <th className="distribute-header">Bonus to Posts, by Receiving Tips:</th>
                                 <th className="distribute-body">680K Donuts per distribution</th>
                             </tr>
                             <tr>

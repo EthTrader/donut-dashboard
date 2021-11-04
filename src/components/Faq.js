@@ -14,7 +14,7 @@ class Faq extends React.Component {
                 <div className="faq-odd">
                     <p className="faq-q">Q: What are donuts?</p>
 
-                    <p className="faq-a">A: Donuts are tokens running on the Ethereum main-net that represent community contribution & engagement here at r/ethtrader. Donuts follow the ERC-20 standard and are the first ever implementation of Reddit Community Points. An easy way to think of them is a spendable and tradeable Karma, but exclusive to this subreddit.</p>
+                    <p className="faq-a">A: Donuts are tokens running on the Ethereum main net that represent community contribution & engagement on the <a href="https://reddit.com/r/ethtrader" target="_blank" rel="noreferrer">r/ethtrader subreddit</a>. Donuts follow the ERC-20 standard and are the first ever implementation of Reddit Community Points. An easy way to think of them is a spendable and tradeable Karma, but exclusive to the ethtrader subreddit.</p>
                 </div>
                 <div className="faq-even">
                     <p className="faq-q">Q: What are donuts used for?</p>
@@ -29,7 +29,7 @@ class Faq extends React.Component {
                 <div className="faq-even">
                     <p className="faq-q">Q: How can I tip other users with donuts?</p>
 
-                    <p className="faq-a">A: On /r/ethtrader, click the donut icon next to a user's name and it will take you to <a href="https://www.donut.finance/tip/" target="_blank" rel="noreferrer">donut.finance</a>.  Connect your Metamask account to this site, enter the amount you would like to tip, and submit.  Note that tipping uses donuts on the xDai sidechain, not the main net, in order to get around high gas fees.</p>
+                    <p className="faq-a">A: When viewing a post on /r/ethtrader, click the donut icon next to a user's name and it will take you to <a href="https://www.donut.finance/tip/" target="_blank" rel="noreferrer">donut.finance</a>.  Connect your Metamask account to this site, enter the amount you would like to tip, and submit.  Note that tipping uses donuts on the xDai sidechain, not the main net, in order to get around high gas fees.</p>
                 </div>
 
                 <p className="faq-title">Donut Tokenomics</p>
@@ -37,7 +37,7 @@ class Faq extends React.Component {
                 <div className="faq-odd">
                     <p className="faq-q">Q: How does karma earned relate to donuts earned?</p>
 
-                    <p className="faq-a">A: Upvotes help users earn more donuts, but it is not a 1:1 relationship.  The donuts earned by an individual at the end of the month depends on the total karma earned by all users.  Additionally, posts flaired Comedy and Media earn 10% as many donuts as other posts, per community vote.</p>
+                    <p className="faq-a">A: Upvotes help users earn more donuts, but it is not a 1:1 relationship.  The donuts earned by an individual at the end of the month depends on the total karma earned by all users.  Additionally, posts flaired Comedy and Media earn 10% as many donuts as other posts, per community vote.  Recieving tips and giving tips also earn users bonus Donuts.</p>  
                 </div>
                 <div className="faq-even">
                     <p className="faq-q">Q: How often are new donuts minted and distributed?</p>
@@ -47,7 +47,7 @@ class Faq extends React.Component {
                 <div className="faq-odd">
                     <p className="faq-q">Q: How many new donuts are minted in each batch?</p>
 
-                    <p className="faq-a">A: 4 million donuts are created in each batch.</p>
+                    <p className="faq-a">A: 3.4 million donuts are created in each batch.  An additional 600K donuts are awarded to those that provide trading liquidity on Uniswap (main net) and Honeyswap (xDai).</p>
                 </div>
                 <div className="faq-even">
                     <p className="faq-q">Q: How many donuts are in circulation?</p>
@@ -57,7 +57,7 @@ class Faq extends React.Component {
                 <div className="faq-odd">
                     <p className="faq-q">Q: Do any donuts ever leave circulation?</p>
 
-                    <p className="faq-a">A: Donuts spent on the banner and on premium memberships are burned.</p>
+                    <p className="faq-a">A: Donuts spent on banner rent and on premium memberships are burned.</p>
                 </div>                
 
                 <p className="faq-title">Claiming Donuts</p>
@@ -70,7 +70,7 @@ class Faq extends React.Component {
                 <div className="faq-odd">
                     <p className="faq-q">Q: Gas fees are extremely high.  How can I save money on retrieving my donuts?</p>
 
-                    <p className="faq-a">A: /r/ethtrader is currently experimenting with distributing donuts on xDai.  Visit <a href="https://www.reddit.com/r/ethtrader/comments/p5ik6b/donuts_xdai_optin_thread/" target="_blank" rel="noreferrer">this thread</a> to signal you would like to receive future donuts on xDai instead of main net.</p>
+                    <p className="faq-a">A: Users can choose to receive their future Donut distributions on the xDai sidechain.  Visit <a href="https://www.reddit.com/r/ethtrader/comments/p5ik6b/donuts_xdai_optin_thread/" target="_blank" rel="noreferrer">this thread</a> to signal you would like to receive future donuts on xDai instead of main net.</p>
                 </div>
                 <div className="faq-even">
                     <p className="faq-q">Q: Will I lose my donuts if I don't claim them right away?</p>
@@ -81,6 +81,44 @@ class Faq extends React.Component {
                     <p className="faq-q">Q: I had donuts from 2018-2019, can I still claim them?</p>
 
                     <p className="faq-a">A: Unfortunately, no. In late 2019 & early 2020, donuts transitioned from being centralized on Reddit's servers to decentralized tokens on Ethereum. There was a period of a couple months where users needed to log in and claim their donuts - this was done by providing Reddit with an Ethereum address. Any donuts not claimed after those months were lost.</p>
+                </div>
+
+                <p className="faq-title">Banner</p>
+
+                <div className="faq-even">
+                    <p className="faq-q">Q: What is the cost to own the banner?</p>
+
+                    <p className="faq-a">A: The cost to purchase the banner is a variable rate, driven directly by demand.  A Harberger Tax system is used to achieve this: the owner of the banner chooses their own buy-out price point, denominated in donuts, and pays a 10% daily rent to keep ownership. Any other user can purchase ownership of the banner at any time by paying the buy-out cost. The banner must be paid for using donuts on Ethereum main net only, currently.</p>
+                </div>
+
+                <div className="faq-even">
+                    <p className="faq-q">Q: How do I purchase the banner?</p>
+
+                    <p className="faq-a">A: When viewing the <a href="https://reddit.com/r/ethtrader" target="_blank" rel="noreferrer">/r/ethtrader subreddit</a>, a <b>BUY BANNER</b> link is located near the top of the page.  Clicking this link opens a dialog prompt that interacts with a user's browser wallet, such as Metamask.</p>
+                </div>
+
+                <div className="faq-even">
+                    <p className="faq-q">Q: What are the daily rent costs of the banner?</p>
+
+                    <p className="faq-a">A: The rent is set to 10% of the banner buy-out price.</p>
+                </div>
+
+                <div className="faq-even">
+                    <p className="faq-q">Q: Can you explain the banner through an example?</p>
+
+                    <p className="faq-a">Alice has control of the banner. She sets the buy-out price at 10,000 donuts. This means she must pay 1,000 donuts per day to maintain ownership of the banner. At any time, Bob can take ownership of the banner by paying Alice's buy-out price of 10,000 donuts. If he does, he then chooses the next buy-out price and, by extension, his daily rent amount.  The 10,000 donuts spent on the buyout price go to Alice.  Bob is prompted to pre-pay donuts for the daily rent costs at the time he purchases the banner.  Bob decides to set the new buyout price to 20,000 donuts, making his daily rent amount 2,000 donuts.</p>
+                </div>
+
+                <div className="faq-even">
+                    <p className="faq-q">Q: What happens if a user stops paying rent on the banner or runs out of donuts for rent?</p>
+
+                    <p className="faq-a">The buy-out price of the banner drops to zero, allowing anyone to scoop it up and set a new buyout price.</p>
+                </div>
+
+                <div className="faq-even">
+                    <p className="faq-q">Q: What types of content are appropriate for the banner?</p>
+
+                    <p className="faq-a">A: Generally, any type of Ethereum-based project is a good fit for the /r/ethtrader banner.  Advertisements may be removed at moderator discretion if they are not appropriate for the subreddit (example: an ad for a rival Layer 1 blockchain).  Explicit images are not allowed.</p>
                 </div>
                 
                 <p className="faq-title">Miscellaneous</p>
@@ -99,12 +137,6 @@ class Faq extends React.Component {
                     <p className="faq-q">Q: What is CONTRIB?</p>
 
                     <p className="faq-a">A: Whenever a user earns donuts, they earn an equal amount of CONTRIB. CONTRIB is a separate token and is non-transferrable. It essentially shows life-time earnings, even if a user has sold their donuts. It can also be used to potentially restrict some actions to users that earned their donuts, rather than purchased them.</p>
-                </div>
-                <div className="faq-even">
-                    <p className="faq-q">Q: What are the costs to purchase the banner?</p>
-
-                    <p className="faq-a">A: The cost to purchase the banner is a variable rate that uses a Harberger Tax. The owner of the banner sets a price point in donuts and pays a 10% daily rent to keep ownership. Any other user can purchase ownership of the banner by paying the buy-out cost. If the previous owner does not pay the daily tax, the cost to purchase the banner drops to zero.</p>
-                    <p className="faq-a">As an example, Alice buys the banner. She sets the price at 10,000 donuts. This means she must pay 1,000 donuts per day to maintain ownership of the banner. At any time, Bob can take ownership of the banner by paying Alice's buy-out price of 10,000 donuts. If he does, he then chooses the next buy-out price and, by extension, his daily rent amount.</p>
                 </div>
                 <div className="faq-odd">
                     <p className="faq-q">Q: How long have donuts been around?</p>
