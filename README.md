@@ -15,10 +15,14 @@ To run locally:
 - `npm run start`
 - Open a browser and navigate to localhost:3000
 
-Monthly updates to pull in new distribution and governance data:
-1. Pull in the most recent output **distribution** JSON file from the donut.distribution project
+Monthly updates to pull in new distribution data:
+1. Pull in the most recent output **distribution** proofs JSON file from the donut.distribution project
 1. Replace /distribution/most_recent.json with the new JSON file
-1. Pull in the most recent output **user** JSON file from the donut.distribution project
+1. Update /components/distribution.js to have new month and distribution number
+
+Monthly updates to pull in new governance data:
+(NOTE: the users.json file is only available after the distribution is completed)
+1. Pull in the most recent output **user** JSON file from the donut.distribution project (note, this step i)
 1. Replace /governance/most_recent.json with the new JSON file
 1. Commit changes and push to start a redeploy of the site
 
