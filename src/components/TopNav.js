@@ -18,6 +18,8 @@ function TopNav() {
                     {location.pathname === "/stake" ? <Link className="active" to="stake">Stake</Link> : <Link to="stake">Stake</Link>}
                 </div>
             </div>
+
+            
     );
 }
 
