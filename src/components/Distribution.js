@@ -46,11 +46,7 @@ class Distribution extends React.Component {
             <div className="content">
                 <img src={Title} alt="Fresh Donuts" className="logo-image" />
                 <br />
-<<<<<<< HEAD
                 <i>Distribution #106: January 2022</i>
-=======
-                <i>Distribution #104: November 2021</i>
->>>>>>> 87485703d9264185a1a7935e14dd172d1139d49f
                 <br /><br />
 
                 <input type="text" className="filter-box" value={this.state.filter} onChange={this.handleFilterChange} placeholder="Username filter"/>                
