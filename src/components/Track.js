@@ -129,23 +129,23 @@ class Track extends React.Component {
         let render = 
               <div className="content">
 
-                  <div className="content-center"><button className="btn-xdai-network" id="xdaiButton" onClick={this.addXDaiNetwork}>Add xDai Network to Metamask</button></div> 
+                  <div className="content-center"><button className="btn-xdai-network" id="xdaiButton" onClick={this.addXDaiNetwork}>Add Gnosis Chain to Metamask</button></div> 
                   { this.state.network===1 ? <div className="content-center"><button className="btn-main-net" id="mainNetButton" onClick={this.addDonutsMainNet}>Track Donuts in Metamask<br />(Ethereum Main Net)</button></div> 
                         : <div className="content-center"><button className="btn-disable-track" id="mainNetButton">Track Donuts in Metamask<br />(Ethereum Main Net)</button></div> }
-                  { this.state.network===100 ? <div className="content-center"><button className="btn-xdai" id="xdaiButton" onClick={this.addDonutsXDai}>Track Donuts in Metamask<br />(XDai)</button></div> 
-                    :  <div className="content-center"><button className="btn-disable-track" id="xdaiButton">Track Donuts in Metamask<br />(XDai)</button></div>}                        
+                  { this.state.network===100 ? <div className="content-center"><button className="btn-xdai" id="xdaiButton" onClick={this.addDonutsXDai}>Track Donuts in Metamask<br />(Gnosis Chain)</button></div> 
+                    :  <div className="content-center"><button className="btn-disable-track" id="xdaiButton">Track Donuts in Metamask<br />(Gnosis Chain)</button></div>}                        
                 </div>;
 
         return (
             <div className="content">
                 <img src={Title} alt="Tracking Donuts" className="logo-image" /><br /><br />    
             
-                <p className="left-body">Want to track donuts in your Metamask wallet or need to add the xDai network?  Connect your Metamask account to this site and click the below buttons:</p>    
+                <p className="left-body">Want to track donuts in your Metamask wallet or need to add the Gnosis chain?  Connect your Metamask account to this site and click the below buttons:</p>    
                 
                 <div className="network-account">
                   { this.state.signer !== "" ? <span></span> : <span>NOT CONNECTED</span>}
                   { this.state.network === 1 ? <span>ETHEREUM</span> : <span></span> }
-                  { this.state.network === 100 ? <span>XDAI</span> : <span></span> }
+                  { this.state.network === 100 ? <span>GNOSIS</span> : <span></span> }
                   { this.state.signer !== "" ? <span>&nbsp;| {this.state.currentAddress.substring(0,6)}...{this.state.currentAddress.substring(38,42)}</span> : <span></span>}
                 </div><br /><br />
 

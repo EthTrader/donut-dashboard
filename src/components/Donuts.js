@@ -58,8 +58,7 @@ class Donuts extends React.Component {
                 </table>
                 <br />
                 <p className="left-body">Following the ERC-20 token standard, Donuts are the first ever 
-                implementation of Reddit Community Points and the only Community Points token to currently 
-                exist on the Ethereum main net.</p>
+                implementation of Reddit Community Points.  Donuts are distributed automatically to all users on the Gnosis chain on a monthly basis.</p>
                     
             </div>
             <div className="container-middle">

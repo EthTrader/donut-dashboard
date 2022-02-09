@@ -44,7 +44,7 @@ class Governance extends React.Component {
             <div className="content">
                 <img src={Title} alt="Governance Scores" className="logo-image" />
                 <br />
-                <p className="left-body">Governance scores are calculated by taking the lesser value of DONUT and CONTRIB tokens held by each user.  DONUTs held on both Ethereum main net and the xDai network are counted in this score,
+                <p className="left-body">Governance scores are calculated by taking the lesser value of DONUT and CONTRIB tokens held by each user.  DONUTs held on both Ethereum main net and the Gnosis network are counted in this score,
                 as well as DONUTs held in liquidity pools and staking contracts.  Unclaimed DONUTs and CONTRIB are also considered in this score.</p>    
                 <p className="left-body">Governance scores currently affect tip weight bonuses.</p>
                 <br />

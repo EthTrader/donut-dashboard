@@ -140,7 +140,7 @@ class Stake extends React.Component {
       let totalUniDonutSupply = await this.state.uniDonutTokenContract.totalSupply();
       totalUniDonutSupply = (totalUniDonutSupply/1e18).toFixed(3);
       
-      //On main net, the pair is ETH-DONUT.  On xdai, the pair is DONUT-XDAI.  Order of tokens matters here for assigning values.
+      //On main net, the pair is ETH-DONUT.  On gnosis, the pair is DONUT-XDAI.  Order of tokens matters here for assigning values.
       let donutsInUniswap, wxdaiInUniswap;
       if (this.state.network === 1) {
         [wxdaiInUniswap, donutsInUniswap] = await this.state.uniDonutTokenContract.getReserves();  
@@ -216,7 +216,7 @@ class Stake extends React.Component {
         stakingContractAddress = "0x813fd5A7B6f6d792Bf9c03BBF02Ec3F08C9f98B2";  
       }
       
-      //Xdai Addresses
+      //Gnosis Addresses
       if (network === 100) {
         donutTokenAddress = "0x524B969793a64a602342d89BC2789D43a016B13A";
         uniDonutTokenAddress = "0x077240a400b1740C8cD6f73DEa37DA1F703D8c00";
@@ -466,7 +466,7 @@ class Stake extends React.Component {
               <img src={SteakLogo} alt="Steak Logo" className="logo-image-medium" />
 
               <p className="left-body">Additional donuts are granted to those that provide donut trading liquidity via Uniswap v2 on the Ethereum main net 
-                  or Honeyswap on the XDai sidechain.  Staking rewards are earned in real-time.</p>
+                  or Honeyswap on Gnosis chain.  Staking rewards are earned in real-time.</p>
 
               <p className="left-body">To participate in donut liquidity staking, first provide liquidity on the <a target="_blank" rel="noreferrer" 
                   href="https://app.uniswap.org/#/pool/v2">Uniswap v2 ETH-DONUT</a> pair or <a target="_blank" rel="noreferrer" 
@@ -476,7 +476,7 @@ class Stake extends React.Component {
               <div className="network-account">
                   { this.state.signer !== "" ? <span></span> : <span>NOT CONNECTED</span>}
                   { this.state.network === 1 ? <span>ETHEREUM</span> : <span></span> }
-                  { this.state.network === 100 ? <span>XDAI</span> : <span></span> }
+                  { this.state.network === 100 ? <span>GNOSIS</span> : <span></span> }
                   { this.state.signer !== "" ? <span>&nbsp;| {this.state.currentAddress.substring(0,6)}...{this.state.currentAddress.substring(38,42)}</span> : <span></span>}
               </div><br /><br />
                                 

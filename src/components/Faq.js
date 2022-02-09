@@ -29,8 +29,21 @@ class Faq extends React.Component {
                 <div className="faq-even">
                     <p className="faq-q">Q: How can I tip other users with donuts?</p>
 
-                    <p className="faq-a">A: When viewing a post on /r/ethtrader, click the donut icon next to a user's name and it will take you to <a href="https://www.donut.finance/tip/" target="_blank" rel="noreferrer">donut.finance</a>.  Connect your Metamask account to this site, enter the amount you would like to tip, and submit.  Note that tipping uses donuts on the xDai sidechain, not the main net, in order to get around high gas fees.</p>
+                    <p className="faq-a">A: When viewing a post on /r/ethtrader, click the donut icon next to a user's name and it will take you to <a href="https://www.donut.finance/tip/" target="_blank" rel="noreferrer">donut.finance</a>.  Connect your Metamask account to this site, enter the amount you would like to tip, and submit.  Note that tipping uses donuts on the Gnosis sidechain, not the main net, in order to get around high gas fees.</p>
                 </div>
+
+                <p className="faq-title">Claiming Donuts</p>
+
+                <div className="faq-even">
+                    <p className="faq-q">Q: How do I claim my donuts?</p>
+
+                    <p className="faq-a">A: Donuts are automatically deposited into your account on the Gnosis chain every month.  You don't have to manually claim or pay any gas costs to acquire them!</p>
+                </div>
+                <div className="faq-odd">
+                    <p className="faq-q">Q: I had donuts from 2018-2019, can I still claim them?</p>
+
+                    <p className="faq-a">A: Unfortunately, no. In late 2019 & early 2020, donuts transitioned from being centralized on Reddit's servers to decentralized tokens on Ethereum. There was a period of a couple months where users needed to log in and claim their donuts - this was done by providing Reddit with an Ethereum address. Any donuts not claimed after those months were lost.</p>
+                </div>                
 
                 <p className="faq-title">Donut Tokenomics</p>
 
@@ -47,7 +60,7 @@ class Faq extends React.Component {
                 <div className="faq-odd">
                     <p className="faq-q">Q: How many new donuts are minted in each batch?</p>
 
-                    <p className="faq-a">A: 3.4 million donuts are created in each batch.  An additional 600K donuts are awarded to those that provide trading liquidity on Uniswap (main net) and Honeyswap (xDai).</p>
+                    <p className="faq-a">A: 3.4 million donuts are created in each batch.  An additional 600K donuts are awarded to those that provide trading liquidity on Uniswap (main net) and Honeyswap (Gnosis chain).</p>
                 </div>
                 <div className="faq-even">
                     <p className="faq-q">Q: How many donuts are in circulation?</p>
@@ -59,29 +72,6 @@ class Faq extends React.Component {
 
                     <p className="faq-a">A: Donuts spent on banner rent and on premium memberships are burned.</p>
                 </div>                
-
-                <p className="faq-title">Claiming Donuts</p>
-
-                <div className="faq-even">
-                    <p className="faq-q">Q: How do I claim my donuts?</p>
-
-                    <p className="faq-a">A: See instructions on <a href="/#/claim">this page</a>.</p>
-                </div>
-                <div className="faq-odd">
-                    <p className="faq-q">Q: Gas fees are extremely high.  How can I save money on retrieving my donuts?</p>
-
-                    <p className="faq-a">A: Users can choose to receive their future Donut distributions on the xDai sidechain.  Visit <a href="https://www.reddit.com/r/ethtrader/comments/p5ik6b/donuts_xdai_optin_thread/" target="_blank" rel="noreferrer">this thread</a> to signal you would like to receive future donuts on xDai instead of main net.</p>
-                </div>
-                <div className="faq-even">
-                    <p className="faq-q">Q: Will I lose my donuts if I don't claim them right away?</p>
-
-                    <p className="faq-a">A: Donuts can be claimed any time later on.</p>
-                </div>
-                <div className="faq-odd">
-                    <p className="faq-q">Q: I had donuts from 2018-2019, can I still claim them?</p>
-
-                    <p className="faq-a">A: Unfortunately, no. In late 2019 & early 2020, donuts transitioned from being centralized on Reddit's servers to decentralized tokens on Ethereum. There was a period of a couple months where users needed to log in and claim their donuts - this was done by providing Reddit with an Ethereum address. Any donuts not claimed after those months were lost.</p>
-                </div>
 
                 <p className="faq-title">Banner</p>
 
@@ -131,7 +121,7 @@ class Faq extends React.Component {
                 <div className="faq-odd">
                     <p className="faq-q">Q: How can I add donuts to my token list in Metamask?</p>
 
-                    <p className="faq-a">A: You can visit the <a href="/#/track">Track Donuts</a> page and click the buttons to add.<br /><br />To manually add the tokens, at the bottom of the assets tab, click the <span className="highlight">Add Token</span> button.  Click the <span className="highlight">Custom Token</span> tab.  In the <span className="highlight">Token Contract Address</span> input box, paste <span className="highlight">0xc0f9bd5fa5698b6505f643900ffa515ea5df54a9</span>.  (If you are adding Donuts on xDai, instead use <span className="highlight">0x524B969793a64a602342d89BC2789D43a016B13A</span>)</p>
+                    <p className="faq-a">A: You can visit the <a href="/#/track">Track Donuts</a> page and click the buttons to add.<br /><br />To manually add the tokens, at the bottom of the assets tab, click the <span className="highlight">Add Token</span> button.  Click the <span className="highlight">Custom Token</span> tab.  In the <span className="highlight">Token Contract Address</span> input box, paste <span className="highlight">0xc0f9bd5fa5698b6505f643900ffa515ea5df54a9</span>.  (If you are adding Donuts on Gnosis chain, instead use <span className="highlight">0x524B969793a64a602342d89BC2789D43a016B13A</span>)</p>
                 </div>
                 <div className="faq-odd">
                     <p className="faq-q">Q: What is CONTRIB?</p>
