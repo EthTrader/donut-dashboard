@@ -25,6 +25,30 @@ html {
   }               
 }
 
+.content-container {
+  display: table;
+  width: 100%;
+}
+
+.content-column {
+  display:table-cell;
+  width: 50%;
+  vertical-align: top;
+}
+
+.content-column-mid {
+  display:table-cell;
+  width: 50%;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 768px) {
+  .content-column {
+    display: block;
+    width: 100%;
+  }
+}
+
 .topnav a {
   float:initial;
   color: #f2f2f2;
@@ -170,6 +194,7 @@ html {
 .content-table {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 25px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -491,6 +516,15 @@ a {
   background-color: #1e151c;
 }
 
+.left-body-large {
+  text-align: left;
+  margin: 20px;
+  background-color: #1e151c;
+  font-size: 22px;
+  display: inline-block;
+}
+
+
 .faq-odd {
   text-align: left;
   margin: 20px;
@@ -765,6 +799,11 @@ a {
 .logo-image {
   height: 30px;
   margin-top: 15px;
+}
+
+.splash-image {
+  width: 640px;
+  border: 2px solid rgb(255,182,222);
 }
 
 @media only screen and (max-width: 768px) {

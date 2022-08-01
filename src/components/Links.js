@@ -25,16 +25,6 @@ class Links extends React.Component {
                                 </a>
                             </th>
                             <th className="logo-column">
-                                <a href="https://client.aragon.org/#/0x57EBE61f5f8303AD944136b293C1836B3803b4c0" target="_blank" rel="noreferrer">
-                                    <img src={AragonLogo} alt="Aragon Icon" className="logo-image-medium" />
-                                </a>
-                            </th>
-                            <th className="logo-column">
-                                <a href="https://cloudflare-ipfs.com/ipfs/QmajDWDWim8r6muJP1DgFysEAiWVYFf5spw9itY5MgX24W"  target="_blank" rel="noreferrer">
-                                    <img src={SteakLogo} alt="Steak Icon" className="logo-image-medium" />
-                                </a>
-                            </th>
-                            <th className="logo-column">
                                 <a href="https://etherscan.io/token/0xc0f9bd5fa5698b6505f643900ffa515ea5df54a9"  target="_blank" rel="noreferrer">
                                     <img src={EtherscanLogo} alt="Etherscan Icon" className="logo-image-medium" />
                                 </a>
@@ -49,16 +39,6 @@ class Links extends React.Component {
                             <th className="logo-column">
                                 <a href="https://www.reddit.com/r/ethtrader/wiki/donuts"  target="_blank" rel="noreferrer">
                                     <span className="caption-link">Donut Overview</span>
-                                </a>
-                            </th>
-                            <th className="logo-column">
-                                <a href="https://client.aragon.org/#/0x57EBE61f5f8303AD944136b293C1836B3803b4c0"  target="_blank" rel="noreferrer">
-                                    <span className="caption-link">Aragon DAO</span>
-                                </a>
-                            </th>
-                            <th className="logo-column">
-                                <a href="http://www.donut.finance/"  target="_blank" rel="noreferrer">
-                                    <span className="caption-link">Main Net Donut Staking</span>
                                 </a>
                             </th>
                             <th className="logo-column">

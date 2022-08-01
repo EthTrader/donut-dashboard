@@ -1,5 +1,11 @@
 import React from 'react';
 import Title from '../img/title-faq.png';
+import Donut03 from '../img/donut-03.png';
+import Donut04 from '../img/donut-04.png';
+import Donut05 from '../img/donut-05.png';
+import Donut06 from '../img/donut-06.png';
+import Donut07 from '../img/donut-07.png';
+import Donut08 from '../img/donut-08.png';
 
 
 class Faq extends React.Component {
@@ -8,13 +14,15 @@ class Faq extends React.Component {
         return (
             <div className="content">
                 <img src={Title} alt="Frequently Asked Questions" className="logo-image" />
+                <br></br>
+                <img src={Donut03} alt="Flying donuts" className="splash-image" />
                 
                 <p className="faq-title">General Questions</p>
 
                 <div className="faq-odd">
                     <p className="faq-q">Q: What are donuts?</p>
 
-                    <p className="faq-a">A: Donuts are tokens running on the Ethereum main net that represent community contribution & engagement on the <a href="https://reddit.com/r/ethtrader" target="_blank" rel="noreferrer">r/ethtrader subreddit</a>. Donuts follow the ERC-20 standard and are the first ever implementation of Reddit Community Points. An easy way to think of them is a spendable and tradeable Karma, but exclusive to the ethtrader subreddit.</p>
+                    <p className="faq-a">A: Donuts are tokens that represent community contribution & engagement on the <a href="https://reddit.com/r/ethtrader" target="_blank" rel="noreferrer">r/ethtrader subreddit</a>. Donuts follow the ERC-20 standard and are the first ever implementation of Reddit Community Points. An easy way to think of them is a spendable and tradeable Karma, but exclusive to the ethtrader subreddit.  Donuts are on the Ethereum main net and Gnosis chain.</p>
                 </div>
                 <div className="faq-even">
                     <p className="faq-q">Q: What are donuts used for?</p>
@@ -32,6 +40,8 @@ class Faq extends React.Component {
                     <p className="faq-a">A: When viewing a post on /r/ethtrader, click the donut icon next to a user's name and it will take you to <a href="https://www.donut.finance/tip/" target="_blank" rel="noreferrer">donut.finance</a>.  Connect your Metamask account to this site, enter the amount you would like to tip, and submit.  Note that tipping uses donuts on the Gnosis sidechain, not the main net, in order to get around high gas fees.</p>
                 </div>
 
+                <img src={Donut04} alt="Flying donuts" className="splash-image" />
+
                 <p className="faq-title">Claiming Donuts</p>
 
                 <div className="faq-even">
@@ -44,6 +54,8 @@ class Faq extends React.Component {
 
                     <p className="faq-a">A: Unfortunately, no. In late 2019 & early 2020, donuts transitioned from being centralized on Reddit's servers to decentralized tokens on Ethereum. There was a period of a couple months where users needed to log in and claim their donuts - this was done by providing Reddit with an Ethereum address. Any donuts not claimed after those months were lost.</p>
                 </div>                
+
+                <img src={Donut05} alt="Flying donuts" className="splash-image" />
 
                 <p className="faq-title">Donut Tokenomics</p>
 
@@ -60,18 +72,20 @@ class Faq extends React.Component {
                 <div className="faq-odd">
                     <p className="faq-q">Q: How many new donuts are minted in each batch?</p>
 
-                    <p className="faq-a">A: 3.4 million donuts are created in each batch.  An additional 600K donuts are awarded to those that provide trading liquidity on Uniswap (main net) and Honeyswap (Gnosis chain).</p>
+                    <p className="faq-a">A: 1.7 million donuts are created in each batch.  An additional 600K donuts are awarded to those that provide trading liquidity on Uniswap (main net) and Honeyswap (Gnosis chain).</p>
                 </div>
                 <div className="faq-even">
                     <p className="faq-q">Q: How many donuts are in circulation?</p>
 
-                    <p className="faq-a">A: About 140 million at the time of writing. You can view up-to-date statistics on the <a href="https://etherscan.io/token/0xc0f9bd5fa5698b6505f643900ffa515ea5df54a9" target="_blank" rel="noreferrer">etherscan donut page</a>.</p>
+                    <p className="faq-a">A: The number of donuts in circulation varies depending on issuance & burn.  Up-to-date statistics can be viewed on the <a href="https://etherscan.io/token/0xc0f9bd5fa5698b6505f643900ffa515ea5df54a9" target="_blank" rel="noreferrer">etherscan donut page</a>.</p>
                 </div>
                 <div className="faq-odd">
                     <p className="faq-q">Q: Do any donuts ever leave circulation?</p>
 
                     <p className="faq-a">A: Donuts spent on banner rent and on premium memberships are burned.</p>
                 </div>                
+
+                <img src={Donut06} alt="Flying donuts" className="splash-image" />
 
                 <p className="faq-title">Banner</p>
 
@@ -110,13 +124,15 @@ class Faq extends React.Component {
 
                     <p className="faq-a">A: Generally, any type of Ethereum-based project is a good fit for the /r/ethtrader banner.  Advertisements may be removed at moderator discretion if they are not appropriate for the subreddit (example: an ad for a rival Layer 1 blockchain).  Explicit images are not allowed.</p>
                 </div>
+
+                <img src={Donut07} alt="Flying donuts" className="splash-image" />
                 
                 <p className="faq-title">Miscellaneous</p>
 
                 <div className="faq-even">
                     <p className="faq-q">Q: Where can I buy and sell donuts?</p>
 
-                    <p className="faq-a">A: Uniswap, Hoo.com, and Honeyswap all currently trade donuts.</p>
+                    <p className="faq-a">A: Uniswap on Ethereum main net or Honeyswap on Gnosis Chain both have trading liquidity for donuts.</p>
                 </div>
                 <div className="faq-odd">
                     <p className="faq-q">Q: How can I add donuts to my token list in Metamask?</p>

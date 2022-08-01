@@ -5,10 +5,11 @@ import MembershipLogo from '../img/donut-membership.png';
 import TippingLogo from '../img/donut-tipping.png';
 import VotingLogo from '../img/donut-voting.png';
 import UniswapLogo from '../img/donut-uniswap.png';
-import HooLogo from '../img/donut-hoo.png';
 import HoneyswapLogo from '../img/donut-honeyswap.png';
 import DonutLogo from '../img/donut-overview.png';
 import BurnLogo from '../img/donut-burn.png';
+import Donut01 from '../img/donut-01.png';
+import Donut02 from '../img/donut-02.png';
 
 
 class Donuts extends React.Component {
@@ -17,15 +18,25 @@ class Donuts extends React.Component {
         return (
             <div>
             <div className="content">
-                <img src={Title} alt="What are donuts?" className="logo-image" />
-                
-                <p className="left-body">Donuts are tokens that represent community contribution & engagement 
-                at the <a href="http://reddit.com/r/ethtrader" target="_blank" rel="noreferrer">/r/ethtrader subreddit</a>.  Users
-                earn Donuts simply by participating and contributing content to /r/ethtrader. An easy way to 
-                think of them is a spendable and tradeable karma, but exclusive to /r/ethtrader.</p>
+                <div className="content-container">
+                    <div className="content-column">
+                        <img src={Donut02} alt="Donuts: the original food token" className="splash-image" />
+                    </div>
+                    <div className="content-column-mid">
+                        <img src={Title} alt="What are donuts?" className="logo-image" />
+                    
+                        <p className="left-body-large">Donuts are tokens that represent community contribution & engagement 
+                        at the <a href="http://reddit.com/r/ethtrader" target="_blank" rel="noreferrer">/r/ethtrader subreddit</a>.</p>
+                        <p className="left-body-large">Users
+                        earn Donuts simply by participating and contributing content to /r/ethtrader. </p>
+                        <p className="left-body-large">Think of them as a spendable and tradeable karma, 
+                        but exclusive to /r/ethtrader.</p>
+                    </div>
+                </div>
+             </div>
 
-                <p className="left-body">Donuts can be used for:</p>
-
+             <div className="container-middle">
+                <div className="content-middle">                
                 <table className="content-table">
                     <tbody>
                         <tr>
@@ -57,10 +68,24 @@ class Donuts extends React.Component {
                     </tbody>
                 </table>
                 <br />
-                <p className="left-body">Following the ERC-20 token standard, Donuts are the first ever 
-                implementation of Reddit Community Points.  Donuts are distributed automatically to all users on the Gnosis chain on a monthly basis.</p>
-                    
-            </div>
+                
+                </div>
+            </div>             
+
+            <div className="content">
+                <div className="content-container">
+                    <div className="content-column-mid">
+                        <p className="left-body-large">Following the ERC-20 token standard, Donuts are the first ever 
+                    implementation of Reddit Community Points.  Donuts exist on both the Ethereum main net and the Gnosis chain.</p>
+                    <p className="left-body-large">  Donuts are distributed automatically to all users on the Gnosis chain on a monthly basis.</p>
+                    </div>
+                    <div className="content-column">
+                        <img src={Donut01} alt="The future is fried.  With sprinkles on it." className="splash-image" />
+                    </div>
+                </div>
+            </div>            
+
+
             <div className="container-middle">
             <div className="content-middle">
             <p className="left-body-middle">New Donuts are baked and distributed every 4 weeks to registered users, based off of 
@@ -76,23 +101,23 @@ class Donuts extends React.Component {
                             </tr>
                             <tr>
                                 <th className="distribute-header">Posts:</th>
-                                <th className="distribute-body">1.02M Donuts per distribution</th>
-                            </tr>
-                            <tr>
-                                <th className="distribute-header">Comments:</th>
-                                <th className="distribute-body">680K Donuts per distribution</th>
-                            </tr>
-                            <tr>
-                                <th className="distribute-header">Bonus to Posts, by Receiving Tips:</th>
-                                <th className="distribute-body">680K Donuts per distribution</th>
-                            </tr>
-                            <tr>
-                                <th className="distribute-header">Community Treasury Funds:</th>
                                 <th className="distribute-body">510K Donuts per distribution</th>
                             </tr>
                             <tr>
-                                <th className="distribute-header">Donut Tipping & Content Curation:</th>
+                                <th className="distribute-header">Comments:</th>
                                 <th className="distribute-body">340K Donuts per distribution</th>
+                            </tr>
+                            <tr>
+                                <th className="distribute-header">Bonus to Posts, by Receiving Tips:</th>
+                                <th className="distribute-body">340K Donuts per distribution</th>
+                            </tr>
+                            <tr>
+                                <th className="distribute-header">Community Treasury Funds:</th>
+                                <th className="distribute-body">255K Donuts per distribution</th>
+                            </tr>
+                            <tr>
+                                <th className="distribute-header">Donut Tipping & Content Curation:</th>
+                                <th className="distribute-body">170K Donuts per distribution</th>
                             </tr>                            
                             <tr>
                                 <th className="distribute-header">Uniswap Liquidity Incentives:</th>
@@ -104,7 +129,7 @@ class Donuts extends React.Component {
                             </tr>
                             <tr>
                                 <th className="distribute-header">Moderation:</th>
-                                <th className="distribute-body">170K Donuts per distribution</th>
+                                <th className="distribute-body">85K Donuts per distribution</th>
                             </tr>
                             <tr className="spacer-row"><br /><br /><br /></tr>
                             <tr>
@@ -134,15 +159,6 @@ class Donuts extends React.Component {
                                 </a><br />
                                 <a href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0xc0f9bd5fa5698b6505f643900ffa515ea5df54a9"  target="_blank" rel="noreferrer">
                                     <span className="caption-heading">Uniswap</span>
-                                </a>
-                                <br /><br />
-                            </th>
-                            <th className="logo-column">
-                                <a href="https://hoo.com/spot/donut-usdt"  target="_blank" rel="noreferrer">
-                                    <img src={HooLogo} alt="Hoo Icon" className="logo-image-large" />
-                                </a><br />
-                                <a href="https://hoo.com/spot/donut-usdt"  target="_blank" rel="noreferrer">
-                                    <span className="caption-heading">Hoo</span>
                                 </a>
                                 <br /><br />
                             </th>

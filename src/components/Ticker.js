@@ -91,16 +91,6 @@ class Ticker extends React.Component {
                         (1 <b>Burrito</b> = {this.formatNumber(Math.ceil(this.state.burritoDonut))} <b>DONUT</b>)
                     </div>
                     <div className="ticker-item">
-                        <img src={LAMBO} alt="lambo" className="ticker-logo" />
-                        &nbsp;
-                        {this.state.donutLAMBO} <b>Lambo</b>
-                        &nbsp;
-                        {this.state.usd24hr >= 0 ? <img src={UpArrow} alt="Up arrow" className="green-arrow" /> : <img src={DownArrow} alt="Down arrow" className="red-arrow" />}
-                        {this.state.usd24hr >= 0 ? <span className="upArrow">+{this.state.usd24hr.toFixed(2)}%</span> : <span className="downArrow">{this.state.usd24hr.toFixed(2)}%</span>}                
-                        &nbsp;
-                        (1 <b>Lambo</b> = {this.formatNumber(Math.ceil(this.state.lamboDonut))} <b>DONUT</b>)
-                    </div>
-                    <div className="ticker-item">
                         <b>Marketcap:</b>
                         &nbsp;
                         ${this.formatNumber(Math.ceil(this.state.usdMarketCap))} <b>USD</b>
