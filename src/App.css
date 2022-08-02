@@ -801,15 +801,21 @@ a {
   margin-top: 15px;
 }
 
+@media only screen and (max-width: 768px) {
+  .logo-image {
+    width: 95%;
+    height: 20px;
+  }
+}
+
 .splash-image {
   width: 640px;
   border: 2px solid rgb(255,182,222);
 }
 
 @media only screen and (max-width: 768px) {
-  .logo-image {
+  .splash-image {
     width: 95%;
-    height: 20px;
   }
 }
 
@@ -818,7 +824,7 @@ a {
   width: 160px
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
   .logo-image-large {
     width: 100px;
     height: 100px;

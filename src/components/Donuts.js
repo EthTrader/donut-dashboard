@@ -22,7 +22,7 @@ class Donuts extends React.Component {
                     <div className="content-column">
                         <img src={Donut02} alt="Donuts: the original food token" className="splash-image" />
                     </div>
-                    <div className="content-column-mid">
+                    <div className="content-column">
                         <img src={Title} alt="What are donuts?" className="logo-image" />
                     
                         <p className="left-body-large">Donuts are tokens that represent community contribution & engagement 
@@ -74,10 +74,10 @@ class Donuts extends React.Component {
 
             <div className="content">
                 <div className="content-container">
-                    <div className="content-column-mid">
+                    <div className="content-column">
                         <p className="left-body-large">Following the ERC-20 token standard, Donuts are the first ever 
                     implementation of Reddit Community Points.  Donuts exist on both the Ethereum main net and the Gnosis chain.</p>
-                    <p className="left-body-large">  Donuts are distributed automatically to all users on the Gnosis chain on a monthly basis.</p>
+                    <p className="left-body-large">Donuts are distributed automatically to all users on the Gnosis chain on a monthly basis.</p>
                     </div>
                     <div className="content-column">
                         <img src={Donut01} alt="The future is fried.  With sprinkles on it." className="splash-image" />
