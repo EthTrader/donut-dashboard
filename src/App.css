@@ -857,6 +857,62 @@ a {
   color: #61dafb;
 }
 
+.delicious-donuts-column {
+  display:table-cell;
+  width: 20%;
+  vertical-align: top;
+}
+
+.delicious-donut-image-yes {
+  width: 100%
+}
+
+.delicious-donut-image-no {
+  width: 100%;
+  opacity: 0.4;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+   -ms-filter: grayscale(100%);
+       filter: grayscale(100%);
+}
+
+
+@media only screen and (max-width: 768px) {
+  .delicious-donuts-column {
+    display: block;
+    width: 100%;
+  }
+}
+
+.text-delicious-donut-caption {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.text-not-collected {
+  color:rgb(175, 0, 0);
+}
+
+.text-collected {
+  color:rgb(0, 180, 6);
+}
+
+.text-rarity-common {
+  color:rgb(155, 155, 155);
+  font-size: 10px;
+}
+
+.text-rarity-uncommon {
+  color:rgb(150, 247, 126);
+  font-size: 10px;
+}
+
+.text-rarity-rare {
+  color:rgb(194, 0, 158);
+  font-size: 10px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -865,3 +921,41 @@ a {
     transform: rotate(360deg);
   }
 }
+
+.popup-content {
+  width: 600px;
+  margin: 10px;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  color: white;    
+  background:rgb(83, 31, 68);        
+  border-radius: 10px;
+  display: block;
+  float: middle;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #fe6dda;
+}
+
+.pop-up-btn {background-image: linear-gradient(to right, #68c47c 0%, #6191c6  51%, #68c47c  100%)}
+.pop-up-btn {
+   margin: 10px;
+   padding: 10px;
+   font-size: 16px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   font-weight: bold;
+   color: white;            
+   border-radius: 10px;
+   width: 210px;
+   height: 50px;
+   float: middle;
+   border: none;
+ }

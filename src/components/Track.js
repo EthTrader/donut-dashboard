@@ -146,7 +146,9 @@ class Track extends React.Component {
                   { this.state.signer !== "" ? <span></span> : <span>NOT CONNECTED</span>}
                   { this.state.network === 1 ? <span>ETHEREUM</span> : <span></span> }
                   { this.state.network === 100 ? <span>GNOSIS</span> : <span></span> }
-                  { this.state.signer !== "" ? <span>&nbsp;| {this.state.currentAddress.substring(0,6)}...{this.state.currentAddress.substring(38,42)}</span> : <span></span>}
+                  { this.state.network !== 1 && this.state.network !== 100 ? <span>Unsupported Network</span> : <span></span> }
+                  &nbsp;|
+                  { this.state.signer !== "" ? <span> {this.state.currentAddress.substring(0,6)}...{this.state.currentAddress.substring(38,42)}</span> : <span></span>}
                 </div><br /><br />
 
                 { this.state.isLoading ? <img src={Loading} alt="Loading" /> : render }

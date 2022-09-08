@@ -5,7 +5,6 @@ import Donut04 from '../img/donut-04.png';
 import Donut05 from '../img/donut-05.png';
 import Donut06 from '../img/donut-06.png';
 import Donut07 from '../img/donut-07.png';
-import Donut08 from '../img/donut-08.png';
 
 
 class Faq extends React.Component {

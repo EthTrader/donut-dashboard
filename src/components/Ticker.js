@@ -5,7 +5,7 @@ import UpArrow from '../img/up-arrow.svg';
 import USD from '../img/logo-usd.png';
 import ETH from '../img/logo-eth.png';
 import BURRITO from '../img/logo-burrito.png';
-import LAMBO from '../img/logo-lambo.png';
+//import LAMBO from '../img/logo-lambo.png';
 
 class Ticker extends React.Component {
 

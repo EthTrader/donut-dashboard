@@ -1,9 +1,10 @@
 import React from 'react';
 import RedditLogo from '../img/donut-reddit.png';
 import OverviewLogo from '../img/donut-overview.png';
-import AragonLogo from '../img/donut-aragon.png';
-import SteakLogo from '../img/donut-steak.png';
+//import AragonLogo from '../img/donut-aragon.png';
+//import SteakLogo from '../img/donut-steak.png';
 import EtherscanLogo from '../img/donut-etherscan.png';
+import QuestsLogo from '../img/donut-quests.png';
 
 class Links extends React.Component {
 
@@ -25,6 +26,11 @@ class Links extends React.Component {
                                 </a>
                             </th>
                             <th className="logo-column">
+                                <a href="https://www.donutquests.xyz/"  target="_blank" rel="noreferrer">
+                                    <img src={QuestsLogo} alt="Quests Icon" className="logo-image-medium" />
+                                </a>
+                            </th>
+                            <th className="logo-column">
                                 <a href="https://etherscan.io/token/0xc0f9bd5fa5698b6505f643900ffa515ea5df54a9"  target="_blank" rel="noreferrer">
                                     <img src={EtherscanLogo} alt="Etherscan Icon" className="logo-image-medium" />
                                 </a>
@@ -41,6 +47,11 @@ class Links extends React.Component {
                                     <span className="caption-link">Donut Overview</span>
                                 </a>
                             </th>
+                            <th className="logo-column">
+                                <a href="https://www.donutquests.xyz/"  target="_blank" rel="noreferrer">
+                                    <span className="caption-link">Donut Quests</span>
+                                </a>
+                            </th>                            
                             <th className="logo-column">
                                 <a href="https://etherscan.io/token/0xc0f9bd5fa5698b6505f643900ffa515ea5df54a9"  target="_blank" rel="noreferrer">
                                     <span className="caption-link">Etherscan Donut Page</span>

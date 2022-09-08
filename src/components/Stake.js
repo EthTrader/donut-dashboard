@@ -1,5 +1,5 @@
 import React from 'react';
-import { ethers, utils } from 'ethers';
+import { ethers } from 'ethers';
 import SteakLogo from '../img/donut-steak.png';
 import Loading from '../img/loading.gif';
 import Title from '../img/title-stake.png';
@@ -344,7 +344,7 @@ class Stake extends React.Component {
     }
 
     async rewardPaid(amount) {
-      const myGrowl = await growl({
+      await growl({
         title: "Donuts successfully claimed!",
         message: amount + ' donuts harvested, fresh from the bakery.',
         timeout: 9000
@@ -473,12 +473,14 @@ class Stake extends React.Component {
                   href="https://app.honeyswap.org/#/pool">Honeyswap DONUT-XDAI</a> pair.  Once you provide liquidity, your account will be credited with 
                   liquidity tokens.  Add those tokens to the staking contract using the interface below and you will immediately start earning donuts!</p>
 
-              <div className="network-account">
+                <div className="network-account">
                   { this.state.signer !== "" ? <span></span> : <span>NOT CONNECTED</span>}
                   { this.state.network === 1 ? <span>ETHEREUM</span> : <span></span> }
                   { this.state.network === 100 ? <span>GNOSIS</span> : <span></span> }
-                  { this.state.signer !== "" ? <span>&nbsp;| {this.state.currentAddress.substring(0,6)}...{this.state.currentAddress.substring(38,42)}</span> : <span></span>}
-              </div><br /><br />
+                  { this.state.network !== 1 && this.state.network !== 100 ? <span>Unsupported Network</span> : <span></span> }
+                  &nbsp;|
+                  { this.state.signer !== "" ? <span> {this.state.currentAddress.substring(0,6)}...{this.state.currentAddress.substring(38,42)}</span> : <span></span>}
+                </div><br /><br />
                                 
               { this.state.isLoading ? <img src={Loading} alt="Loading" /> : render }
                   
