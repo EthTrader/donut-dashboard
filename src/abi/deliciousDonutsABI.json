@@ -136,18 +136,7 @@
 		"type": "function"
 	},
 	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "receiver",
-				"type": "address"
-			},
-			{
-				"internalType": "string",
-				"name": "tokenURI",
-				"type": "string"
-			}
-		],
+		"inputs": [],
 		"name": "closeMinting",
 		"outputs": [],
 		"stateMutability": "nonpayable",
@@ -194,6 +183,19 @@
 			}
 		],
 		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address payable",
+				"name": "_to",
+				"type": "address"
+			}
+		],
+		"name": "kill",
+		"outputs": [],
+		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{

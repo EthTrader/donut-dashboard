@@ -44,7 +44,7 @@ class DeliciousDonuts extends React.Component {
             currentAddress: "",
             network: 0,
   
-            deliciousDonutsContractAddress: "0x22f634c230a1Fa703867Bb2aced11a86e126B893",
+            deliciousDonutsContractAddress: "0xb5C6178AB6288BeaB6FCE80b44786D647E8A7a82",
             
             userDeliciousDonuts: [],
   
