@@ -7,7 +7,7 @@ html {
 }
 
 .topnav-group {
-  background-color: #1e151c;
+  background-color: #271422;
   overflow: hidden;
 }
 
@@ -74,7 +74,7 @@ html {
 
 .topnav a.active {
   background-color: rgb(255,182,222);
-  color: #1e151c;
+  color: #271422;
 }
 
 .green-arrow {
@@ -158,7 +158,7 @@ html {
 .ticker-wrap {
   width: 100%;
   padding-left: 100%; /* Push contents to right side of screen */
-  background-color: #1e151c;
+  background-color: #271422;
   padding-top: 2px;
   border-style: solid;
   border-width: 1px;
@@ -513,13 +513,13 @@ a {
 .left-body {
   text-align: left;
   margin: 20px;
-  background-color: #1e151c;
+  background-color: #271422;
 }
 
 .left-body-large {
   text-align: left;
   margin: 20px;
-  background-color: #1e151c;
+  background-color: #271422;
   font-size: 22px;
   display: inline-block;
 }
@@ -559,9 +559,9 @@ a {
   word-wrap: break-word;
 }
 
-.container {
+.container-orig {
   width: 100%;
-  background-color: #1e151c;
+  background-color: #271422;
   margin: auto;
   border-style: solid;
   border-width: 1px;
@@ -572,7 +572,7 @@ a {
 .content {
   margin: auto;
   width: 65%;
-  background-color: #1e151c;
+  background-color: #271422;
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -651,7 +651,7 @@ a {
   height: 50px;
   text-align: left;
   width: 100%;
-  background-color: #1e151c;
+  background-color: #271422;
 }
 
 .links-container {

@@ -2,7 +2,6 @@ import React from 'react';
 import axios from 'axios';
 import Snowfall from 'react-snowfall'
 import Popup from 'reactjs-popup';
-import 'reactjs-popup/dist/index.css';
 import { ethers } from 'ethers';
 
 import Loading from '../img/loading.gif';

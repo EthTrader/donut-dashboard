@@ -3,7 +3,7 @@ import { ethers } from 'ethers';
 import SteakLogo from '../img/donut-steak.png';
 import Loading from '../img/loading.gif';
 import Title from '../img/title-stake.png';
-import { GrowlScene, growl } from '@crystallize/react-growl';
+import Snackbar from 'awesome-snackbar';
 
 class Stake extends React.Component {
 
@@ -303,7 +303,7 @@ class Stake extends React.Component {
           await this.checkAllowance();
           this.eventListeners();
         }
-      }
+      }    
 
       this.run();
     }
@@ -344,11 +344,30 @@ class Stake extends React.Component {
     }
 
     async rewardPaid(amount) {
-      await growl({
-        title: "Donuts successfully claimed!",
-        message: amount + ' donuts harvested, fresh from the bakery.',
-        timeout: 9000
-    });
+      let snack = new Snackbar(("<b>Donuts successfully claimed!</b><br /> " + amount + " donuts harvested, fresh from the bakery."), {
+        iconSrc: 'donut-logo.png',
+        actionText: 'Close',
+        timeout: 9000,
+        position: 'top-right',
+        style: {
+          container: [
+              ['border', 'solid'],
+              ['border-image-slice', '1'],
+              ['border-image-source', 'linear-gradient(to right, #68c47c 0%, #6191c6  51%, #68c47c  100%)'],
+              ['border-width', '3px'],
+              ['border-radius', '5px']
+          ],
+          message: [
+              ['color', 'white'],
+          ],
+          bold: [
+              ['font-weight', 'bold'],
+          ],
+          actionButton: [
+              ['color', '#fe6dda'],
+          ],
+        }
+      });  
     }
 
     render() {
@@ -459,7 +478,6 @@ class Stake extends React.Component {
 
         return (
             <div className="content">
-              <GrowlScene />
               <img src={Title} alt="Staking Donuts" className="logo-image" />                
               
               <br /><br />
