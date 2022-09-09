@@ -101,6 +101,8 @@ class Stake extends React.Component {
       this.exit = this.exit.bind(this);
       this.rewardPaid = this.rewardPaid.bind(this);
       this.eventListeners = this.eventListeners.bind(this);
+      this.connectWallet = this.connectWallet.bind(this);
+      this.setWallet = this.setWallet.bind(this);
     }
     
     async run() {
@@ -199,6 +201,39 @@ class Stake extends React.Component {
       });
     }
 
+    // Connect web3 wallet when user presses connect button
+    async connectWallet() {
+      await window.ethereum.request({ method: 'eth_requestAccounts' });
+      await this.setWallet();
+    }
+
+    // Sets wallet variables in states
+    async setWallet() {
+      if (typeof window.ethereum !== 'undefined') {       
+          let provider = new ethers.providers.Web3Provider(window.ethereum, "any");
+          try {    
+              let signer = await provider.getSigner();
+              let network = await provider.getNetwork();
+              let currentAddress = await signer.getAddress();
+      
+              this.setState({
+                  provider: provider,
+                  signer: signer,
+                  network: network.chainId,
+                  currentAddress: currentAddress
+              });
+              await this.getNetwork();
+              await this.checkAllowance();
+              if (this.state.network === 1 || this.state.network === 100) {
+                await this.getBalances();
+              }
+              this.eventListeners();
+              this.run();
+          }
+          catch (e) {}
+        }
+    }
+
     async getNetwork() {
       let provider = new ethers.providers.Web3Provider(window.ethereum, "any");
       let signer = await provider.getSigner();
@@ -293,31 +328,33 @@ class Stake extends React.Component {
     } 
 
     async componentDidMount() {
-      await window.ethereum.request({ method: 'eth_requestAccounts' });
       if (typeof window.ethereum !== 'undefined') {
-        
-        await this.getNetwork();
-
-        if (this.state.network === 1 || this.state.network === 100) {
-          await this.getBalances();
-          await this.checkAllowance();
-          this.eventListeners();
-        }
+        await this.setWallet();
       }    
-
-      this.run();
     }
 
     async eventListeners() {
       //Event listener for user changing metamask account
-      window.ethereum.on('accountsChanged', (accounts) => {
-        this.setState({
-          currentAddress: accounts[0],
-          isLoading: true
-        });
-        if (this.state.network === 1 || this.state.network === 100) {
-          this.getBalances();
-          this.checkAllowance();
+      window.ethereum.on('accountsChanged', (accounts) => {      
+        // Connecting 
+        if (accounts.length > 0) {
+          this.setState({
+              currentAddress: accounts[0],
+              isLoading: true
+          });
+          if (this.state.network === 1 || this.state.network === 100) {
+            this.checkAllowance();
+          }
+        }
+        // Disconnecting
+        else {
+          this.setState({
+              isLoading: true,
+              provider: "",
+              signer: "",
+              network: 0,
+              currentAddress: ""
+          });
         }
       });
 
@@ -492,15 +529,16 @@ class Stake extends React.Component {
                   liquidity tokens.  Add those tokens to the staking contract using the interface below and you will immediately start earning donuts!</p>
 
                 <div className="network-account">
-                  { this.state.signer !== "" ? <span></span> : <span>NOT CONNECTED</span>}
-                  { this.state.network === 1 ? <span>ETHEREUM</span> : <span></span> }
-                  { this.state.network === 100 ? <span>GNOSIS</span> : <span></span> }
-                  { this.state.network !== 1 && this.state.network !== 100 ? <span>Unsupported Network</span> : <span></span> }
-                  &nbsp;|
-                  { this.state.signer !== "" ? <span> {this.state.currentAddress.substring(0,6)}...{this.state.currentAddress.substring(38,42)}</span> : <span></span>}
-                </div><br /><br />
-                                
-              { this.state.isLoading ? <img src={Loading} alt="Loading" /> : render }
+                { this.state.signer !== "" ? <span></span> : <span>NOT CONNECTED</span>}
+                { this.state.network === 1 ? <span>ETHEREUM</span> : <span></span> }
+                { this.state.network === 100 ? <span>GNOSIS</span> : <span></span> }
+                { this.state.network !== 1 && this.state.network !== 100 && this.state.signer !== "" ? <span>Unsupported Network</span> : <span></span> }
+                { this.state.signer !== "" ? <span>&nbsp;| {this.state.currentAddress.substring(0,6)}...{this.state.currentAddress.substring(38,42)}</span> : <span></span>}
+                </div>
+                <br /><br />
+
+                { this.state.signer === "" ? <div className="content-center"><button className="pop-up-btn" id="connectWalletButton" onClick={this.connectWallet}>Connect Wallet</button></div> : <span></span> }
+                { this.state.isLoading ? <img src={Loading} alt="Loading" /> : render }
                   
             </div>
         );

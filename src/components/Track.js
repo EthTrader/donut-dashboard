@@ -27,6 +27,8 @@ class Track extends React.Component {
       this.addDonutsXDai = this.addDonutsXDai.bind(this);
       this.addXDaiNetwork = this.addXDaiNetwork.bind(this);
       this.eventListeners = this.eventListeners.bind(this);
+      this.connectWallet = this.connectWallet.bind(this);
+      this.setWallet = this.setWallet.bind(this);
 
       //window.ethereum.enable().then(provider = new ethers.providers.Web3Provider(window.ethereum)).then(init).then(run).then();    
     }
@@ -90,31 +92,59 @@ class Track extends React.Component {
       };        
     }
 
-    async componentDidMount() {
-      await window.ethereum.request({ method: 'eth_requestAccounts' });
-      if (typeof window.ethereum !== 'undefined') {       
-        let provider = new ethers.providers.Web3Provider(window.ethereum, "any");
-        let signer = await provider.getSigner();
-        let network = await provider.getNetwork();
-        let currentAddress = await signer.getAddress();
+      // Connect web3 wallet when user presses connect button
+      async connectWallet() {
+        await window.ethereum.request({ method: 'eth_requestAccounts' });
+        await this.setWallet();
+      }
 
-        this.setState({
-            provider: provider,
-            signer: signer,
-            network: network.chainId,
-            currentAddress: currentAddress
-        });
-        this.eventListeners();
-        this.run();
+      // Sets wallet variables in states
+      async setWallet() {
+        if (typeof window.ethereum !== 'undefined') {       
+            let provider = new ethers.providers.Web3Provider(window.ethereum, "any");
+            try {    
+                let signer = await provider.getSigner();
+                let network = await provider.getNetwork();
+                let currentAddress = await signer.getAddress();
+        
+                this.setState({
+                    provider: provider,
+                    signer: signer,
+                    network: network.chainId,
+                    currentAddress: currentAddress
+                });
+                this.eventListeners();
+                this.run();
+            }
+            catch (e) {}
+          }
+      }    
+
+    async componentDidMount() {
+      if (typeof window.ethereum !== 'undefined') {       
+        this.setWallet();
       }
     }
 
     // Event Listeners
     async eventListeners() {
       window.ethereum.on('accountsChanged', (accounts) => {
-        this.setState({
-          currentAddress: accounts[0]
-        });
+        // Connecting 
+        if (accounts.length > 0) {
+          this.setState({
+              currentAddress: accounts[0]
+          });
+        }
+        // Disconnecting
+        else {
+          this.setState({
+              isLoading: true,
+              provider: "",
+              signer: "",
+              network: 0,
+              currentAddress: ""
+          });
+        }
       });
 
       window.ethereum.on('chainChanged', (network) => {
@@ -143,14 +173,15 @@ class Track extends React.Component {
                 <p className="left-body">Want to track donuts in your Metamask wallet or need to add the Gnosis chain?  Connect your Metamask account to this site and click the below buttons:</p>    
                 
                 <div className="network-account">
-                  { this.state.signer !== "" ? <span></span> : <span>NOT CONNECTED</span>}
-                  { this.state.network === 1 ? <span>ETHEREUM</span> : <span></span> }
-                  { this.state.network === 100 ? <span>GNOSIS</span> : <span></span> }
-                  { this.state.network !== 1 && this.state.network !== 100 ? <span>Unsupported Network</span> : <span></span> }
-                  &nbsp;|
-                  { this.state.signer !== "" ? <span> {this.state.currentAddress.substring(0,6)}...{this.state.currentAddress.substring(38,42)}</span> : <span></span>}
-                </div><br /><br />
+                { this.state.signer !== "" ? <span></span> : <span>NOT CONNECTED</span>}
+                { this.state.network === 1 ? <span>ETHEREUM</span> : <span></span> }
+                { this.state.network === 100 ? <span>GNOSIS</span> : <span></span> }
+                { this.state.network !== 1 && this.state.network !== 100 && this.state.signer !== "" ? <span>Unsupported Network</span> : <span></span> }
+                { this.state.signer !== "" ? <span>&nbsp;| {this.state.currentAddress.substring(0,6)}...{this.state.currentAddress.substring(38,42)}</span> : <span></span>}
+                </div>
+                <br /><br />
 
+                { this.state.signer === "" ? <div className="content-center"><button className="pop-up-btn" id="connectWalletButton" onClick={this.connectWallet}>Connect Wallet</button></div> : <span></span> }
                 { this.state.isLoading ? <img src={Loading} alt="Loading" /> : render }
 
             </div>

@@ -54,6 +54,8 @@ class DeliciousDonuts extends React.Component {
         this.run = this.run.bind(this);      
         this.getDonutList = this.getDonutList.bind(this);
         this.eventListeners = this.eventListeners.bind(this);
+        this.connectWallet = this.connectWallet.bind(this);
+        this.setWallet = this.setWallet.bind(this);
       }
       
       async run() {
@@ -86,8 +88,6 @@ class DeliciousDonuts extends React.Component {
         // Convert result from BigNumber format to a readable number
         nftCount = ethers.utils.formatUnits(nftCount, 0);
 
-        console.log("nftCount: ", nftCount);
-
         // Loop through and get the tokenID for each NFT the user owns.
         let nftURIList = [];
         for (let i=0; i < nftCount; i++) {
@@ -96,14 +96,11 @@ class DeliciousDonuts extends React.Component {
             nftURIList.push(tokenURI);
         }
 
-        console.log("nftURIList: ", nftURIList);
-
         // Loop through and get the deliciousDonutID from the metadata on IPFS for each NFT the user owns.
         let deliciousDonutsList = [];
         
         for (let i=0; i < nftURIList.length; i++) {           
             let metadataResult = await axios.get(nftURIList[i]);
-            console.log("metadataResult: ", metadataResult);
             let deliciousDonutID = metadataResult.data.attributes[0].value;
             deliciousDonutsList.push(deliciousDonutID);
         }
@@ -116,37 +113,65 @@ class DeliciousDonuts extends React.Component {
             userDeliciousDonuts: deliciousDonutsList
         });
       }
+
+      // Connect web3 wallet when user presses connect button
+      async connectWallet() {
+        await window.ethereum.request({ method: 'eth_requestAccounts' });
+        await this.setWallet();
+      }
+
+      // Sets wallet variables in states
+      async setWallet() {
+        if (typeof window.ethereum !== 'undefined') {       
+            let provider = new ethers.providers.Web3Provider(window.ethereum, "any");
+            try {    
+                let signer = await provider.getSigner();
+                let network = await provider.getNetwork();
+                let currentAddress = await signer.getAddress();
+        
+                this.setState({
+                    provider: provider,
+                    signer: signer,
+                    network: network.chainId,
+                    currentAddress: currentAddress
+                });
+                await this.getDonutList();
+                this.eventListeners();
+                this.run();
+            }
+            catch (e) {}
+          }
+      }
   
       // --
       // Runs on startup
       // --
       async componentDidMount() {
-        await window.ethereum.request({ method: 'eth_requestAccounts' });
         if (typeof window.ethereum !== 'undefined') {       
-          let provider = new ethers.providers.Web3Provider(window.ethereum, "any");
-          let signer = await provider.getSigner();
-          let network = await provider.getNetwork();
-          let currentAddress = await signer.getAddress();
-  
-          this.setState({
-              provider: provider,
-              signer: signer,
-              network: network.chainId,
-              currentAddress: currentAddress
-          });
-          await this.getDonutList();
-          this.eventListeners();
-          this.run();
+            await this.setWallet();
         }
       }
   
       // Event Listeners
       async eventListeners() {
         window.ethereum.on('accountsChanged', (accounts) => {
-          this.setState({
-            currentAddress: accounts[0]
-          });
-          this.getDonutList();
+          // Connecting 
+          if (accounts.length > 0) {
+            this.setState({
+                currentAddress: accounts[0]
+            });
+            this.getDonutList();
+          }
+          // Disconnecting
+          else {
+            this.setState({
+                isLoading: true,
+                provider: "",
+                signer: "",
+                network: 0,
+                currentAddress: ""
+            });
+          }
         });
   
         window.ethereum.on('chainChanged', (network) => {
@@ -407,15 +432,16 @@ class DeliciousDonuts extends React.Component {
                 { this.state.signer !== "" ? <span></span> : <span>NOT CONNECTED</span>}
                 { this.state.network === 1 ? <span>ETHEREUM</span> : <span></span> }
                 { this.state.network === 100 ? <span>GNOSIS</span> : <span></span> }
-                { this.state.network !== 1 && this.state.network !== 100 ? <span>Unsupported Network</span> : <span></span> }
-                &nbsp;|
-                { this.state.signer !== "" ? <span> {this.state.currentAddress.substring(0,6)}...{this.state.currentAddress.substring(38,42)}</span> : <span></span>}
+                { this.state.network !== 1 && this.state.network !== 100 && this.state.signer !== "" ? <span>Unsupported Network</span> : <span></span> }
+                { this.state.signer !== "" ? <span>&nbsp;| {this.state.currentAddress.substring(0,6)}...{this.state.currentAddress.substring(38,42)}</span> : <span></span>}
                 </div>
                 <br />
                 { this.state.network !== 100 ? <span className="text-rarity-common">DELICIOUS DONUTS ONLY AVAILABLE ON GNOSIS CHAIN</span> : <span></span> }
                 <br /><br />
 
+                { this.state.signer === "" ? <div className="content-center"><button className="pop-up-btn" id="connectWalletButton" onClick={this.connectWallet}>Connect Wallet</button></div> : <span></span> }
                 { this.state.isLoading ? <img src={Loading} alt="Loading" /> : render }
+                
             </div>
         );
     }
