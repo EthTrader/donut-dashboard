@@ -863,6 +863,13 @@ a {
   vertical-align: top;
 }
 
+@media only screen and (max-width: 768px) {
+  .delicious-donuts-column {
+    display: block;
+    width: 100%;
+  }
+}
+
 .delicious-donut-image-yes {
   width: 100%
 }
@@ -875,14 +882,6 @@ a {
     -o-filter: grayscale(100%);
    -ms-filter: grayscale(100%);
        filter: grayscale(100%);
-}
-
-
-@media only screen and (max-width: 768px) {
-  .delicious-donuts-column {
-    display: block;
-    width: 100%;
-  }
 }
 
 .text-delicious-donut-caption {
@@ -940,6 +939,12 @@ a {
   border-style: solid;
   border-width: 1px;
   border-color: #fe6dda;
+}
+
+@media only screen and (max-width: 768px) {
+  .allourdonut-img {
+    width: 90%
+  }
 }
 
 .pop-up-btn {background-image: linear-gradient(to right, #68c47c 0%, #6191c6  51%, #68c47c  100%)}

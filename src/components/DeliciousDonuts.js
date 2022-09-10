@@ -44,7 +44,7 @@ class DeliciousDonuts extends React.Component {
             currentAddress: "",
             network: 0,
   
-            deliciousDonutsContractAddress: "0xb5C6178AB6288BeaB6FCE80b44786D647E8A7a82",
+            deliciousDonutsContractAddress: "0x1735c8121788163CD9b49abaf633a66FFea7D145",
             
             userDeliciousDonuts: [],
   
@@ -409,7 +409,7 @@ class DeliciousDonuts extends React.Component {
             {close => (
             <div className="modal">
                 <div className="pop-up-content">
-                    <img src={AllOurDonut} alt="All our donut are belong to you!" /><br /><br />  
+                    <img src={AllOurDonut} className="allourdonut-img" alt="All our donut are belong to you!" /><br /><br />  
                     Congratulations! You've collected all 20 Delicious Donuts!<br />  
                 </div>
                 <div className="pop-up-actions">
@@ -421,7 +421,7 @@ class DeliciousDonuts extends React.Component {
 
         return (
             <div className="content">
-                { this.state.userDeliciousDonuts.length === 20 ? <Snowfall snowflakeCount={200} color="#fe6dda" style={{ height: '200vh' }} /> : <span />}
+                { this.state.userDeliciousDonuts.length === 20 ? <Snowfall snowflakeCount={300} color="#fe6dda" style={{ height: '200vh' }} /> : <span />}
                 { this.state.userDeliciousDonuts.length === 20 ? popUp : <span />}
 
                 <img src={Title} alt="Delicious Donuts" className="logo-image" /><br /><br />    
