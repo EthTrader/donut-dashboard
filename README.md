@@ -22,7 +22,7 @@ Monthly updates to pull in new distribution data:
 
 Monthly updates to pull in new governance data:
 (NOTE: the users.json file is only available after the distribution is completed)
-1. Pull in the most recent output **user** JSON file from the donut.distribution project (note, this step i)
+1. Pull in the most recent output **user** JSON file from the donut.distribution project (note, user output file is generated as part of distribution process)
 1. Replace /governance/most_recent.json with the new JSON file
 1. Commit changes and push to start a redeploy of the site
 
