@@ -436,7 +436,7 @@ class DeliciousDonuts extends React.Component {
                 { this.state.signer !== "" ? <span>&nbsp;| {this.state.currentAddress.substring(0,6)}...{this.state.currentAddress.substring(38,42)}</span> : <span></span>}
                 </div>
                 <br />
-                { this.state.network !== 100 ? <span className="text-rarity-common">DELICIOUS DONUTS ONLY AVAILABLE ON GNOSIS CHAIN</span> : <span></span> }
+                { this.state.network !== 100 ? <span className="text-alert">DELICIOUS DONUTS ONLY AVAILABLE ON GNOSIS CHAIN</span> : <span></span> }
                 <br /><br />
 
                 { this.state.signer === "" ? <div className="content-center"><button className="pop-up-btn" id="connectWalletButton" onClick={this.connectWallet}>Connect Wallet</button></div> : <span></span> }

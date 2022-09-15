@@ -912,6 +912,11 @@ a {
   font-size: 10px;
 }
 
+.text-alert {
+  color:rgb(224, 0, 0);
+  font-size: 10px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
