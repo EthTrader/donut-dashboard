@@ -426,7 +426,7 @@ class DeliciousDonuts extends React.Component {
 
                 <img src={Title} alt="Delicious Donuts" className="logo-image" /><br /><br />    
       
-                <p className="left-body">Delicious Donuts are a collection of 20 semi-fungible-pastries on the Gnosis Chain. Delicious Donuts were issued to DONUT holders in September 2022, celebrating the Ethereum Merge.</p>    
+                <p className="left-body">Delicious Donuts are a collection of 20 semi-fungible-pastries on the Gnosis Chain. Delicious Donuts were issued to DONUT holders in September 2022, celebrating the Ethereum Merge. More information available <a href="https://www.reddit.com/r/ethtrader/comments/xezea4/delicious_donuts_an_rethtrader_nft_collection/" target="_blank">here</a>.</p>    
             
                 <div className="network-account">
                 { this.state.signer !== "" ? <span></span> : <span>NOT CONNECTED</span>}
