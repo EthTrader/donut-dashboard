@@ -1,6 +1,8 @@
 import React from 'react';
 import Title from '../img/title-distributions.png';
-import full_distribution from '../distribution/most_recent.json';
+import axios from 'axios';
+
+let full_distribution;
 
 class Distribution extends React.Component {
 
@@ -16,7 +18,11 @@ class Distribution extends React.Component {
     }
 
     async componentDidMount() { 
-        let distribution = full_distribution.awards;     
+
+        let result = await axios.get("https://raw.githubusercontent.com/EthTrader/donut.distribution/main/docs/distribution.json");
+        full_distribution = result.data;
+
+        let distribution = full_distribution.awards;   
         // Sort the output array
         distribution.sort(function (a,b) {
             return b.amount0 - a.amount0;
@@ -45,8 +51,6 @@ class Distribution extends React.Component {
         return (
             <div className="content">
                 <img src={Title} alt="Fresh Donuts" className="logo-image" />
-                <br />
-                <i>Distribution #114: September 2022</i>
                 <br /><br />
 
                 <input type="text" className="filter-box" value={this.state.filter} onChange={this.handleFilterChange} placeholder="Username filter"/>                

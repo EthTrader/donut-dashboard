@@ -1,6 +1,8 @@
 import React from 'react';
 import Title from '../img/title-governance.png';
-import governance_scores from '../governance/most_recent.json';
+import axios from 'axios';
+
+let governance;
 
 class Governance extends React.Component {
 
@@ -16,7 +18,9 @@ class Governance extends React.Component {
     }
 
     async componentDidMount() { 
-        let governance = governance_scores;     
+        let result = await axios.get("https://raw.githubusercontent.com/EthTrader/donut.distribution/main/docs/users.json");
+        governance = result.data;
+    
         // Sort the output array
         governance.sort(function (a,b) {
             return b.weight - a.weight;
@@ -29,8 +33,6 @@ class Governance extends React.Component {
 
     async handleFilterChange(event) {        
         let filter = event.target.value;
-
-        let governance = governance_scores;
         
         let filteredGovernance = governance.filter(item => item.username.toLowerCase().includes(filter.toLowerCase()));  
         this.setState({
