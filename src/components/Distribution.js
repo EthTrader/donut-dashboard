@@ -99,16 +99,16 @@ class Distribution extends React.Component {
                                     {parseInt(row.donut).toLocaleString()}
                                 </th>
                                 <th className="contentColumn upArrow">
-                                    +{parseInt(row.data.fromKarma)}
+                                    +{parseInt(row.data.fromKarma).toLocaleString()}
                                 </th>
                                 <th className="contentColumn upArrow">
-                                    +{parseInt(row.data.fromTipsRecd)}
+                                    +{parseInt(row.data.fromTipsRecd).toLocaleString()}
                                 </th>
                                 <th className="contentColumn upArrow">
-                                    +{parseInt(row.data.fromTipsGiven)}
+                                    +{parseInt(row.data.fromTipsGiven).toLocaleString()}
                                 </th>
                                 <th className="contentColumn downArrow">
-                                    -{parseInt(row.data.pay2PostFee)}
+                                    -{parseInt(row.data.pay2PostFee).toLocaleString()}
                                 </th>
                             </tr>)
                         })}
