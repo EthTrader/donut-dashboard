@@ -2,8 +2,6 @@ import React from 'react';
 import Title from '../img/title-distributions.png';
 import axios from 'axios';
 
-let full_distribution;
-
 class Distribution extends React.Component {
 
     constructor(props) {
@@ -11,6 +9,7 @@ class Distribution extends React.Component {
 
         this.state = {
             distribution: [],
+            unfilteredDistribution: [],
             filter: ""
         }
 
@@ -19,24 +18,34 @@ class Distribution extends React.Component {
 
     async componentDidMount() { 
 
-        let result = await axios.get("https://raw.githubusercontent.com/EthTrader/donut.distribution/main/docs/distribution.json");
-        full_distribution = result.data;
+        let result = await axios.get("https://raw.githubusercontent.com/EthTrader/donut.distribution/main/docs/distributionSummary.json");
+        let full_distribution = result.data;
+        let label = full_distribution.label.replace('round_','');
 
-        let distribution = full_distribution.awards;   
-        // Sort the output array
-        distribution.sort(function (a,b) {
-            return b.amount0 - a.amount0;
+        let distribution = full_distribution.summary;   
+        let distributionKeys = Object.keys(distribution);
+
+        let newDistribution = [];
+        for (let i = 0; i < distributionKeys.length; i++) {
+            newDistribution.push(distribution[distributionKeys[i]]);
+        }
+
+        // Sort the output array by donuts earned
+        newDistribution.sort(function (a,b) {
+            return b.donut - a.donut;
         });
-        
+
         this.setState({ 
-            distribution: distribution
+            distribution: newDistribution,
+            unfilteredDistribution: newDistribution,
+            label: label
         });
     }
 
     async handleFilterChange(event) {        
         let filter = event.target.value;
 
-        let distribution = full_distribution.awards;
+        let distribution = this.state.unfilteredDistribution;
         
         let filteredDistribution = distribution.filter(item => item.username.toLowerCase().includes(filter.toLowerCase()));  
         this.setState({
@@ -45,12 +54,12 @@ class Distribution extends React.Component {
         });
     }
 
-    
-
     render() {
         return (
             <div className="content">
                 <img src={Title} alt="Fresh Donuts" className="logo-image" />
+                <br />
+                <div className="">Distribution Information for Round #{this.state.label}</div>
                 <br /><br />
 
                 <input type="text" className="filter-box" value={this.state.filter} onChange={this.handleFilterChange} placeholder="Username filter"/>                
@@ -62,7 +71,19 @@ class Distribution extends React.Component {
                                 Username
                             </th>
                             <th className="donut-header">
-                                Donuts Received
+                                Total Donuts Received
+                            </th>
+                            <th className="donut-header">
+                                Donuts from Posts &amp; Karma
+                            </th>
+                            <th className="donut-header">
+                                Donuts from Receiving Tips
+                            </th>
+                            <th className="donut-header">
+                                Donuts from Tipping Others
+                            </th>
+                            <th className="donut-header">
+                                Pay to Post Fees
                             </th>
                         </tr>
                     </thead>
@@ -75,7 +96,19 @@ class Distribution extends React.Component {
                                     {row.username}
                                 </th>
                                 <th className="contentColumn">
-                                    {parseInt(row.amount0/1e18.toFixed(0)).toLocaleString()}
+                                    {parseInt(row.donut).toLocaleString()}
+                                </th>
+                                <th className="contentColumn upArrow">
+                                    +{parseInt(row.data.fromKarma)}
+                                </th>
+                                <th className="contentColumn upArrow">
+                                    +{parseInt(row.data.fromTipsRecd)}
+                                </th>
+                                <th className="contentColumn upArrow">
+                                    +{parseInt(row.data.fromTipsGiven)}
+                                </th>
+                                <th className="contentColumn downArrow">
+                                    -{parseInt(row.data.pay2PostFee)}
                                 </th>
                             </tr>)
                         })}
