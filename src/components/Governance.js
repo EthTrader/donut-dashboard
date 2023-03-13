@@ -69,7 +69,7 @@ class Governance extends React.Component {
                         <tr></tr>
                     {this.state.governance.map((row) => {
                             return (<tr key={row.username}>
-                                <th className="contentColumn">
+                                <th className="contentColumn pinkText">
                                     {row.username}
                                 </th>
                                 <th className="contentColumn">

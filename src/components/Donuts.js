@@ -8,8 +8,8 @@ import UniswapLogo from '../img/donut-uniswap.png';
 import HoneyswapLogo from '../img/donut-honeyswap.png';
 import DonutLogo from '../img/donut-overview.png';
 import BurnLogo from '../img/donut-burn.png';
-import Donut01 from '../img/donut-01.png';
-import Donut02 from '../img/donut-02.png';
+import Donut01 from '../img/donut01.png';
+import Donut02 from '../img/donut02.png';
 
 
 class Donuts extends React.Component {
@@ -20,7 +20,7 @@ class Donuts extends React.Component {
             <div className="content">
                 <div className="content-container">
                     <div className="content-column">
-                        <img src={Donut02} alt="Donuts: the original food token" className="splash-image" />
+                        <img src={Donut01} alt="Donuts: the original food token" className="splash-image" />
                     </div>
                     <div className="content-column">
                         <img src={Title} alt="What are donuts?" className="logo-image" />
@@ -28,9 +28,8 @@ class Donuts extends React.Component {
                         <p className="left-body-large">Donuts are tokens that represent community contribution & engagement 
                         at the <a href="http://reddit.com/r/ethtrader" target="_blank" rel="noreferrer">/r/ethtrader subreddit</a>.</p>
                         <p className="left-body-large">Users
-                        earn Donuts simply by participating and contributing content to /r/ethtrader. </p>
-                        <p className="left-body-large">Think of them as a spendable and tradeable karma, 
-                        but exclusive to /r/ethtrader.</p>
+                        earn Donuts simply by participating and contributing content to /r/ethtrader. Think of them as a spendable and tradeable karma, 
+                        but exclusive to the /r/ethtrader subreddit.</p>
                     </div>
                 </div>
              </div>
@@ -80,7 +79,7 @@ class Donuts extends React.Component {
                     <p className="left-body-large">Donuts are distributed automatically to all users on the Gnosis chain on a monthly basis.</p>
                     </div>
                     <div className="content-column">
-                        <img src={Donut01} alt="The future is fried.  With sprinkles on it." className="splash-image" />
+                        <img src={Donut02} alt="The future is fried.  With sprinkles on it." className="splash-image" />
                     </div>
                 </div>
             </div>            

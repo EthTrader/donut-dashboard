@@ -1,6 +1,11 @@
 import React from 'react';
 import Title from '../img/title-distributions.png';
+import Info from '../img/info.png';
 import axios from 'axios';
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCircleInfo } from '@fortawesome/free-solid-svg-icons'
 
 class Distribution extends React.Component {
 
@@ -55,12 +60,12 @@ class Distribution extends React.Component {
     }
 
     render() {
-        return (
+        return (            
             <div className="content">
                 <img src={Title} alt="Fresh Donuts" className="logo-image" />
                 <br />
                 <div className="">Distribution Information for Round #{this.state.label}</div>
-                <br /><br />
+                <br /><br />              
 
                 <input type="text" className="filter-box" value={this.state.filter} onChange={this.handleFilterChange} placeholder="Username filter"/>                
                 
@@ -68,22 +73,38 @@ class Distribution extends React.Component {
                     <thead>
                         <tr>
                             <th className="donut-header">
-                                Username
+                                Username 
                             </th>
                             <th className="donut-header">
-                                Total Donuts Received
+                                Total Donuts Received 
                             </th>
                             <th className="donut-header">
                                 Donuts from Posts &amp; Karma
+                                <br /> 
+                                <Tippy content={<span style={{ color: '#fe6ddb' }}>The number of Donuts earned from posts and comments, as calculated by Reddit.<br /><br /> Comedy and Media posts are additionally reduced in value.</span>}>
+                                    <FontAwesomeIcon icon={faCircleInfo} />
+                                </Tippy>
                             </th>
                             <th className="donut-header">
                                 Donuts from Receiving Tips
+                                <br />
+                                <Tippy content={<span style={{ color: '#fe6ddb' }}>The number of Donuts earned from receiving tips on posts.<br /><br /> In addition to the tips themselves, tips are used as a "super-upvote" and result in bonus Donuts for the receiver. The higher governance score the tipper has, the more Donuts are earned by the recipient.</span>}>
+                                    <FontAwesomeIcon icon={faCircleInfo} />
+                                </Tippy>
                             </th>
                             <th className="donut-header">
                                 Donuts from Tipping Others
+                                <br />
+                                <Tippy content={<span style={{ color: '#fe6ddb' }}>The number of Donuts earned from giving tips to others.<br /><br /> Tipping posts helps curate content and Donuts are paid out to tippers for their effort.</span>}>
+                                    <FontAwesomeIcon icon={faCircleInfo} />
+                                </Tippy>
                             </th>
                             <th className="donut-header">
                                 Pay to Post Fees
+                                <br />
+                                <Tippy content={<span style={{ color: '#fe6ddb' }}>The number of Donuts deducted for making posts.<br /><br /> In an effort to reduce spam, each post made carries a flat donut "fee" that is deducted from monthly donut distributions.</span>}>
+                                    <FontAwesomeIcon icon={faCircleInfo} />
+                                </Tippy>
                             </th>
                         </tr>
                     </thead>
@@ -92,7 +113,7 @@ class Distribution extends React.Component {
                         <tr></tr>
                     {this.state.distribution.map((row) => {
                             return (<tr key={row.username}>
-                                <th className="contentColumn">
+                                <th className="contentColumn pinkText">
                                     {row.username}
                                 </th>
                                 <th className="contentColumn">
