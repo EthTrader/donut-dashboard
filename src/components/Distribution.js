@@ -100,6 +100,13 @@ class Distribution extends React.Component {
                                 </Tippy>
                             </th>
                             <th className="donut-header">
+                                Voter Bonus
+                                <br />
+                                <Tippy content={<span style={{ color: '#fe6ddb' }}>The number of Donuts earned from voting in governance polls.</span>}>
+                                    <FontAwesomeIcon icon={faCircleInfo} />
+                                </Tippy>
+                            </th>
+                            <th className="donut-header">
                                 Pay to Post Fees
                                 <br />
                                 <Tippy content={<span style={{ color: '#fe6ddb' }}>The number of Donuts deducted for making posts.<br /><br /> In an effort to reduce spam, each post made carries a flat donut "fee" that is deducted from monthly donut distributions.</span>}>
@@ -127,6 +134,9 @@ class Distribution extends React.Component {
                                 </th>
                                 <th className="contentColumn upArrow">
                                     +{parseInt(row.data.fromTipsGiven).toLocaleString()}
+                                </th>
+                                <th className="contentColumn upArrow">
+                                    +{parseInt(row.data.voterBonus).toLocaleString()}
                                 </th>
                                 <th className="contentColumn downArrow">
                                     -{parseInt(row.data.pay2PostFee).toLocaleString()}
