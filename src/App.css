@@ -510,6 +510,17 @@ a {
   margin-top: 15px;
 }
 
+.code {
+  text-align: left;
+  margin: 20px;
+  margin-left: 70px;
+  padding: 15px 30px 15px 30px;
+  font-family: monospace;
+  background-color: #180f16;
+  border: 1px solid white;
+  display: inline-block;
+}
+
 .left-body {
   text-align: left;
   margin: 20px;

@@ -26,7 +26,7 @@ class Faq extends React.Component {
                 <div className="faq-even">
                     <p className="faq-q">Q: What are donuts used for?</p>
 
-                    <p className="faq-a">A: Donuts can be used for additional vote weight in community polls, tipping other users, purchasing special memberships, posting GIFs in comments, obtaining special-colored names, purchasing badges, and even purchasing the top banner (which can be used for advertising).  Donuts spent in these ways are burned, meaning they are destroyed and leave circulation.</p>
+                    <p className="faq-a">A: Donuts can be used for additional vote weight in community polls, tipping other users, and even purchasing the top banner (which can be used for advertising).</p>
                 </div>
                 <div className="faq-odd">
                     <p className="faq-q">Q: How do I register for donuts?</p>
@@ -48,11 +48,6 @@ class Faq extends React.Component {
 
                     <p className="faq-a">A: Donuts are automatically deposited into your account on the Gnosis chain every month.  You don't have to manually claim or pay any gas costs to acquire them!</p>
                 </div>
-                <div className="faq-odd">
-                    <p className="faq-q">Q: I had donuts from 2018-2019, can I still claim them?</p>
-
-                    <p className="faq-a">A: Unfortunately, no. In late 2019 & early 2020, donuts transitioned from being centralized on Reddit's servers to decentralized tokens on Ethereum. There was a period of a couple months where users needed to log in and claim their donuts - this was done by providing Reddit with an Ethereum address. Any donuts not claimed after those months were lost.</p>
-                </div>                
 
                 <img src={Donut05} alt="Flying donuts" className="splash-image" />
 
@@ -91,31 +86,13 @@ class Faq extends React.Component {
                 <div className="faq-even">
                     <p className="faq-q">Q: What is the cost to own the banner?</p>
 
-                    <p className="faq-a">A: The cost to purchase the banner is a variable rate, driven directly by demand.  A Harberger Tax system is used to achieve this: the owner of the banner chooses their own buy-out price point, denominated in donuts, and pays a 10% daily rent to keep ownership. Any other user can purchase ownership of the banner at any time by paying the buy-out cost. The banner must be paid for using donuts on Ethereum main net only, currently.</p>
+                    <p className="faq-a">A: Currently the cost is 13,000 DONUT per day that the banner is owned.</p>
                 </div>
 
-                <div className="faq-even">
+                <div className="faq-odd">
                     <p className="faq-q">Q: How do I purchase the banner?</p>
 
-                    <p className="faq-a">A: When viewing the <a href="https://reddit.com/r/ethtrader" target="_blank" rel="noreferrer">/r/ethtrader subreddit</a>, a <b>BUY BANNER</b> link is located near the top of the page.  Clicking this link opens a dialog prompt that interacts with a user's browser wallet, such as Metamask.</p>
-                </div>
-
-                <div className="faq-even">
-                    <p className="faq-q">Q: What are the daily rent costs of the banner?</p>
-
-                    <p className="faq-a">A: The rent is set to 10% of the banner buy-out price.</p>
-                </div>
-
-                <div className="faq-even">
-                    <p className="faq-q">Q: Can you explain the banner through an example?</p>
-
-                    <p className="faq-a">Alice has control of the banner. She sets the buy-out price at 10,000 donuts. This means she must pay 1,000 donuts per day to maintain ownership of the banner. At any time, Bob can take ownership of the banner by paying Alice's buy-out price of 10,000 donuts. If he does, he then chooses the next buy-out price and, by extension, his daily rent amount.  The 10,000 donuts spent on the buyout price go to Alice.  Bob is prompted to pre-pay donuts for the daily rent costs at the time he purchases the banner.  Bob decides to set the new buyout price to 20,000 donuts, making his daily rent amount 2,000 donuts.</p>
-                </div>
-
-                <div className="faq-even">
-                    <p className="faq-q">Q: What happens if a user stops paying rent on the banner or runs out of donuts for rent?</p>
-
-                    <p className="faq-a">The buy-out price of the banner drops to zero, allowing anyone to scoop it up and set a new buyout price.</p>
+                    <p className="faq-a">A: Contact the /r/ethtrader mod team via modmail.  The mod team will work with you to get the banner uploaded and displayed correctly.</p>
                 </div>
 
                 <div className="faq-even">
@@ -136,23 +113,26 @@ class Faq extends React.Component {
                 <div className="faq-odd">
                     <p className="faq-q">Q: How can I add donuts to my token list in Metamask?</p>
 
-                    <p className="faq-a">A: You can visit the <a href="/#/track">Track Donuts</a> page and click the buttons to add.<br /><br />To manually add the tokens, at the bottom of the assets tab, click the <span className="highlight">Add Token</span> button.  Click the <span className="highlight">Custom Token</span> tab.  In the <span className="highlight">Token Contract Address</span> input box, paste <span className="highlight">0xc0f9bd5fa5698b6505f643900ffa515ea5df54a9</span>.  (If you are adding Donuts on Gnosis chain, instead use <span className="highlight">0x524B969793a64a602342d89BC2789D43a016B13A</span>)</p>
+                    <p className="faq-a">A: You can visit the <a href="/#/track">Track Donuts</a> page and click the buttons to add.<br /><br />
+                    DONUTs can also be manually added to most cryptocurrency wallets by using the contract address:<br /><br /> 
+                    Ethereum main net: <span className="highlight">0xc0f9bd5fa5698b6505f643900ffa515ea5df54a9</span><br /><br />
+                    Gnosis Chain: <span className="highlight">0x524B969793a64a602342d89BC2789D43a016B13A</span></p>
                 </div>
-                <div className="faq-odd">
+                <div className="faq-even">
                     <p className="faq-q">Q: What is CONTRIB?</p>
 
                     <p className="faq-a">A: Whenever a user earns donuts, they earn an equal amount of CONTRIB. CONTRIB is a separate token and is non-transferrable. It essentially shows life-time earnings, even if a user has sold their donuts. It can also be used to potentially restrict some actions to users that earned their donuts, rather than purchased them.</p>
-                </div>
+                </div>                
                 <div className="faq-odd">
+                    <p className="faq-q">Q: What is a governance score?</p>
+
+                    <p className="faq-a">A: Governance scores measure an individual's vote weight in polls.  Governance scores are calculated by taking the lesser value of DONUT and CONTRIB tokens held by each user.  DONUTs held on both Ethereum main net and the Gnosis network are counted in this score,
+                as well as DONUTs held in liquidity pools and staking contracts.</p>
+                </div>
+                <div className="faq-even">
                     <p className="faq-q">Q: How long have donuts been around?</p>
 
                     <p className="faq-a">A: Since 2018, though they weren't ERC-20 tokens to start. They started out as simply numbers stored on Reddit's servers. Donuts transitioned to be decentralized in late 2019 & early 2020.</p>
-                </div>
-                <div className="faq-even">
-                    <p className="faq-q">Q: Is this idea of community points being tried elsewhere on Reddit?</p>
-
-                    <p className="faq-a">A: Yes. Both r/cryptocurrency and r/FortNiteBR have a test implementation of Reddit community points implemented. Both of those currencies are running on Ethereum test networks. Donuts are the only implementation running on the Ethereum mainnet.</p>
-                    <p className="faq-a">Ethereum scaling is necessary if the idea is to be fully rolled out, however.  Reddit plans to use an Arbitrum-based rollup strategy to tackle the scaling issue.</p>
                 </div>
 
             </div>

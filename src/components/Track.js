@@ -76,14 +76,14 @@ class Track extends React.Component {
           method: 'wallet_addEthereumChain',
           params: [{
             chainId: '0x64',
-            chainName: 'xDAI Chain',
+            chainName: 'Gnosis',
             nativeCurrency: {
-                name: 'xDAI',
-                symbol: 'xDAI',
+                name: 'XDAI',
+                symbol: 'XDAI',
                 decimals: 18
             },
-            rpcUrls: ['https://rpc.xdaichain.com'],
-            blockExplorerUrls: ['https://blockscout.com/poa/mainnet/']
+            rpcUrls: ['https://rpc.gnosischain.com/'],
+            blockExplorerUrls: ['https://gnosisscan.io']
             }]
         });
       }
@@ -91,6 +91,7 @@ class Track extends React.Component {
         console.log(e);
       };        
     }
+
 
       // Connect web3 wallet when user presses connect button
       async connectWallet() {

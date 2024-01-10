@@ -46,12 +46,6 @@ class Donuts extends React.Component {
                                 <br />
                             </th>
                             <th className="logo-column">
-                                <img src={MembershipLogo} alt="Membership Icon" className="logo-image-large" /><br />
-                                <span className="caption-heading">Special Membership</span>
-                                <p className="caption-body">Donuts can be used to purchase special memberships, which bring a number of aesthetic perks.</p>
-                                <br />
-                            </th>
-                            <th className="logo-column">
                                 <img src={BannerLogo} alt="Banner Icon" className="logo-image-large" /><br />
                                 <span className="caption-heading">Banner Advertising</span>
                                 <p className="caption-body">Donuts can be used to purchase control of the top banner, often used for advertising purposes.</p>
