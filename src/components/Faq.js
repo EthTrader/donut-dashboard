@@ -76,7 +76,7 @@ class Faq extends React.Component {
                 <div className="faq-odd">
                     <p className="faq-q">Q: Do any donuts ever leave circulation?</p>
 
-                    <p className="faq-a">A: Donuts spent on banner rent and on premium memberships are burned.</p>
+                    <p className="faq-a">A: Donuts spent on banner purchases are burned.</p>
                 </div>                
 
                 <img src={Donut06} alt="Flying donuts" className="splash-image" />

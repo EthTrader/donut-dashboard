@@ -1,11 +1,13 @@
 import React from 'react';
 import Title from '../img/title-register.png';
+import Donut09 from '../img/donut-09.png';
 
 class Register extends React.Component {
 
     render() {
         return (
             <div className="content">
+                    <img src={Donut09} alt="Flying donuts" className="splash-image" />
                     <img src={Title} alt="How to Register for Donuts" className="logo-image" />
                     <p className="left-body">Simply respond to any thread in /r/ethtrader with a message like the following:</p>
                     <p className="code">!register 0x12345678901234567890123456789012345678901</p>
