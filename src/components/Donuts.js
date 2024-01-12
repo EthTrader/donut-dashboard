@@ -6,8 +6,6 @@ import VotingLogo from '../img/donut-voting.png';
 import UniswapLogo from '../img/donut-uniswap.png';
 import HoneyswapLogo from '../img/donut-honeyswap.png';
 import DonutLogo from '../img/donut-overview.png';
-import Donut01 from '../img/donut01.png';
-import Donut02 from '../img/donut02.png';
 
 import Slideshow from './Slideshow.js'
 
@@ -22,18 +20,14 @@ class Donuts extends React.Component {
                     <Slideshow />
                 </div>
                 <div className="content-container">
-                    <div className="content-column">
-                        <img src={Donut01} alt="Donuts: the original food token" className="splash-image" />
-                    </div>
-                    <div className="content-column">
-                        <img src={Title} alt="What are donuts?" className="logo-image" />
-                    
-                        <p className="left-body-large">Donuts are tokens that represent community contribution & engagement 
-                        at the <a href="http://reddit.com/r/ethtrader" target="_blank" rel="noreferrer">/r/ethtrader subreddit</a>.</p>
-                        <p className="left-body-large">Users
+
+                    <img src={Title} alt="What are donuts?" className="logo-image" /><br />
+                    <p className="left-body-large">Donuts are tokens that represent community contribution & engagement 
+                        at the <a href="http://reddit.com/r/ethtrader" target="_blank" rel="noreferrer">/r/ethtrader subreddit</a>.  Users
                         earn Donuts simply by participating and contributing content to /r/ethtrader. Think of them as a spendable and tradeable karma, 
-                        but exclusive to the /r/ethtrader subreddit.</p>
-                    </div>
+                        but exclusive to the /r/ethtrader subreddit.  </p>
+                    <p className="left-body-large">Following the ERC-20 token standard, Donuts are the first ever 
+                    implementation of Reddit Community Points.  Donuts exist on both the Ethereum main net and the Gnosis chain.  Donuts are distributed automatically to all users on the Gnosis chain on a monthly basis.</p>
                 </div>
              </div>
 
@@ -66,20 +60,7 @@ class Donuts extends React.Component {
                 <br />
                 
                 </div>
-            </div>             
-
-            <div className="content">
-                <div className="content-container">
-                    <div className="content-column">
-                        <p className="left-body-large">Following the ERC-20 token standard, Donuts are the first ever 
-                    implementation of Reddit Community Points.  Donuts exist on both the Ethereum main net and the Gnosis chain.</p>
-                    <p className="left-body-large">Donuts are distributed automatically to all users on the Gnosis chain on a monthly basis.</p>
-                    </div>
-                    <div className="content-column">
-                        <img src={Donut02} alt="The future is fried.  With sprinkles on it." className="splash-image" />
-                    </div>
-                </div>
-            </div>            
+            </div>                
 
 
             <div className="container-middle">

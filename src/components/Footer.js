@@ -7,7 +7,7 @@ class Footer extends React.Component {
         return (
             <div>
                 <p className="footer-text">Price information provided by CoinGecko API.</p>                
-                <p className="footer-text">Burrito price assumed as $7.50 USD, for a steak burrito from Chipotle.</p>
+                <p className="footer-text">Burrito price assumed as $11.00 USD, for a steak burrito from Chipotle.</p>
             </div>
         );
     }
