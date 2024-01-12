@@ -993,7 +993,8 @@ a {
 .slideshow {
   margin: 0 auto;
   overflow: hidden;
-  max-width: 100%;
+  width: 100%;
+  max-width: 1500px;
 }
 
 .slideshowSlider {
@@ -1004,7 +1005,7 @@ a {
 .slide {
   display: inline-block;
 
-  height: 500px;
+  height: 600px;
   width: 100%;
   border-radius: 40px;
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import Donut01 from '../img/donut01.png';
 
 const images = [
     "https://donut-dashboard.com/01.png", 
