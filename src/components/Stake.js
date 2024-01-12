@@ -381,7 +381,7 @@ class Stake extends React.Component {
     }
 
     async rewardPaid(amount) {
-      let snack = new Snackbar(("<b>Donuts successfully claimed!</b><br /> " + amount + " donuts harvested, fresh from the bakery."), {
+      new Snackbar(("<b>Donuts successfully claimed!</b><br /> " + amount + " donuts harvested, fresh from the bakery."), {
         iconSrc: 'donut-logo.png',
         actionText: 'Close',
         timeout: 9000,

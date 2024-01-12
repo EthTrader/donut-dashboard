@@ -1,10 +1,7 @@
 import React from 'react';
 import RedditLogo from '../img/donut-reddit.png';
 import OverviewLogo from '../img/donut-overview.png';
-//import AragonLogo from '../img/donut-aragon.png';
-//import SteakLogo from '../img/donut-steak.png';
 import EtherscanLogo from '../img/donut-etherscan.png';
-import QuestsLogo from '../img/donut-quests.png';
 
 class Links extends React.Component {
 

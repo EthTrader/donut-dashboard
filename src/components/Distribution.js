@@ -1,6 +1,5 @@
 import React from 'react';
 import Title from '../img/title-distributions.png';
-import Info from '../img/info.png';
 import axios from 'axios';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css'

@@ -1,15 +1,15 @@
 import React from 'react';
 import Title from '../img/title-donuts.png';
 import BannerLogo from '../img/donut-banner.png';
-import MembershipLogo from '../img/donut-membership.png';
 import TippingLogo from '../img/donut-tipping.png';
 import VotingLogo from '../img/donut-voting.png';
 import UniswapLogo from '../img/donut-uniswap.png';
 import HoneyswapLogo from '../img/donut-honeyswap.png';
 import DonutLogo from '../img/donut-overview.png';
-import BurnLogo from '../img/donut-burn.png';
 import Donut01 from '../img/donut01.png';
 import Donut02 from '../img/donut02.png';
+
+import Slideshow from './Slideshow.js'
 
 
 class Donuts extends React.Component {
@@ -18,6 +18,9 @@ class Donuts extends React.Component {
         return (
             <div>
             <div className="content">
+                <div className="content-container">
+                    <Slideshow />
+                </div>
                 <div className="content-container">
                     <div className="content-column">
                         <img src={Donut01} alt="Donuts: the original food token" className="splash-image" />
@@ -125,17 +128,6 @@ class Donuts extends React.Component {
                                 <th className="distribute-body">85K Donuts per distribution</th>
                             </tr>
                             <tr className="spacer-row"><br /><br /><br /></tr>
-                            <tr>
-                                <th rowSpan="2"><img src={BurnLogo} className="logo-image-large" alt="Burns" /></th>
-                                <th colSpan="2" className="highlight-large">Donut Burns</th>
-                            </tr>
-                            <tr>
-                                <th colSpan="2" className="distribute-body-burn">
-                                    Donuts spent on premium memberships are burned, leaving circulation and forever destroyed.
-                                    <br /><br />
-                                    In addition, ownership of the banner follows a <a href="https://medium.com/@simondlr/what-is-harberger-tax-where-does-the-blockchain-fit-in-1329046922c6" target="_blank" rel="noreferrer">Harberger Tax</a> system, in which the owner must pay a daily tax in order to retain ownership.  Donuts spent in this way are also burned, forever destroyed. 
-                                </th>
-                            </tr>
                         </tbody>
                     </table>
             </div>
