@@ -3,15 +3,31 @@ import Title from '../img/title-donuts.png';
 import BannerLogo from '../img/donut-banner.png';
 import TippingLogo from '../img/donut-tipping.png';
 import VotingLogo from '../img/donut-voting.png';
-import UniswapLogo from '../img/donut-uniswap.png';
-import HoneyswapLogo from '../img/donut-honeyswap.png';
 import DonutLogo from '../img/donut-overview.png';
 
 import Slideshow from './Slideshow.js'
+import {exchanges} from '../data.js'
 
+
+class Exchange extends React.Component {
+  render() {
+    return (
+      <th className="logo-column">
+        <a href={this.props.link}  target="_blank" rel="noreferrer">
+          <img src={this.props.icon} alt="Icon" className="logo-image-large" />
+        </a><br />
+        <a href={this.props.link}  target="_blank" rel="noreferrer">
+          <span className="caption-heading">{this.props.label}</span>
+        </a>
+        <br/>
+        <small style={{opacity: 0.5}}>{this.props.network}</small>
+        <br /><br />
+      </th>
+    )
+  }
+}
 
 class Donuts extends React.Component {
-
     render() {
         return (
             <div>
@@ -114,29 +130,13 @@ class Donuts extends React.Component {
             </div>
             </div>
             <div className="content">
-                <p className="left-body">Donuts are available to be traded on the following exchanges:</p>
-                 
+                <p className="center-body">Donuts are available to be traded on the following exchanges</p>
                 <table className="content-table">
                     <tbody>
                         <tr>
-                            <th className="logo-column">
-                                <a href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0xc0f9bd5fa5698b6505f643900ffa515ea5df54a9"  target="_blank" rel="noreferrer">
-                                    <img src={UniswapLogo} alt="Uniswap Icon" className="logo-image-large" />
-                                </a><br />
-                                <a href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0xc0f9bd5fa5698b6505f643900ffa515ea5df54a9"  target="_blank" rel="noreferrer">
-                                    <span className="caption-heading">Uniswap</span>
-                                </a>
-                                <br /><br />
-                            </th>
-                            <th className="logo-column">
-                                <a href="https://honeyswap.org/"  target="_blank" rel="noreferrer">
-                                    <img src={HoneyswapLogo} alt="Honeyswap Icon" className="logo-image-large" />
-                                </a><br />
-                                <a href="https://honeyswap.org/"  target="_blank" rel="noreferrer">
-                                    <span className="caption-heading">Honeyswap</span>
-                                </a>
-                                <br /><br />
-                            </th>
+                            {exchanges.map((e) =>
+                              <Exchange link={e.link} icon={e.icon} label={e.name} network={e.network}/>
+                            )}
                         </tr>
                     </tbody>
                 </table>
