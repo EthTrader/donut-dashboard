@@ -1029,13 +1029,13 @@ a {
   }
 }
 
+.icon-outline-layer {
+  fill: white;
+  transform: scale(0.75);
+  transform-origin: center;
+  opacity: 0.9;
+}
 
-
-
-
-
-
-
-
-
-
+.icon-background-layer {
+  fill: url(#id0);
+}
