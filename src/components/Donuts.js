@@ -13,8 +13,10 @@ class Exchange extends React.Component {
   render() {
     return (
       <th className="logo-column">
-        <a href={this.props.link}  target="_blank" rel="noreferrer">
-          <img src={this.props.icon} alt="Icon" className="logo-image-large" />
+        <a href={this.props.link}  target="_blank" rel="noreferrer" style={{width: 100}}>
+          <div style={{width: 160, height: 160, display: "inline-block"}}>
+            {this.props.icon}
+          </div>
         </a><br />
         <a href={this.props.link}  target="_blank" rel="noreferrer">
           <span className="caption-heading">{this.props.label}</span>
