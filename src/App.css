@@ -1039,3 +1039,10 @@ a {
 .icon-background-layer {
   fill: url(#id0);
 }
+
+.exchange-listing {
+  width: 100%;
+  height: 100%;
+  max-width: 160px;
+  margin: auto;
+}

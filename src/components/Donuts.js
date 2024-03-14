@@ -14,7 +14,7 @@ class Exchange extends React.Component {
     return (
       <th className="logo-column">
         <a href={this.props.link}  target="_blank" rel="noreferrer" style={{width: 100}}>
-          <div style={{width: 160, height: 160, display: "inline-block"}}>
+          <div className="exchange-listing">
             {this.props.icon}
           </div>
         </a><br />
@@ -132,7 +132,7 @@ class Donuts extends React.Component {
             </div>
             </div>
             <div className="content">
-                <p className="center-body">Donuts are available to be traded on the following exchanges</p>
+                <p className="center-body">Donuts are available to be traded on the following exchanges:</p>
                 <table className="content-table">
                     <tbody>
                         <tr>

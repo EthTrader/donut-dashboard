@@ -26,7 +26,7 @@ class Faq extends React.Component {
                 <div className="faq-even">
                     <p className="faq-q">Q: What are donuts used for?</p>
 
-                    <p className="faq-a">A: Donuts can be used for additional vote weight in community polls, tipping other users, and even purchasing the top banner (which can be used for advertising).</p>
+                    <p className="faq-a">A: Donuts can be used for additional vote weight in community polls, tipping other users, and even purchasing the top banner, which can be used for advertising.</p>
                 </div>
                 <div className="faq-odd">
                     <p className="faq-q">Q: How do I register for donuts?</p>
@@ -36,7 +36,7 @@ class Faq extends React.Component {
                 <div className="faq-even">
                     <p className="faq-q">Q: How can I tip other users with donuts?</p>
 
-                    <p className="faq-a">A: When viewing a post on /r/ethtrader, click the donut icon next to a user's name and it will take you to <a href="https://www.donut.finance/tip/" target="_blank" rel="noreferrer">donut.finance</a>.  Connect your Metamask account to this site, enter the amount you would like to tip, and submit.  Note that tipping uses donuts on the Gnosis sidechain, not the main net, in order to get around high gas fees.</p>
+                    <p className="faq-a">A: Respond to a post or comment with the !tip command and the donuts will be debited from the next distribution.  (e.g., "!tip 20" will take 20 donuts from the next distribution and tip it to the user you are responding to)</p>
                 </div>
 
                 <img src={Donut04} alt="Flying donuts" className="splash-image" />
