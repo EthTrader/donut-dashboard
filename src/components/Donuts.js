@@ -119,8 +119,8 @@ class Donuts extends React.Component {
                                 <th className="distribute-body">400K Donuts per distribution</th>
                             </tr>
                             <tr>
-                                <th className="distribute-header">Honeyswap Liquidity Incentives:</th>
-                                <th className="distribute-body">200K Donuts per distribution</th>
+                                <th className="distribute-header">Sushiswap Liquidity Incentives:</th>
+                                <th className="distribute-body">100K Donuts per distribution</th>
                             </tr>
                             <tr>
                                 <th className="distribute-header">Moderation:</th>

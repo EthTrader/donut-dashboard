@@ -4,6 +4,13 @@ import SteakLogo from '../img/donut-steak.png';
 import Loading from '../img/loading.gif';
 import Title from '../img/title-stake.png';
 import Snackbar from 'awesome-snackbar';
+import {
+  Accordion,
+  AccordionItem,
+  AccordionItemHeading,
+  AccordionItemButton,
+  AccordionItemPanel,
+} from 'react-accessible-accordion';
 
 class Stake extends React.Component {
 
@@ -519,14 +526,67 @@ class Stake extends React.Component {
               
               <br /><br />
               <img src={SteakLogo} alt="Steak Logo" className="logo-image-medium" />
+              <Accordion allowZeroExpanded>
+                  <AccordionItem>
+                      <AccordionItemHeading>
+                          <AccordionItemButton>
+                              NOTE: Gnosis staking incentives ending, Arbitrum One incentives starting!
+                          </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <p className="left-body">As part of the community efforts to migrate DONUTs from Gnosis over to Arbitrum One,  DONUT staking incentives will also 
+                        be migrating.</p>
+                        <p className="left-body">Per <a href="https://snapshot.org/#/ethtraderdao.eth/proposal/0xa14e66cf843c9c6160be9ad6272d12efd4a566fc6ba4c252d40ffe6a29a9e651" target="_blank" rel="noreferrer">this governance proposal</a>, staking rewards on Gnosis Chain with Honeyswap will be ending on May 18, 2024.  After that date, all stakers 
+                        will automatically no longer earn staking incentives on Gnosis Chain (though you may continue to use this interface to unstake your liquidity tokens, even after the incentives expiration date).</p>
 
-              <p className="left-body">Additional donuts are granted to those that provide donut trading liquidity via Uniswap v2 on the Ethereum main net 
-                  or Honeyswap on Gnosis chain.  Staking rewards are earned in real-time.</p>
+                        <p className="left-body">However, staking incentives will soon begin on Arbitrum One with Sushiswap!  Simply provide liquidity on the <a href="https://www.sushi.com/pool/42161%3A0x65f7a98d87bc21a3748545047632fef4d3ff9a67" target="_blank" rel="noreferrer">Sushiswap 
+                        Arbitrum One ETH/DONUT pair</a> and you will automatically earn incentives once they are live!  You will not need to stake your liquidity tokens on the Donut Dashboard going forward as your bonus DONUTs will instead be added directly to your Sushiswap rewards. (we will miss you, though!)</p>
 
-              <p className="left-body">To participate in donut liquidity staking, first provide liquidity on the <a target="_blank" rel="noreferrer" 
-                  href="https://app.uniswap.org/#/pool/v2">Uniswap v2 ETH-DONUT</a> pair or <a target="_blank" rel="noreferrer" 
-                  href="https://app.honeyswap.org/#/pool">Honeyswap DONUT-XDAI</a> pair.  Once you provide liquidity, your account will be credited with 
+                        <p className="left-body">Need help migrating your stack to Arbitrum One?  <a href="https://www.reddit.com/r/ethtrader/comments/1bl00ho/arb_1_migration_megathread_the_shuttle_is_live/" target="_blank" rel="noreferrer">This thread</a> has more information on the shuttle service that can migrate 
+                        DONUTs from Gnosis to Arbitrum One, free of cost.</p>                  
+                      </AccordionItemPanel>
+                  </AccordionItem>                 
+              </Accordion>  
+              <br /><br />
+
+              <Accordion allowZeroExpanded>
+                  <AccordionItem>
+                      <AccordionItemHeading>
+                          <AccordionItemButton>
+                              What is staking?
+                          </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <p className="left-body">Additional donuts are granted to those that provide donut trading liquidity via Uniswap v2 on the Ethereum main net 
+                    or Sushiswap on Arbitrum One.  Staking rewards are earned in real-time.  It's a community incentive to make sure there is enough trading liquidity available
+                    for people to buy & sell donuts!</p>
+                      </AccordionItemPanel>
+                  </AccordionItem>
+                  <AccordionItem>
+                      <AccordionItemHeading>
+                          <AccordionItemButton>
+                              How do I stake my donut liquidity on Ethereum main net?
+                          </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                      <p className="left-body">First provide liquidity on the <a target="_blank" rel="noreferrer" 
+                  href="https://app.uniswap.org/#/pool/v2">Uniswap v2 ETH-DONUT</a> pair.  Once you provide liquidity, your account will be credited with 
                   liquidity tokens.  Add those tokens to the staking contract using the interface below and you will immediately start earning donuts!</p>
+                      </AccordionItemPanel>
+                  </AccordionItem>
+                  <AccordionItem>
+                      <AccordionItemHeading>
+                          <AccordionItemButton>
+                              How do I stake my donut liquidity on Arbitrum One?
+                          </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                      <p className="left-body">Provide trading liquidity on the <a href="https://www.sushi.com/pool/42161%3A0x65f7a98d87bc21a3748545047632fef4d3ff9a67" target="_blank" rel="noreferrer">Sushiswap 
+                        Arbitrum One ETH/DONUT pair</a>.  That's it!  No additional steps necessary.  You will automatically earn staking incentives directly on Sushiswap.</p>
+                      </AccordionItemPanel>
+                  </AccordionItem>                  
+              </Accordion>       
+              <br />  
 
                 <div className="network-account">
                 { this.state.signer !== "" ? <span></span> : <span>NOT CONNECTED</span>}

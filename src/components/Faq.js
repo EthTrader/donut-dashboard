@@ -21,7 +21,7 @@ class Faq extends React.Component {
                 <div className="faq-odd">
                     <p className="faq-q">Q: What are donuts?</p>
 
-                    <p className="faq-a">A: Donuts are tokens that represent community contribution & engagement on the <a href="https://reddit.com/r/ethtrader" target="_blank" rel="noreferrer">r/ethtrader subreddit</a>. Donuts follow the ERC-20 standard and are the first ever implementation of Reddit Community Points. An easy way to think of them is a spendable and tradeable Karma, but exclusive to the ethtrader subreddit.  Donuts are on the Ethereum main net and Gnosis chain.</p>
+                    <p className="faq-a">A: Donuts are tokens that represent community contribution & engagement on the <a href="https://reddit.com/r/ethtrader" target="_blank" rel="noreferrer">r/ethtrader subreddit</a>. Donuts follow the ERC-20 standard and are the first ever implementation of Reddit Community Points. An easy way to think of them is a spendable and tradeable Karma, but exclusive to the ethtrader subreddit.  Donuts are on the Ethereum main net, Arbitrum One, and Gnosis Chain.</p>
                 </div>
                 <div className="faq-even">
                     <p className="faq-q">Q: What are donuts used for?</p>
@@ -46,7 +46,7 @@ class Faq extends React.Component {
                 <div className="faq-even">
                     <p className="faq-q">Q: How do I claim my donuts?</p>
 
-                    <p className="faq-a">A: Donuts are automatically deposited into your account on the Gnosis chain every month.  You don't have to manually claim or pay any gas costs to acquire them!</p>
+                    <p className="faq-a">A: Donuts are automatically deposited into your account on Arbitrum One every month.  You don't have to manually claim or pay any gas costs to acquire them!</p>
                 </div>
 
                 <img src={Donut05} alt="Flying donuts" className="splash-image" />
@@ -66,7 +66,7 @@ class Faq extends React.Component {
                 <div className="faq-odd">
                     <p className="faq-q">Q: How many new donuts are minted in each batch?</p>
 
-                    <p className="faq-a">A: 1.7 million donuts are created in each batch.  An additional 600K donuts are awarded to those that provide trading liquidity on Uniswap (main net) and Honeyswap (Gnosis chain).</p>
+                    <p className="faq-a">A: 1.7 million donuts are created in each batch.  An additional 500K donuts are awarded to those that provide trading liquidity on Uniswap (main net) and Sushiswap (Arbitrum One).</p>
                 </div>
                 <div className="faq-even">
                     <p className="faq-q">Q: How many donuts are in circulation?</p>
@@ -82,12 +82,6 @@ class Faq extends React.Component {
                 <img src={Donut06} alt="Flying donuts" className="splash-image" />
 
                 <p className="faq-title">Banner</p>
-
-                <div className="faq-even">
-                    <p className="faq-q">Q: What is the cost to own the banner?</p>
-
-                    <p className="faq-a">A: Currently the cost is 13,000 DONUT per day that the banner is owned.</p>
-                </div>
 
                 <div className="faq-odd">
                     <p className="faq-q">Q: How do I purchase the banner?</p>
@@ -108,7 +102,7 @@ class Faq extends React.Component {
                 <div className="faq-even">
                     <p className="faq-q">Q: Where can I buy and sell donuts?</p>
 
-                    <p className="faq-a">A: Uniswap on Ethereum main net or Honeyswap on Gnosis Chain both have trading liquidity for donuts.</p>
+                    <p className="faq-a">A: Uniswap on Ethereum main net or Sushiswap on Arbitrum One both have trading liquidity for donuts.</p>
                 </div>
                 <div className="faq-odd">
                     <p className="faq-q">Q: How can I add donuts to my token list in Metamask?</p>
@@ -116,6 +110,7 @@ class Faq extends React.Component {
                     <p className="faq-a">A: You can visit the <a href="/#/track">Track Donuts</a> page and click the buttons to add.<br /><br />
                     DONUTs can also be manually added to most cryptocurrency wallets by using the contract address:<br /><br /> 
                     Ethereum main net: <span className="highlight">0xc0f9bd5fa5698b6505f643900ffa515ea5df54a9</span><br /><br />
+                    Arbitrum One: <span className="highlight">0xF42e2B8bc2aF8B110b65be98dB1321B1ab8D44f5</span><br /><br />
                     Gnosis Chain: <span className="highlight">0x524B969793a64a602342d89BC2789D43a016B13A</span></p>
                 </div>
                 <div className="faq-even">
@@ -126,7 +121,7 @@ class Faq extends React.Component {
                 <div className="faq-odd">
                     <p className="faq-q">Q: What is a governance score?</p>
 
-                    <p className="faq-a">A: Governance scores measure an individual's vote weight in polls.  Governance scores are calculated by taking the lesser value of DONUT and CONTRIB tokens held by each user.  DONUTs held on both Ethereum main net and the Gnosis network are counted in this score,
+                    <p className="faq-a">A: Governance scores measure an individual's vote weight in polls.  Governance scores are calculated by taking the lesser value of DONUT and CONTRIB tokens held by each user.  DONUTs held on Ethereum main net, Arbitrum One, and Gnosis Chain are counted in this score,
                 as well as DONUTs held in liquidity pools and staking contracts.</p>
                 </div>
                 <div className="faq-even">

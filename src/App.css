@@ -259,6 +259,28 @@ html {
    text-decoration: none;
  }
 
+ .btn-arbitrum-one {background-image: linear-gradient(to right, #c86b00 0%, #d08841  51%, #8a6846  100%)}
+ .btn-arbitrum-one {
+   margin-top: 10px;
+   padding: 15px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   font-size: 16px;
+   font-weight: bold;
+   color: white;            
+   border-radius: 10px;
+   width: 300px;
+   border: none;
+  }
+ 
+  .btn-arbitrum-one:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  } 
+
  .btn-xdai {background-image: linear-gradient(to right, #21921f 0%, #04d700  51%, #21921f  100%)}
 .btn-xdai {
   margin-top: 10px;
@@ -1045,4 +1067,74 @@ a {
   height: 100%;
   max-width: 160px;
   margin: auto;
+}
+
+/**
+* ----------------------------------------------
+* Demo styles
+* ----------------------------------------------
+**/
+.accordion {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+}
+
+.accordion__item + .accordion__item {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.accordion__button {
+  background-color:rgb(83, 31, 68);
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  border: none;
+}
+
+.accordion__button:hover {
+  background-color: rgb(98, 41, 82);
+}
+
+.accordion__button:before {
+  display: inline-block;
+  content: '';
+  height: 10px;
+  width: 10px;
+  margin-right: 12px;
+  border-bottom: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  transform: rotate(-45deg);
+}
+
+.accordion__button[aria-expanded='true']::before,
+.accordion__button[aria-selected='true']::before {
+  transform: rotate(45deg);
+}
+
+[hidden] {
+  display: none;
+}
+
+.accordion__panel {
+  padding: 20px;
+  animation: fadein 0.35s ease-in;
+  width: 80%;
+  margin: auto;
+}
+
+/* -------------------------------------------------- */
+/* ---------------- Animation part ------------------ */
+/* -------------------------------------------------- */
+
+@keyframes fadein {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
 }
