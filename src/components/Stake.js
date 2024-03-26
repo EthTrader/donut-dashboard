@@ -522,7 +522,7 @@ class Stake extends React.Component {
 
         return (
             <div className="content">              
-              <img src={DonutStake} alt="Donuts served with steak" className="splash-image" />
+              {/* <img src={DonutStake} alt="Donuts served with steak" className="splash-image" /> */}
               <img src={Title} alt="Staking Donuts" className="logo-image" />  
               <br /><br />
               <Accordion allowZeroExpanded>
