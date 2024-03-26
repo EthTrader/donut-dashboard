@@ -66,7 +66,7 @@ class Faq extends React.Component {
                 <div className="faq-odd">
                     <p className="faq-q">Q: How many new donuts are minted in each batch?</p>
 
-                    <p className="faq-a">A: 1.7 million donuts are created in each batch.  An additional 500K donuts are awarded to those that provide trading liquidity on Uniswap (main net) and Sushiswap (Arbitrum One).</p>
+                    <p className="faq-a">A: 1.3 million donuts are created in each batch.  An additional 500K donuts are awarded to those that provide trading liquidity on Uniswap (main net) and Sushiswap (Arbitrum One).</p>
                 </div>
                 <div className="faq-even">
                     <p className="faq-q">Q: How many donuts are in circulation?</p>
