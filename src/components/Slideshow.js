@@ -31,7 +31,7 @@ const mondayImages = [
   prefix + "51" + postfix,
   prefix + "58" + postfix,
   prefix + "65" + postfix,
-  prefix + "72" + postfix,
+  //72 missing because it was terrible
 ];
 
 const tuesdayImages = [

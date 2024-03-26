@@ -2,6 +2,7 @@ import React from 'react';
 import { ethers } from 'ethers';
 import Loading from '../img/loading.gif';
 import Title from '../img/title-track.png';
+import DonutTrack from '../img/donut-track.png';
 
 class Track extends React.Component {
 
@@ -187,6 +188,7 @@ class Track extends React.Component {
 
         return (
             <div className="content">
+                <img src={DonutTrack} alt="Donut detective" className="splash-image" />
                 <img src={Title} alt="Tracking Donuts" className="logo-image" /><br /><br />    
             
                 <p className="left-body">Want to track donuts in your browser wallet?  Connect your wallet to this site and click the below buttons to keep tabs on your donut stack:</p>    

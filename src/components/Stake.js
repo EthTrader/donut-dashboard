@@ -1,6 +1,6 @@
 import React from 'react';
 import { ethers } from 'ethers';
-import SteakLogo from '../img/donut-steak.png';
+import DonutStake from '../img/donut-stake.png';
 import Loading from '../img/loading.gif';
 import Title from '../img/title-stake.png';
 import Snackbar from 'awesome-snackbar';
@@ -521,11 +521,10 @@ class Stake extends React.Component {
                 </div>;
 
         return (
-            <div className="content">
-              <img src={Title} alt="Staking Donuts" className="logo-image" />                
-              
+            <div className="content">              
+              <img src={DonutStake} alt="Donuts served with steak" className="splash-image" />
+              <img src={Title} alt="Staking Donuts" className="logo-image" />  
               <br /><br />
-              <img src={SteakLogo} alt="Steak Logo" className="logo-image-medium" />
               <Accordion allowZeroExpanded>
                   <AccordionItem>
                       <AccordionItemHeading>
