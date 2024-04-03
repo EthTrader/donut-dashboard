@@ -64,7 +64,7 @@ class Track extends React.Component {
           params: {
             type: 'ERC20', 
             options: {
-              address: this.state.xdaiDonutTokenAddress, 
+              address: this.state.arbitrumOneDonutTokenAddress, 
               symbol: "DONUT", 
               decimals: 18, 
               image: "https://donut-dashboard.com/static/media/donut-logo.b1e2b1be.png", 
