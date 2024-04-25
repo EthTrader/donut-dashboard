@@ -416,7 +416,9 @@ class Stake extends React.Component {
 
     render() {
 
-        let render = 
+      let render;
+      if (this.state.network === 1) {  
+        render = 
               <div className="content">          
                   <div className="content-center">
                     { this.state.isApproved ? <p></p> : 
@@ -519,6 +521,77 @@ class Stake extends React.Component {
 
                   <p><i>* All rates listed above are not fixed and will change in real-time as market conditions change.</i></p>
                 </div>;
+        }
+        else if (this.state.network === 100) {
+          render = 
+              <div className="content">          
+                  <div className="content-center">
+                    { this.state.isApproved ? <p></p> : 
+                    <button className="btn-active" id="approveButton" onClick={this.approveUniDonut}>Approve LP Token Spending</button>}
+                  </div>
+
+                  { this.state.isApproved ? 
+                  <table className="harvest-table">
+                  <tbody>
+                    <tr>
+                    <th>{ this.state.isApproved && this.state.stakedByUser > 0 ? <div className="content-center"><button className="btn-withdraw" id="withdrawButton" onClick={this.withdraw}>Withdraw Staked LP Tokens</button></div> : <span></span> }</th>
+                    </tr>
+                  </tbody>
+                  </table>
+                  : <p></p>
+                  }
+
+                  <br /><br />
+
+                  <table className="staking-table">
+                  <thead>
+                    <tr>
+                    <th>
+                      <span className="stake-header">% OF LIQUIDITY STAKED</span><br />
+                      <span className="rate-number">{this.state.stakedFraction}%</span>
+                    </th>
+                    <th>
+                      <span className="stake-header">TOTAL STAKING DEPOSITS</span><br />
+                      <span className="staking-number">{this.state.totalStaked}</span> { this.state.network===1 && <span>(ETH-DONUT)</span> }{ this.state.network===100 && <span>(DONUT-XDAI)</span> } LP<br />
+                      (<span className="staking-number">{this.state.totalDonutStaked}</span> DONUT<br />
+                      <span className="staking-number">{this.state.totalXdaiStaked}</span> { this.state.network===1 && <span>ETH</span> }{ this.state.network===100 && <span>XDAI</span> })
+                    </th>
+                    </tr>
+                  </thead>
+                  </table>
+
+                  <br /><br />
+
+                  { this.state.isApproved && this.state.stakedByUser > 0 ? <div><br /><br /></div> : <p></p> }
+
+                  { this.state.isApproved && this.state.stakedByUser > 0 ?
+                  <table className="rate-table">
+                  <thead>
+                    <tr>
+                    <th className="three-col">
+                      <span className="stake-your-info-header">YOUR STAKING DEPOSITS</span><br />
+                      <span className="staking-number">{this.state.stakedByUser}</span> { this.state.network===1 && <span>(ETH-DONUT)</span> }{ this.state.network===100 && <span>(DONUT-XDAI)</span> } LP<br />
+                      (<span className="staking-number">{this.state.userDonutStaked}</span> DONUT<br />
+                      <span className="staking-number">{this.state.userXdaiStaked}</span> { this.state.network===1 && <span>ETH</span> }{ this.state.network===100 && <span>XDAI</span> })
+                    </th>
+                    <th className="three-col">
+                      <span className="stake-your-info-header">YOUR % OWNERSHIP OF LIQUIDITY POOL</span><br />
+                      <span className="rate-number">{this.state.heldByUserFraction}%</span>
+                    </th>
+                    <th className="three-col">
+                      <span className="stake-your-info-header">YOUR % OWNERSHIP OF STAKED DONUTS</span><br />
+                      <span className="rate-number">{this.state.stakedByUserFraction}%</span>
+                    </th>
+                    </tr>
+                  </thead>
+                  </table> : <p></p>
+                  }
+
+                  <br />
+
+                  <p><i>* All rates listed above are not fixed and will change in real-time as market conditions change.</i></p>
+                </div>;
+        }
 
         return (
             <div className="content">              
@@ -529,20 +602,16 @@ class Stake extends React.Component {
                   <AccordionItem>
                       <AccordionItemHeading>
                           <AccordionItemButton>
-                              NOTE: Gnosis staking incentives ending, Arbitrum One incentives starting!
+                              UPDATE: Gnosis staking incentives have ended, Arbitrum One incentives started! (Apr-25-2024)
                           </AccordionItemButton>
                       </AccordionItemHeading>
                       <AccordionItemPanel>
-                        <p className="left-body">As part of the community efforts to migrate DONUTs from Gnosis over to Arbitrum One,  DONUT staking incentives will also 
-                        be migrating.</p>
-                        <p className="left-body">Per <a href="https://snapshot.org/#/ethtraderdao.eth/proposal/0xa14e66cf843c9c6160be9ad6272d12efd4a566fc6ba4c252d40ffe6a29a9e651" target="_blank" rel="noreferrer">this governance proposal</a>, staking rewards on Gnosis Chain with Honeyswap will be ending on May 18, 2024.  After that date, all stakers 
-                        will automatically no longer earn staking incentives on Gnosis Chain (though you may continue to use this interface to unstake your liquidity tokens, even after the incentives expiration date).</p>
-
-                        <p className="left-body">However, staking incentives will soon begin on Arbitrum One with Sushiswap!  Simply provide liquidity on the <a href="https://www.sushi.com/pool/42161%3A0x65f7a98d87bc21a3748545047632fef4d3ff9a67" target="_blank" rel="noreferrer">Sushiswap 
-                        Arbitrum One ETH/DONUT pair</a> and you will automatically earn incentives once they are live!  You will not need to stake your liquidity tokens on the Donut Dashboard going forward as your bonus DONUTs will instead be added directly to your Sushiswap rewards. (we will miss you, though!)</p>
-
-                        <p className="left-body">Need help migrating your stack to Arbitrum One?  <a href="https://www.reddit.com/r/ethtrader/comments/1bl00ho/arb_1_migration_megathread_the_shuttle_is_live/" target="_blank" rel="noreferrer">This thread</a> has more information on the shuttle service that can migrate 
-                        DONUTs from Gnosis to Arbitrum One, free of cost.</p>                  
+                        <p className="left-body">As part of the community efforts to migrate DONUTs from Gnosis over to Arbitrum One,  DONUT staking incentives have now moved
+                        from Honeyswap on Gnosis to Sushiswap on Arbitrum One, effective April 25, 2024.</p> 
+                        <p className="left-body">DONUT rewards on Gnosis will no longer accrue past this date.  Any unclaimed DONUT rewards you had as of April 25 have been sent directly to your account on Arbitrum One.  
+                        The below interface can still be used to withdraw your staked liquidity.</p>
+                        <p className="left-body">Additional information can be found in <a target="_blank" rel="noreferrer" 
+                        href="https://www.reddit.com/r/ethtrader/comments/1c7y3f3/update_on_the_end_of_gnosis_staking_rewards/">this thread</a>.  Please reach out on Reddit with any questions!</p>
                       </AccordionItemPanel>
                   </AccordionItem>                 
               </Accordion>  
