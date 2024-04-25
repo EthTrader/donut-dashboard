@@ -15,6 +15,7 @@ function TopNav() {
                     {location.pathname === "/distribution" ? <Link className="active" to="distribution">Distributions</Link> : <Link to="distribution">Distributions</Link>}
                     {location.pathname === "/delicious-donuts" ? <Link className="active" to="delicious-donuts">Delicious Donuts</Link> : <Link to="delicious-donuts">Delicious Donuts</Link>}
                     {location.pathname === "/track" ? <Link className="active" to="track">Track</Link> : <Link to="track">Track</Link>}
+                    {location.pathname === "/liquidity" ? <Link className="active" to="liquidity">Liquidity Leaderboard</Link> : <Link to="liquidity">Liquidity Leaderboard</Link>}
                     {location.pathname === "/stake" ? <Link className="active" to="stake">Stake</Link> : <Link to="stake">Stake</Link>}
                 </div>
             </div>

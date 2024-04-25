@@ -13,6 +13,7 @@ import Claim from './components/Claim'
 import Footer from './components/Footer'
 import Stake from './components/Stake'
 import Track from './components/Track'
+import Liquidity from './components/Liquidity'
 import DeliciousDonuts from './components/DeliciousDonuts'
 import './App.css';
 
@@ -42,6 +43,7 @@ function App() {
               <Route path="/distribution"><Distribution></Distribution></Route>
               <Route path="/delicious-donuts"><DeliciousDonuts></DeliciousDonuts></Route>
               <Route path="/track"><Track></Track></Route>
+              <Route path="/liquidity"><Liquidity></Liquidity></Route>
               <Route path="/stake"><Stake></Stake></Route>
             </Switch>
           </div>
