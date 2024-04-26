@@ -22,6 +22,8 @@ class Liquidity extends React.Component {
         
         // Add an index field onto each object to keep track of rank order
         let indexAddedResult = result.data.map((obj, index) => ({ ...obj, index: index + 1 }));
+        // Add an 
+        indexAddedResult = indexAddedResult.map((obj) => ({ ...obj, address: "https://arbiscan.io/address/" + obj.owner }));
 
         liquidity = indexAddedResult;
 
@@ -81,7 +83,9 @@ class Liquidity extends React.Component {
                                     {parseInt(row.index).toLocaleString()}
                                 </th>
                                 <th className="contentColumn pinkText">
-                                    {row.user ? row.user : <div className="darkPinkText">Anonymous</div>}
+                                    <a href={row.address} target="_blank" rel="noreferrer" className="pinkText">
+                                        {row.user ? row.user : <div className="darkPinkText">Anonymous</div>}
+                                    </a>
                                 </th>
                                 <th className="contentColumn">
                                     {(Math.round((row.percent_of_pool) * 100) / 100).toFixed(2) + "%"}
