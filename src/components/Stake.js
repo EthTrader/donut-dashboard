@@ -1,6 +1,5 @@
 import React from 'react';
 import { ethers } from 'ethers';
-import DonutStake from '../img/donut-stake.png';
 import Loading from '../img/loading.gif';
 import Title from '../img/title-stake.png';
 import Snackbar from 'awesome-snackbar';

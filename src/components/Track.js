@@ -2,7 +2,6 @@ import React from 'react';
 import { ethers } from 'ethers';
 import Loading from '../img/loading.gif';
 import Title from '../img/title-track.png';
-import DonutTrack from '../img/donut-track.png';
 
 class Track extends React.Component {
 

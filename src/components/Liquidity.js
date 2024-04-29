@@ -22,7 +22,7 @@ class Liquidity extends React.Component {
         
         // Add an index field onto each object to keep track of rank order
         let indexAddedResult = result.data.map((obj, index) => ({ ...obj, index: index + 1 }));
-        // Add an 
+        // Add an address field onto each object for the link
         indexAddedResult = indexAddedResult.map((obj) => ({ ...obj, address: "https://arbiscan.io/address/" + obj.owner }));
 
         liquidity = indexAddedResult;
@@ -54,8 +54,10 @@ class Liquidity extends React.Component {
             <div className="content">
                 <img src={Title} alt="Liquidity Leaderboard" className="logo-image" />
                 <br />
-                <p className="left-body">The liquidity leaderboard shows the top liquidity providers in the DONUT-ETH Sushiswap pool on Arbitrum One.  NOTE: Liquidity providers 
-                on Uniswap (Ethereum Main Net) are not currently shown.</p>
+                <p className="left-body">The liquidity leaderboard shows the top liquidity providers in the DONUT-ETH Sushiswap pool on Arbitrum One.  Liquidity providers 
+                on Uniswap (Ethereum Main Net) are not currently shown.  Sushiswap offers concentrated liquidity, allowing users to specify a price range where their liquidity
+                should be used.  Because of this, users with smaller asset deposits may show higher in the rankings if they have a tight liquidity range.  They will also fall
+                off the list if the price of DONUT goes outside their liquidity range.</p>
                 <br />
                                 
                 <input type="text" className="filter-box" value={this.state.filter} onChange={this.handleFilterChange} placeholder="Username filter"/>                                   
@@ -71,6 +73,12 @@ class Liquidity extends React.Component {
                             </th>
                             <th className="donut-header">
                                 Percent of Pool
+                            </th>
+                            <th className="donut-header">
+                                Donuts in Pool
+                            </th>
+                            <th className="donut-header">
+                                Ether in Pool
                             </th>
                         </tr>
                     </thead>
@@ -88,7 +96,13 @@ class Liquidity extends React.Component {
                                     </a>
                                 </th>
                                 <th className="contentColumn">
-                                    {(Math.round((row.percent_of_pool) * 100) / 100).toFixed(2) + "%"}
+                                    {row.percent_of_pool.toFixed(2) + "%"}
+                                </th>
+                                <th className="contentColumn">
+                                    {row.donut_in_lp.toFixed(0)}
+                                </th>
+                                <th className="contentColumn">
+                                    {row.eth_in_lp.toFixed(3)}
                                 </th>
                             </tr>)
                         })}

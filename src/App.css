@@ -1007,6 +1007,14 @@ a {
   color: #fe6ddb
  }
 
+ .orangeText {
+  color: #f7a597
+ }
+
+ .lightPinkText {
+  color: rgb(255,182,222);
+ }
+
  .darkPinkText {
   color: #893876
  } 
@@ -1165,4 +1173,81 @@ a {
   100% {
       opacity: 1;
   }
+}
+
+
+
+/* Governance Proposals */
+
+.card-container {
+  display: flex; /* Use flexbox */
+  justify-content: space-between; /* Distribute space between items */
+}
+
+.card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  min-height: 210px; 
+}
+
+.card .title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limit to two lines */
+  -webkit-box-orient: vertical;
+  max-height: 5em; /* Adjust this based on your font size and line height */
+  min-height: 70px;
+}
+
+.card .status {
+  font-weight: bold;
+  float: left;
+  text-transform: capitalize;
+}
+
+.card .creation-date {
+  font-weight: bold;
+  float: right;
+}
+
+.card .description {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: 8px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Limit to two lines */
+  -webkit-box-orient: vertical;
+  max-height: 6em; 
+}
+
+.card .bar-graph {
+  display: flex;
+  align-items: center;
+}
+
+.card .bar {
+  height: 10px;
+  margin-right: 5px;
+}
+
+.card .thumbs-up {
+  width: 70%;
+  background-color: #4CAF50; /* Green color for thumbs up */
+}
+
+.card .thumbs-down {
+  width: 30%;
+  background-color: #F44336; /* Red color for thumbs down */
 }

@@ -6,6 +6,7 @@ import VotingLogo from '../img/donut-voting.png';
 import DonutLogo from '../img/donut-overview.png';
 
 import Slideshow from './Slideshow.js'
+import Proposals from './Proposals.js'
 import {exchanges} from '../data.js'
 
 
@@ -78,8 +79,9 @@ class Donuts extends React.Component {
                 <br />
                 
                 </div>
-            </div>                
+            </div>    
 
+            <Proposals></Proposals>            
 
             <div className="container-middle">
             <div className="content-middle">
@@ -137,7 +139,7 @@ class Donuts extends React.Component {
                     <tbody>
                         <tr>
                             {exchanges.map((e) =>
-                              <Exchange link={e.link} icon={e.icon} label={e.name} network={e.network}/>
+                              <Exchange key={e.link} link={e.link} icon={e.icon} label={e.name} network={e.network}/>
                             )}
                         </tr>
                     </tbody>
