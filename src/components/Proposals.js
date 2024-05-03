@@ -7,7 +7,8 @@ class Proposals extends React.Component {
         super(props);
 
         this.state = {
-            proposals: []
+            proposals: [],
+            colors: ['#2f7031', '#36618f', '#660b0b', '#9f5e0f', '#640e4f']
         }
     }
 
@@ -31,7 +32,22 @@ class Proposals extends React.Component {
 
             // Remove [Governance Poll] from titles  
             proposal.title = proposal.title.replace('[Governance Poll]','');
+
+            proposal.choicesPercents = [];
+            let iteration = 0;
+            // Determine percent of each vote option
+            proposal.scores.forEach(function (score) {
+                let percent = (score / proposal.scores_total) * 100;
+                let object = { 
+                    choice: proposal.choices[iteration],
+                    percent: percent
+                 }
+                proposal.choicesPercents.push(object);
+                iteration++;
+            });        
           });
+
+        console.log(proposals);
 
         this.setState({ 
             proposals: proposals
@@ -52,7 +68,18 @@ class Proposals extends React.Component {
                                         <span className="status orangeText">{ proposal.state }</span> 
                                         <span className="creation-date orangeText">{ proposal.date }</span> <br />
                                         <div className="description lightPinkText">{ proposal.body }</div>
-
+                                        <div className="bar-graph">
+                                            {proposal.choicesPercents.map((choice, index) => {
+                                                return (
+                                                    <div key={choice.choice}>
+                                                        <div className="bar-graph-label">{choice.choice}</div>
+                                                        <div className="bar" style={{ width: `${choice.percent}%`, backgroundColor: this.state.colors[index % this.state.colors.length] }}>
+                                                            {choice.percent.toFixed(2) + "%"}
+                                                        </div>
+                                                    </div>
+                                                )})}
+                                        </div>
+                                        <div className="disclaimer">Click for more proposal information</div>
                                     </div>
                                 </a>
                             )

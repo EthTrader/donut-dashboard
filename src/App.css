@@ -1180,17 +1180,19 @@ a {
 /* Governance Proposals */
 
 .card-container {
-  display: flex; /* Use flexbox */
-  justify-content: space-between; /* Distribute space between items */
+  display: flex; 
+  justify-content: space-evenly; 
+  flex-wrap: wrap; 
+  column-gap: 10px;
 }
 
 .card {
   width: 300px;
   border: 1px solid #ccc;
-  border-radius: 8px;
   padding: 20px;
+  border-radius: 8px;
   margin: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgb(54, 27, 46);
   min-height: 210px; 
 }
 
@@ -1206,6 +1208,7 @@ a {
   -webkit-box-orient: vertical;
   max-height: 5em; /* Adjust this based on your font size and line height */
   min-height: 70px;
+  
 }
 
 .card .status {
@@ -1230,24 +1233,28 @@ a {
   -webkit-line-clamp: 4; /* Limit to two lines */
   -webkit-box-orient: vertical;
   max-height: 6em; 
+  margin-bottom: 10px;
 }
 
 .card .bar-graph {
-  display: flex;
   align-items: center;
 }
 
+.card .bar-graph-label {
+  color: white;
+  text-align: left;
+  font-weight: bold;
+}
+
 .card .bar {
-  height: 10px;
+  height: 20px;
+  color: white;
   margin-right: 5px;
+  margin-bottom: 7px;
 }
 
-.card .thumbs-up {
-  width: 70%;
-  background-color: #4CAF50; /* Green color for thumbs up */
-}
-
-.card .thumbs-down {
-  width: 30%;
-  background-color: #F44336; /* Red color for thumbs down */
+.card .disclaimer {
+  font-style:italic;
+  color: gray;
+  font-size: 10px;
 }

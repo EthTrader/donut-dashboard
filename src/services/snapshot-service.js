@@ -3,7 +3,7 @@ import axios from 'axios';
 async function getProposals() {
 
     try {
-        const endpoint = `https://hub.snapshot.org/graphql?query=query Proposals { proposals( first: 3, skip: 0, where: { space_in: ["ethtraderdao.eth"] }, orderBy: "created", orderDirection: desc ) { id title body choices start end state author scores link } }`;
+        const endpoint = `https://hub.snapshot.org/graphql?query=query Proposals { proposals( first: 3, skip: 0, where: { space_in: ["ethtraderdao.eth"] }, orderBy: "created", orderDirection: desc ) { id title body choices start end state author scores scores_total link } }`;
         let response = await axios.get(endpoint);
 
         let proposals = response.data.data.proposals;
