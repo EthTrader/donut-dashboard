@@ -3,10 +3,10 @@ import Title from '../img/title-donuts.png';
 import BannerLogo from '../img/donut-banner.png';
 import TippingLogo from '../img/donut-tipping.png';
 import VotingLogo from '../img/donut-voting.png';
-import DonutLogo from '../img/donut-overview.png';
 
 import Slideshow from './Slideshow.js'
 import Proposals from './Proposals.js'
+import PostOfTheWeek from './PostOfTheWeek.js'
 import {exchanges} from '../data.js'
 
 
@@ -81,58 +81,12 @@ class Donuts extends React.Component {
                 </div>
             </div>    
 
-            <Proposals></Proposals>            
+            <PostOfTheWeek></PostOfTheWeek>
 
             <div className="container-middle">
-            <div className="content-middle">
-            <p className="left-body-middle">New Donuts are baked and distributed every 4 weeks to registered users, based off of 
-                their contribution to the /r/ethtrader subreddit. There is a correlation between karma earned and how many Donuts 
-                a user will receive, though it is not 1:1.  Donuts are also distributed for other purposes, such as liquidity incentives,
-                further development of Donuts, and subreddit moderation.</p>   
+                <Proposals></Proposals>           
+            </div> 
 
-                    <table className="content-middle-table">
-                        <tbody>
-                            <tr>
-                                <th rowSpan="9"><img src={DonutLogo} className="logo-image-large" alt="Distribution" /></th>
-                                <th colSpan="2" className="highlight-large">Donut Distributions</th>
-                            </tr>
-                            <tr>
-                                <th className="distribute-header">Posts:</th>
-                                <th className="distribute-body">510K Donuts per distribution</th>
-                            </tr>
-                            <tr>
-                                <th className="distribute-header">Comments:</th>
-                                <th className="distribute-body">340K Donuts per distribution</th>
-                            </tr>
-                            <tr>
-                                <th className="distribute-header">Community Treasury Funds:</th>
-                                <th className="distribute-body">255K Donuts per distribution</th>
-                            </tr>                            
-                            <tr>
-                                <th className="distribute-header">Bonus to Posts, by Receiving Tips:</th>
-                                <th className="distribute-body">77K Donuts per distribution</th>
-                            </tr>
-                            <tr>
-                                <th className="distribute-header">Donut Tipping & Content Curation:</th>
-                                <th className="distribute-body">33K Donuts per distribution</th>
-                            </tr>                            
-                            <tr>
-                                <th className="distribute-header">Uniswap Liquidity Incentives:</th>
-                                <th className="distribute-body">400K Donuts per distribution</th>
-                            </tr>
-                            <tr>
-                                <th className="distribute-header">Sushiswap Liquidity Incentives:</th>
-                                <th className="distribute-body">100K Donuts per distribution</th>
-                            </tr>
-                            <tr>
-                                <th className="distribute-header">Moderation:</th>
-                                <th className="distribute-body">85K Donuts per distribution</th>
-                            </tr>
-                            <tr className="spacer-row"><br /><br /><br /></tr>
-                        </tbody>
-                    </table>
-            </div>
-            </div>
             <div className="content">
                 <p className="center-body">Donuts are available to be traded on the following exchanges:</p>
                 <table className="content-table">

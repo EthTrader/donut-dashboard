@@ -56,7 +56,7 @@ class Faq extends React.Component {
                 <div className="faq-odd">
                     <p className="faq-q">Q: How does karma earned relate to donuts earned?</p>
 
-                    <p className="faq-a">A: Upvotes help users earn more donuts, but it is not a 1:1 relationship.  The donuts earned by an individual at the end of the month depends on the total karma earned by all users.  Additionally, posts flaired Comedy and Media earn 10% as many donuts as other posts, per community vote.  Recieving tips and giving tips also earn users bonus Donuts.</p>  
+                    <p className="faq-a">A: Upvotes help users earn more donuts, but it is not a 1:1 relationship.  The donuts earned by an individual at the end of the month depends on the total karma earned by all users.  Additionally, posts flaired Comedy and Media earn 10% as many donuts as other posts, per community vote.</p>  
                 </div>
                 <div className="faq-even">
                     <p className="faq-q">Q: How often are new donuts minted and distributed?</p>
@@ -66,7 +66,7 @@ class Faq extends React.Component {
                 <div className="faq-odd">
                     <p className="faq-q">Q: How many new donuts are minted in each batch?</p>
 
-                    <p className="faq-a">A: 1.3 million donuts are created in each batch.  An additional 500K donuts are awarded to those that provide trading liquidity on Uniswap (main net) and Sushiswap (Arbitrum One).</p>
+                    <p className="faq-a">A: 1.25 million donuts are created in each batch.  An additional 550K donuts are awarded to those that provide trading liquidity on Uniswap (main net) and Sushiswap (Arbitrum One).</p>
                 </div>
                 <div className="faq-even">
                     <p className="faq-q">Q: How many donuts are in circulation?</p>

@@ -47,8 +47,6 @@ class Proposals extends React.Component {
             });        
           });
 
-        console.log(proposals);
-
         this.setState({ 
             proposals: proposals
         });
