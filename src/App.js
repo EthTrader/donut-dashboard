@@ -15,6 +15,7 @@ import Stake from './components/Stake'
 import Track from './components/Track'
 import Liquidity from './components/Liquidity'
 import DeliciousDonuts from './components/DeliciousDonuts'
+import Membership from './components/Membership'
 import './App.css';
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
               <Route path="/track"><Track></Track></Route>
               <Route path="/liquidity"><Liquidity></Liquidity></Route>
               <Route path="/stake"><Stake></Stake></Route>
+              <Route path="/membership"><Membership></Membership></Route>
             </Switch>
           </div>
           <div className="links-container">

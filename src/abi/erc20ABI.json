@@ -1,0 +1,10 @@
+[
+    "function totalSupply() public view returns (uint256)",
+    "function balanceOf(address owner) view returns (uint256)",
+    "function decimals() view returns (uint8)",
+    "function symbol() view returns (string)",
+    "function allowance(address owner, address spender) view returns (uint)",
+    "function transfer(address to, uint amount) returns (boolean)",
+    "function approve(address _spender, uint256 _amount) returns (bool success)",
+    "event Transfer(address indexed from, address indexed to, uint amount)"
+]

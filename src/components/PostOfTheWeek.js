@@ -33,7 +33,6 @@ class PostOfTheWeek extends React.Component {
             let profile = await axios.get(profileURL);
     
             let avatar = profile.data.data.snoovatar_img;
-            console.log(avatar);
             if (!avatar) {
                 avatar = profile.data.data.subreddit.icon_img;
                 let avatarArray = avatar.split("?");
