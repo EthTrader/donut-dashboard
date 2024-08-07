@@ -2,8 +2,18 @@ import React from 'react';
 import { ethers } from 'ethers';
 import Loading from '../img/loading.gif';
 import Title from '../img/title-track.png';
+import MembershipNFTSeason01 from '../img/membership-nft-season-01.png';
 import membershipABI from '../abi/membershipABI.json'
 import erc20ABI from '../abi/erc20ABI.json'
+import {
+    Accordion,
+    AccordionItem,
+    AccordionItemHeading,
+    AccordionItemButton,
+    AccordionItemPanel,
+  } from 'react-accessible-accordion';
+import Snackbar from 'awesome-snackbar';  
+import Snowfall from 'react-snowfall';
 
 class Membership extends React.Component {
 
@@ -40,6 +50,7 @@ class Membership extends React.Component {
       this.getMembershipData = this.getMembershipData.bind(this);
       this.buttonApproveSpending = this.buttonApproveSpending.bind(this);
       this.buttonPurchaseMembership = this.buttonPurchaseMembership.bind(this);
+      this.membershipPurchasedCelebration = this.membershipPurchasedCelebration.bind(this);
     }
     
     async run() {
@@ -149,25 +160,20 @@ class Membership extends React.Component {
         let membershipContract = new ethers.Contract(membershipContractAddress, membershipABI, this.state.signer);
 
         let isSeasonActive = await membershipContract.isSeasonActive();
-        console.log("isSeasonActive:", isSeasonActive);
 
         let membershipPrice = await membershipContract.getMintPriceInDonut();
-        console.log("membershipPrice:", membershipPrice.toNumber());
 
         let membershipsOwned = await membershipContract.balanceOf(this.state.currentAddress);
-        console.log("membershipsOwned:", membershipsOwned.toNumber());
 
         let donutSpendingIsApproved = false;
         let allowance = await donutTokenContract.allowance(this.state.currentAddress, membershipContractAddress);
-        console.log("allowance:", allowance);
+
         if(allowance.gte("0x7fffffffffffffffffffffffffffffff")) {
             donutSpendingIsApproved = true;
         }
-        console.log("donutSpendingIsApproved:", donutSpendingIsApproved);
 
         let donutBalance = await donutTokenContract.balanceOf(this.state.currentAddress);
         donutBalance = donutBalance / 1_000_000_000_000_000_000;
-        console.log("donutBalance:", donutBalance);
 
         this.setState({
             donutTokenContract: donutTokenContract,
@@ -179,7 +185,7 @@ class Membership extends React.Component {
             isSeasonActive: isSeasonActive,
             membershipPrice: membershipPrice.toNumber(),
             membershipsOwned: membershipsOwned.toNumber(),
-            loading: false
+            isLoading: false
           });
     }
 
@@ -196,7 +202,11 @@ class Membership extends React.Component {
 
     async buttonApproveSpending() {
         let transactionResponse = await this.state.donutTokenContract.approve(this.state.membershipContractAddress, "0xffffffffffffffffffffffffffffffffffffffff");
-        transactionResponse.wait(1).then(this.refresh);
+        this.setState({
+            isLoading: true
+        });
+        await transactionResponse.wait();
+        this.getMembershipData();
     }
 
     async buttonPurchaseMembership() {
@@ -215,16 +225,46 @@ class Membership extends React.Component {
             return;
         }
 
-        console.log(this.state.membershipContract);
         let transactionResponse = await this.state.membershipContract.safeMint(this.state.currentAddress);
         this.setState({
             isLoading: true
         });
-        transactionResponse.wait(1).then(this.refresh);
-        this.setState({
-            isLoading: false
-        });
+        try {
+            await transactionResponse.wait();
+            this.getMembershipData();
+            this.membershipPurchasedCelebration();
+        }
+        catch (e) {
+            console.log(e);
+        }
     }
+
+    async membershipPurchasedCelebration(amount) {
+        new Snackbar(("<b>Membership successfully purchased!</b><br /> You have attained the rank of Donuteer."), {
+          iconSrc: 'donut-logo.png',
+          actionText: 'Close',
+          timeout: 9000,
+          position: 'top-right',
+          style: {
+            container: [
+                ['border', 'solid'],
+                ['border-image-slice', '1'],
+                ['border-image-source', 'linear-gradient(to right, #68c47c 0%, #6191c6  51%, #68c47c  100%)'],
+                ['border-width', '3px'],
+                ['border-radius', '5px']
+            ],
+            message: [
+                ['color', 'white'],
+            ],
+            bold: [
+                ['font-weight', 'bold'],
+            ],
+            actionButton: [
+                ['color', '#fe6dda'],
+            ],
+          }
+        });  
+      }    
 
     render() {
 
@@ -235,30 +275,59 @@ class Membership extends React.Component {
         if (this.state.network === 42161 || this.state.network === 421614) {
             render = 
                 <div>
-                <div className="content-center">Your DONUT Balance: {this.state.donutBalance}</div>
-                <div className="content-center">Is DONUT spending approved: {this.state.donutSpendingIsApproved.toString()}</div>
-                <div className="content-center">Is Season Active: {this.state.isSeasonActive.toString()}</div>
-                <div className="content-center">Membership Price: {this.state.membershipPrice}</div>
-                <div className="content-center">Memberships Owned: {this.state.membershipsOwned}</div>
-                <div className="content-center">
-                    { this.state.donutSpendingIsApproved ? 
-                    <button className="btn-active" id="purchaseButton" onClick={this.buttonPurchaseMembership}>Purchase Membership</button> :
-                    <button className="btn-active" id="approveButton" onClick={this.buttonApproveSpending}>Approve Donut Spending</button>
+                    <img src={MembershipNFTSeason01} alt="Membership NFT, Season 1" className="membership-nft-image" />
+                    {
+                        this.state.membershipsOwned > 1 ?
+                        <div className="content-center"><span className="membership-label">Membership Status:</span> <span className="text-collected">ACTIVE</span></div> :
+                        <div className="content-center"><span className="membership-label">Membership Status:</span> <span className="text-not-collected">INACTIVE</span></div>
                     }
+                    <br />
+
+                    <div className="content-center"><span className="membership-label">Membership Price:</span> {this.state.membershipPrice} DONUT</div>
+                    <div className="content-center"><span className="membership-label">Your Balance:</span> {this.state.donutBalance} DONUT</div>
+                    <br />
+                    {
+                        this.state.membershipsOwned === 1 ?
+                        <div className="content-center"><span className="membership-label">YOU CURRENTLY OWN {this.state.membershipsOwned} MEMBERSHIP.</span></div> :
+                        <div></div>
+                    }                    
+                    {
+                        this.state.membershipsOwned > 1 ?
+                        <div className="content-center"><span className="membership-label">YOU CURRENTLY OWN {this.state.membershipsOwned} MEMBERSHIPS.</span></div> :
+                        <div></div>
+                    }
+                    <div className="content-center">
+                        { this.state.donutSpendingIsApproved ? 
+                        <button className="btn-active" id="purchaseButton" onClick={this.buttonPurchaseMembership}>Purchase Membership</button> :
+                        <button className="btn-active" id="approveButton" onClick={this.buttonApproveSpending}>Approve Donut Spending</button>
+                        }
+                    </div>
+                    { this.state.membershipsOwned > 0 ? <Snowfall snowflakeCount={300} color="#fe6dda" style={{ height: '200vh' }} /> : <span />}
+                    { this.state.validationError ? <span>{this.state.validationError}</span> : <span></span>}
                 </div>
-                { this.state.validationError ? <span>{this.state.validationError}</span> : <span></span>}
-                </div>
-        }
-        else {
-            render = <p>Memberships are only available for purchase on Arbitrum One.</p>
         }
 
         return (
             <div className="content">
-                {/* <img src={DonutTrack} alt="Donut detective" className="splash-image" /> */}
                 <img src={Title} alt="Membership" className="logo-image" /><br /><br />    
             
-                <p className="left-body">Memberships are only available for purchase on Arbitrum One.</p>    
+                <Accordion allowZeroExpanded>
+                  <AccordionItem>
+                      <AccordionItemHeading>
+                          <AccordionItemButton>
+                              What are /r/ethtrader memberships?
+                          </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <p className="left-body">r/EthTrader Special Memberships have returned! Special Memberships are now fully independent of Reddit, managed directly by the r/EthTrader mod team.</p>
+                        <p className="left-body">These memberships offer a range of exclusive perks to subscribers, and are represented by mintable NFTs.</p>
+                        <p className="left-body">Special Memberships are available as seasonal subscriptions, each represented by a unique, tradable "card". Unlike traditional monthly subscriptions, seasons last for 2 months, each with its own distinct NFT that you need to mint (purchase).</p>
+                        <p className="left-body">As a subscriber, you'll have access to several privileges within the subreddit, such as customizable user flairs and the ability to post GIFs. By subscribing, you actively contribute to DONUT tokenomics. Donuts used for membership subscriptions are burned, reducing the circulating supply and supporting the overall value of DONUT.</p>
+                        <p className="left-body">Memberships are only available for purchase on Arbitrum One.</p>
+                      </AccordionItemPanel>
+                  </AccordionItem>                 
+              </Accordion>  
+              <br></br>
                 
                 <div className="network-account">
                 { this.state.signer !== "" ? <span></span> : <span>NOT CONNECTED</span>}
