@@ -1,3 +1,9 @@
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
 html { 
   background-color: #271422;
   -webkit-background-size: cover;
@@ -1019,7 +1025,13 @@ a {
   color: #893876
  } 
 
+ .grayText {
+  color: #7d7d7d
+ } 
 
+ .boldText {
+  font-weight: bold;
+ } 
 
 
 /* Slideshow */
@@ -1485,4 +1497,64 @@ a {
 .membership-label {
   color: #fe6ddb;
   font-weight: bolder;
+}
+
+.purchase-box {
+  background:rgb(83, 31, 68);
+  color: white;
+  border-radius: 14px;
+  padding-left: 20px; 
+  padding-top: 5px; 
+  padding-bottom: 5px; 
+  height: 24px;
+  font-size: 18px; 
+  width: 450px;
+  border: none;
+}
+
+.errorText {
+  color: rgb(203, 28, 19);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+:root {
+  --clr-1: rgb(51, 26, 44);
+  --clr-2: rgb(83, 29, 68);
+  --clr-3: rgb(155, 27, 118);
+  --clr-4: rgb(187, 3, 141);
+  --clr-5: #f7a597;
+}
+
+.membership-card {
+  background: rgb(51, 26, 44);
+  border-radius: 1.5rem;
+  width: 50%;
+  margin: 50px auto;
+  padding: 30px; 
+  position: relative;
+  z-index: 1;
+}
+
+.membership-card::after {
+  content: "";
+  position: absolute;
+  inset: -.5rem;
+  z-index: -1;
+  background: linear-gradient(
+    var(--gradient-angle), 
+    var(--clr-1),
+    var(--clr-3),
+    var(--clr-5));
+  border-radius: inherit;
+  animation: rotation 12s linear infinite;
+}
+
+.membership-card::after {
+  filter: blur(3.5rem);
+}
+
+@keyframes rotation {
+  0% { --gradient-angle: 0deg; }
+  100% { --gradient-angle: 360deg; }
 }

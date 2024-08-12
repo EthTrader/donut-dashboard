@@ -37,6 +37,7 @@ class Membership extends React.Component {
           donutSpendingIsApproved: false,
           membershipsOwned: 0,
           validationError: "",
+          addressToPurchaseFor: "",
 
           isLoading: true
       }
@@ -51,6 +52,7 @@ class Membership extends React.Component {
       this.buttonApproveSpending = this.buttonApproveSpending.bind(this);
       this.buttonPurchaseMembership = this.buttonPurchaseMembership.bind(this);
       this.membershipPurchasedCelebration = this.membershipPurchasedCelebration.bind(this);
+      this.handleInputChange = this.handleInputChange.bind(this);
     }
     
     async run() {
@@ -175,6 +177,11 @@ class Membership extends React.Component {
         let donutBalance = await donutTokenContract.balanceOf(this.state.currentAddress);
         donutBalance = donutBalance / 1_000_000_000_000_000_000;
 
+        let addressToPurchaseFor;
+        if (!this.state.addressToPurchaseFor) {
+            addressToPurchaseFor = this.state.currentAddress;
+        }
+
         this.setState({
             donutTokenContract: donutTokenContract,
             membershipContract: membershipContract,
@@ -185,6 +192,7 @@ class Membership extends React.Component {
             isSeasonActive: isSeasonActive,
             membershipPrice: membershipPrice.toNumber(),
             membershipsOwned: membershipsOwned.toNumber(),
+            addressToPurchaseFor: addressToPurchaseFor,
             isLoading: false
           });
     }
@@ -217,6 +225,10 @@ class Membership extends React.Component {
         if (!this.state.isSeasonActive) error = "Membership minting is not currently active.";
         // Spending approval must be in place
         if (!this.state.donutSpendingIsApproved) error = "DONUT spending needs to be approved in wallet.";
+        // Must have valid Ethereum Address (42 chars)
+        if (this.state.addressToPurchaseFor.length !== 42) error = "Invalid Ethereum address entered.";
+        // Must have valid Ethereum Address (Stars with 0x)
+        if (this.state.addressToPurchaseFor.substring(0,2) !== "0x") error = "Invalid Ethereum address entered.";        
 
         if (error) {
             this.setState({
@@ -225,7 +237,7 @@ class Membership extends React.Component {
             return;
         }
 
-        let transactionResponse = await this.state.membershipContract.safeMint(this.state.currentAddress);
+        let transactionResponse = await this.state.membershipContract.safeMint(this.state.addressToPurchaseFor);
         this.setState({
             isLoading: true
         });
@@ -266,6 +278,14 @@ class Membership extends React.Component {
         });  
       }    
 
+    async handleInputChange(event) {    
+        let addressToPurchaseFor = event.target.value;
+        
+        this.setState({
+            addressToPurchaseFor: addressToPurchaseFor
+        });
+    }
+
     render() {
 
         <button className="btn-active" id="stakeButton" onClick={this.stake}>Stake LP Tokens</button>
@@ -274,7 +294,9 @@ class Membership extends React.Component {
 
         if (this.state.network === 42161 || this.state.network === 421614) {
             render = 
-                <div>
+            <div>
+                { this.state.membershipsOwned > 0 ? <Snowfall snowflakeCount={300} color="#fe6dda" style={{ height: '200vh' }} /> : <span />}
+                <div className="membership-card">
                     <img src={MembershipNFTSeason01} alt="Membership NFT, Season 1" className="membership-nft-image" />
                     {
                         this.state.membershipsOwned > 1 ?
@@ -284,7 +306,7 @@ class Membership extends React.Component {
                     <br />
 
                     <div className="content-center"><span className="membership-label">Membership Price:</span> {this.state.membershipPrice} DONUT</div>
-                    <div className="content-center"><span className="membership-label">Your Balance:</span> {this.state.donutBalance} DONUT</div>
+                    <div className="content-center"><span className="darkPinkText boldText">Your Balance:</span><span className="grayText"> {this.state.donutBalance} DONUT</span></div>
                     <br />
                     {
                         this.state.membershipsOwned === 1 ?
@@ -295,16 +317,23 @@ class Membership extends React.Component {
                         this.state.membershipsOwned > 1 ?
                         <div className="content-center"><span className="membership-label">YOU CURRENTLY OWN {this.state.membershipsOwned} MEMBERSHIPS.</span></div> :
                         <div></div>
-                    }
+                    }                                                  
+
+                    <br />
+
                     <div className="content-center">
                         { this.state.donutSpendingIsApproved ? 
-                        <button className="btn-active" id="purchaseButton" onClick={this.buttonPurchaseMembership}>Purchase Membership</button> :
+                        <div>
+                            <div className="content-center"><span className="orangeText">Purchase Membership for:</span></div>
+                            <div className="content-center"><input type="text" className="purchase-box" defaultValue={this.state.addressToPurchaseFor} onChange={this.handleInputChange} placeholder="Enter Address to Purchase For"/></div>
+                            <button className="btn-active" id="purchaseButton" onClick={this.buttonPurchaseMembership}>Purchase Membership</button>
+                        </div>      :
                         <button className="btn-active" id="approveButton" onClick={this.buttonApproveSpending}>Approve Donut Spending</button>
                         }
                     </div>
-                    { this.state.membershipsOwned > 0 ? <Snowfall snowflakeCount={300} color="#fe6dda" style={{ height: '200vh' }} /> : <span />}
-                    { this.state.validationError ? <span>{this.state.validationError}</span> : <span></span>}
+                    { this.state.validationError ? <span className="errorText">{this.state.validationError}</span> : <span></span>}
                 </div>
+            </div>
         }
 
         return (
