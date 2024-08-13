@@ -170,7 +170,7 @@ class Membership extends React.Component {
         let donutSpendingIsApproved = false;
         let allowance = await donutTokenContract.allowance(this.state.currentAddress, membershipContractAddress);
 
-        if(allowance.gte("0x7fffffffffffffffffffffffffffffff")) {
+        if(allowance.gte(membershipPrice)) {
             donutSpendingIsApproved = true;
         }
 
@@ -197,19 +197,8 @@ class Membership extends React.Component {
           });
     }
 
-    // async checkAllowance() {
-    //     if(this.state.isApproved) return;
-    //     const allowance = await this.state.uniDonutTokenContract.allowance(this.state.currentAddress, this.state.stakingContractAddress);
-    //     //is approved?
-    //     if(allowance.gte("0x7fffffffffffffffffffffffffffffff")) {
-    //       this.setState({
-    //         isApproved: true
-    //       });
-    //     }
-    //   }
-
     async buttonApproveSpending() {
-        let transactionResponse = await this.state.donutTokenContract.approve(this.state.membershipContractAddress, "0xffffffffffffffffffffffffffffffffffffffff");
+        let transactionResponse = await this.state.donutTokenContract.approve(this.state.membershipContractAddress, this.state.membershipPrice.toString() + "000000000000000000");
         this.setState({
             isLoading: true
         });
@@ -279,7 +268,10 @@ class Membership extends React.Component {
       }    
 
     async handleInputChange(event) {    
-        let addressToPurchaseFor = event.target.value;
+        let addressToPurchaseFor
+        if (event.target.value) {
+            addressToPurchaseFor = event.target.value;
+        }
         
         this.setState({
             addressToPurchaseFor: addressToPurchaseFor
@@ -298,8 +290,9 @@ class Membership extends React.Component {
                 { this.state.membershipsOwned > 0 ? <Snowfall snowflakeCount={300} color="#fe6dda" style={{ height: '200vh' }} /> : <span />}
                 <div className="membership-card">
                     <img src={MembershipNFTSeason01} alt="Membership NFT, Season 1" className="membership-nft-image" />
+                    <br />
                     {
-                        this.state.membershipsOwned > 1 ?
+                        this.state.membershipsOwned >= 1 ?
                         <div className="content-center"><span className="membership-label">Membership Status:</span> <span className="text-collected">ACTIVE</span></div> :
                         <div className="content-center"><span className="membership-label">Membership Status:</span> <span className="text-not-collected">INACTIVE</span></div>
                     }
@@ -310,12 +303,12 @@ class Membership extends React.Component {
                     <br />
                     {
                         this.state.membershipsOwned === 1 ?
-                        <div className="content-center"><span className="membership-label">YOU CURRENTLY OWN {this.state.membershipsOwned} MEMBERSHIP.</span></div> :
+                        <div className="content-center"><span className="membership-label">YOU CURRENTLY OWN</span><span className="whiteText boldText"> {this.state.membershipsOwned} MEMBERSHIP.</span></div> :
                         <div></div>
                     }                    
                     {
                         this.state.membershipsOwned > 1 ?
-                        <div className="content-center"><span className="membership-label">YOU CURRENTLY OWN {this.state.membershipsOwned} MEMBERSHIPS.</span></div> :
+                        <div className="content-center"><span className="membership-label">YOU CURRENTLY OWN</span><span className="whiteText boldText"> {this.state.membershipsOwned} MEMBERSHIPS.</span></div> :
                         <div></div>
                     }                                                  
 

@@ -1013,6 +1013,11 @@ a {
   color: #fe6ddb
  }
 
+ .whiteText {
+  color: white;
+ }
+
+
  .orangeText {
   color: #f7a597
  }
@@ -1527,34 +1532,30 @@ a {
 }
 
 .membership-card {
-  background: rgb(51, 26, 44);
-  border-radius: 1.5rem;
+  flex-wrap: wrap;
   width: 50%;
-  margin: 50px auto;
-  padding: 30px; 
-  position: relative;
-  z-index: 1;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  border: 3px solid #0000;
+  border-radius: 20px;
+  background: linear-gradient(rgb(51, 26, 44), rgb(51, 26, 44)) padding-box, linear-gradient(
+        var(--angle),
+        rgb(187, 3, 141),
+        #f7a597
+      ) border-box;
+  animation: 8s rotate linear infinite;
 }
 
-.membership-card::after {
-  content: "";
-  position: absolute;
-  inset: -.5rem;
-  z-index: -1;
-  background: linear-gradient(
-    var(--gradient-angle), 
-    var(--clr-1),
-    var(--clr-3),
-    var(--clr-5));
-  border-radius: inherit;
-  animation: rotation 12s linear infinite;
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
 }
 
-.membership-card::after {
-  filter: blur(3.5rem);
-}
-
-@keyframes rotation {
-  0% { --gradient-angle: 0deg; }
-  100% { --gradient-angle: 360deg; }
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }
