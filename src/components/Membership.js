@@ -1,7 +1,7 @@
 import React from 'react';
 import { ethers } from 'ethers';
 import Loading from '../img/loading.gif';
-import Title from '../img/title-track.png';
+import Title from '../img/title-membership.png';
 import MembershipNFTSeason01 from '../img/membership-nft-season-01.png';
 import membershipABI from '../abi/membershipABI.json'
 import erc20ABI from '../abi/erc20ABI.json'
@@ -147,7 +147,7 @@ class Membership extends React.Component {
         // Arbitrum One
         if (this.state.network === 42161) {
             donutTokenAddress = "0xF42e2B8bc2aF8B110b65be98dB1321B1ab8D44f5";
-            // membershipContractAddress = ;
+            membershipContractAddress = "0x2937d0c5C6b75BF3C653db3F9a4F207F7A319986";
         }
         // Arbitrum Sepolia Testnet
         if (this.state.network === 421614) {

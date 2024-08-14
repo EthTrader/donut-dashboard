@@ -235,13 +235,18 @@ html {
    width: 260px;
    height: 80px;
    border: none;
+   transition: transform 0.1s ease-in-out;
  }
 
- .btn-active:hover {
-   background-position: right center; /* change the direction of the change here */
-   color: #fff;
-   text-decoration: none;
- }
+.btn-active:active { 
+  transform: scale(0.95); 
+} 
+
+.btn-active:hover {
+  background-position: right center; 
+  color: #fff;
+  text-decoration: none;
+}
 
  .btn-main-net {background-image: linear-gradient(to right, #1a2ca3 0%, #1634fb  51%, #1a2ca3  100%)}
 .btn-main-net {
@@ -1534,6 +1539,8 @@ a {
 .membership-card {
   flex-wrap: wrap;
   width: 50%;
+  position: relative;
+  z-index: 1;
   margin: auto;
   justify-content: center;
   align-items: center;
