@@ -151,7 +151,7 @@ class Membership extends React.Component {
             membershipContractAddress = "0x2937d0c5C6b75BF3C653db3F9a4F207F7A319986";
         }
         // Arbitrum Sepolia Testnet
-        if (this.state.network === 421614) {
+        else if (this.state.network === 421614) {
             donutTokenAddress = "0xb1D4538B4571d411F07960EF2838Ce337FE1E80E";
             membershipContractAddress = "0x5bd6b58d952d895926626c45a5bf0350d7b64ebb";
         }
@@ -336,7 +336,7 @@ class Membership extends React.Component {
                   <AccordionItem>
                       <AccordionItemHeading>
                           <AccordionItemButton>
-                              What are /r/ethtrader memberships?
+                            About r/EthTrader Special Memberships
                           </AccordionItemButton>
                       </AccordionItemHeading>
                       <AccordionItemPanel>
@@ -356,7 +356,7 @@ class Membership extends React.Component {
                           </AccordionItemButton>
                       </AccordionItemHeading>
                       <AccordionItemPanel>
-                        <p className="left-body faq-q">About r/EthTrader Special Memberships</p>
+                        <p className="left-body faq-q">What are r/EthTrader Special Memberships?</p>
                         <p className="left-body faq-a">Special Memberships are seasonal subscriptions represented by unique, tradable NFT "cards" that offer different perks to subscribers within the r/EthTrader subreddit. Each season lasts for 2 months and has its own card (NFT).</p>
                         <hr />
 
