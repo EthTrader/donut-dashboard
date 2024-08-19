@@ -14,6 +14,7 @@ import {
   } from 'react-accessible-accordion';
 import Snackbar from 'awesome-snackbar';  
 import Snowfall from 'react-snowfall';
+import CountdownTimer from './CountdownTimer';
 
 class Membership extends React.Component {
 
@@ -279,8 +280,6 @@ class Membership extends React.Component {
     }
 
     render() {
-
-        <button className="btn-active" id="stakeButton" onClick={this.stake}>Stake LP Tokens</button>
         
         let render;
 
@@ -349,6 +348,65 @@ class Membership extends React.Component {
                       </AccordionItemPanel>
                   </AccordionItem>                 
               </Accordion>  
+              <Accordion allowZeroExpanded>
+                  <AccordionItem>
+                      <AccordionItemHeading>
+                          <AccordionItemButton>
+                              Frequently Asked Questions
+                          </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <p className="left-body faq-q">What are r/EthTrader Special Memberships?</p>
+                        <p className="left-body faq-a">Special Memberships are seasonal subscriptions represented by unique, tradable NFT "cards" that offer different perks to subscribers within the r/EthTrader subreddit. Each season lasts for 2 months and has its own card (NFT).</p>
+                        <hr />
+
+                        <p className="left-body faq-q">How do I purchase a Special Membership?</p>
+                        <p className="left-body faq-a">You can purchase a Special Membership by minting the NFT on the Donut Dashboard (this page!).</p>
+                        <hr />
+
+                        <p className="left-body faq-q">How much does a subscription cost?</p>
+                        <p className="left-body faq-a">The cost is pegged to USD, it is approximately $10 worth of DONUT, though the price will decrease as the end of the season nears.</p>
+                        <hr />
+
+                        <p className="left-body faq-q">What perks do subscribers receive?</p>
+                        <p className="left-body faq-a">Subscribers have access to several perks, including customizable user flairs and the ability to post GIFs. Additionally, a golden donut will appear in your user flair.</p>
+                        <hr />
+
+                        <p className="left-body faq-q">How do seasons work?</p>
+                        <p className="left-body faq-a">Seasons last for 2 months and have a fixed expiration date for all members, regardless of when you subscribe. As the season progresses, the membership price will gradually reduce.</p>
+                        <hr />
+
+                        <p className="left-body faq-q">Can I stack my subscriptions?</p>
+                        <p className="left-body faq-a">No, subscriptions do not stack. If you buy multiple memberships, the duration will remain the same, corresponding to the current season.</p>
+                        <hr />
+
+                        <p className="left-body faq-q">What happens when the season ends?</p>
+                        <p className="left-body faq-a">At the end of each season, the associated NFT will "expire". As such, you will need to mint a new NFT for the upcoming season to maintain your membership perks.</p>
+                        <hr />
+
+                        <p className="left-body faq-q">How do I unlock the subreddit perks?</p>
+                        <p className="left-body faq-a">The entire process is automated. Once you mint the NFT, your perks will unlock within a few minutes. To customize your user flair, you can use the !flair command, followed by your desired flair description. Example: !flair my customized flair</p>                     
+                        <hr />
+
+                        <p className="left-body faq-q">What happens if I transfer my membership card?</p>
+                        <p className="left-body faq-a">If you sell or transfer your NFT, the associated perks will automatically end.</p>                     
+                        <hr />
+
+                        <p className="left-body faq-q">Can I gift memberships?</p>
+                        <p className="left-body faq-a">Yes, season passes can be gifted to other users.</p>                     
+                        <hr />
+
+                        <p className="left-body faq-q">Can I still keep my old membership card?</p>
+                        <p className="left-body faq-a">Yes, previously minted membership cards (NFTs) are yours to keep, even after they expire. They serve as a collectible record of your participation in past seasons.</p>                     
+                        <hr />
+
+                        <p className="left-body faq-q">Does the wallet used to hold the membership NFT need to be the same as the one registered in the subreddit?</p>
+                        <p className="left-body faq-a">Yes, the wallet used to hold the membership card must be the same wallet registered in the subreddit, to ensure you have access to all the associated perks.</p>                                                                                                                                                                      
+                        <hr />
+                      </AccordionItemPanel>
+                  </AccordionItem>                 
+              </Accordion>  
+
               <br></br>
                 
                 <div className="network-account">
@@ -358,6 +416,9 @@ class Membership extends React.Component {
                 { this.state.network !== 42161 && this.state.network !== 421614 && this.state.signer !== "" ? <span>Unsupported Network</span> : <span></span> }
                 { this.state.signer !== "" ? <span>&nbsp;| {this.state.currentAddress.substring(0,6)}...{this.state.currentAddress.substring(38,42)}</span> : <span></span>}
                 </div>
+                <br /><br />
+
+                <CountdownTimer />
                 <br /><br />
 
                 { this.state.signer === "" ? <div className="content-center"><button className="pop-up-btn" id="connectWalletButton" onClick={this.connectWallet}>Connect Wallet</button></div> : <span></span> }

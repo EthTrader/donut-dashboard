@@ -1136,6 +1136,9 @@ a {
   border-style: none;
   width: 80%;
   margin: auto;
+  position: relative;
+  z-index: 1;
+  background: #271422;
 }
 
 .accordion__item + .accordion__item {
@@ -1565,4 +1568,17 @@ a {
   syntax: "<angle>";
   initial-value: 0deg;
   inherits: false;
+}
+
+@media only screen and (max-width: 768px) {
+  .membership-nft-image {
+    width: 100%;
+    height: auto;
+  }
+  .purchase-box {
+    width: 90%;
+  }
+  .membership-card {
+    width: 90%;
+  }
 }
