@@ -356,16 +356,16 @@ class Membership extends React.Component {
                           </AccordionItemButton>
                       </AccordionItemHeading>
                       <AccordionItemPanel>
-                        <p className="left-body faq-q">What are r/EthTrader Special Memberships?</p>
+                        <p className="left-body faq-q">About r/EthTrader Special Memberships</p>
                         <p className="left-body faq-a">Special Memberships are seasonal subscriptions represented by unique, tradable NFT "cards" that offer different perks to subscribers within the r/EthTrader subreddit. Each season lasts for 2 months and has its own card (NFT).</p>
                         <hr />
 
                         <p className="left-body faq-q">How do I purchase a Special Membership?</p>
-                        <p className="left-body faq-a">You can purchase a Special Membership by minting the NFT on the Donut Dashboard (this page!).</p>
+                        <p className="left-body faq-a">You can purchase a Special Membership by minting the NFT on the Donut Dashboard.</p>
                         <hr />
 
                         <p className="left-body faq-q">How much does a subscription cost?</p>
-                        <p className="left-body faq-a">The cost is pegged to USD, it is approximately $10 worth of DONUT, though the price will decrease as the end of the season nears.</p>
+                        <p className="left-body faq-a">The cost is pegged to USD, it is $10 worth of DONUT.</p>
                         <hr />
 
                         <p className="left-body faq-q">What perks do subscribers receive?</p>
