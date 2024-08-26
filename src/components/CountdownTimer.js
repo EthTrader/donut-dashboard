@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const CountdownTimer = () => {
   // Season End Time - Oct 1, 2024
-  let seasonEndTime = 1727755200;
+  let seasonEndTime = 1729656000;
   let currentTime = Math.floor(Date.now() / 1000);
 
   let initialTime = seasonEndTime - currentTime;

@@ -298,7 +298,7 @@ class Membership extends React.Component {
                     <br />
 
                     <div className="content-center"><span className="membership-label">Membership Price:</span> {this.state.membershipPrice} DONUT</div>
-                    <div className="content-center"><span className="darkPinkText boldText">Your Balance:</span><span className="grayText"> {this.state.donutBalance.toFixed(2)} DONUT</span></div>
+                    <div className="content-center"><span className="darkPinkText boldText">Your Balance:</span><span className="grayText"> {Math.floor(this.state.donutBalance)} DONUT</span></div>
                     <br />
                     {
                         this.state.membershipsOwned === 1 ?
