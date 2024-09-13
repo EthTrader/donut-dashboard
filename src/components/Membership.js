@@ -44,7 +44,6 @@ class Membership extends React.Component {
       }
 
       this.run = this.run.bind(this);      
-      this.addDonutsArbitrumOne = this.addDonutsArbitrumOne.bind(this);
       
       this.eventListeners = this.eventListeners.bind(this);
       this.connectWallet = this.connectWallet.bind(this);
@@ -63,21 +62,6 @@ class Membership extends React.Component {
             isLoading: false
         });
     }
-
-    async addDonutsArbitrumOne() {
-      await window.ethereum.request({
-          method: 'wallet_watchAsset',
-          params: {
-            type: 'ERC20', 
-            options: {
-              address: this.state.arbitrumOneDonutTokenAddress, 
-              symbol: "DONUT", 
-              decimals: 18, 
-              image: "https://donut-dashboard.com/static/media/donut-logo.b1e2b1be.png", 
-            },
-          },
-        });
-    }    
 
       // Connect web3 wallet when user presses connect button
       async connectWallet() {
