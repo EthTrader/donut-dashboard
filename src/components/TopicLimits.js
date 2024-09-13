@@ -1,6 +1,10 @@
 import React from 'react';
 import Title from '../img/title-distributions.png';
 import axios from 'axios';
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCircleExclamation } from '@fortawesome/free-solid-svg-icons'
 import {
     Accordion,
     AccordionItem,
@@ -34,7 +38,7 @@ class TopicLimits extends React.Component {
 
         this.setState({
             lastUpdate: lastUpdate.toString(),
-            topicLimits: result.data.data            
+            topicLimits: result.data.data
         });
     }
 
@@ -48,12 +52,13 @@ class TopicLimits extends React.Component {
                     <AccordionItem>
                         <AccordionItemHeading>
                             <AccordionItemButton>
-                                What are topic limits?
+                                What is the topic limiter?
                             </AccordionItemButton>
                         </AccordionItemHeading>
                         <AccordionItemPanel>
-                            <p className="left-body-middle">In an effort to reduce overcrowding on the subreddit, topic limits restrict the number of posts that can be active 
-                            at the same time on the same topic.</p>
+                            <p className="left-body-middle">The topic limiter is a feature designed to improve content organization on r/EthTrader, by automatically limiting the number of posts about specific topics.
+
+                                The limiter works by detecting and removing posts that exceed the allowed limit. This helps reduce duplicate content, spam, and creates a more diverse and engaging feed for all users..</p>
                         </AccordionItemPanel>
                     </AccordionItem>
                 </Accordion>
@@ -62,39 +67,54 @@ class TopicLimits extends React.Component {
 
                 <p className="footer-text">Last Updated: {this.state.lastUpdate}</p>
 
-                <table className="donut-table">
-                    <thead>
-                        <tr>
-                            <th className="donut-header">
-                                Topic
-                            </th>
-                            <th className="donut-header">
-                                Current Posts
-                            </th>
-                            <th className="donut-header">
-                                Maximum Limit
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr></tr>
-                        <tr></tr>
-                    {this.state.topicLimits.map((row) => {
-                            return (<tr key={row.topic}>
-                                <th className="contentColumn pinkText">
-                                    {row.display_name}
+                <div className="membership-card">
+
+                    <table className="topic-table">
+                        <thead>
+                            <tr>
+                                <th className="donut-header topicText">
+                                    Topic
                                 </th>
-                                <th className="contentColumn">
-                                    {row.current}
+                                <th className="donut-header topicText">
+                                    Current Posts
                                 </th>
-                                <th className="contentColumn">
-                                    {row.limit}
+                                <th className="donut-header topicText">
+                                    Maximum Limit
                                 </th>
-                            </tr>)
-                        })}
-                        
-                    </tbody>
-                </table>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr></tr>
+                            <tr></tr>
+                            {this.state.topicLimits.map((row) => {
+                                let rowClass = row.current >= row.limit ? "topic-row-full" : "";
+                                if (row.current + 1 === row.limit) {
+                                    rowClass = "topic-row-almost-full";
+                                }
+
+                                return (<tr key={row.display_name} className={rowClass}>
+                                    <th className="contentColumn pinkText topicText">
+                                        {row.display_name}
+                                    </th>
+                                    <th className="contentColumn topicText">
+                                        {row.current}
+                                        {
+                                            row.current >= row.limit ?
+                                            <span className="exclamation pinkText"><Tippy content={<span style={{ color: '#fe6ddb' }}>This topic has reached the maximum limit.</span>}>
+                                                <FontAwesomeIcon icon={faCircleExclamation} />
+                                            </Tippy></span> :
+                                            <span />
+                                        }                                        
+                                    </th>
+                                    <th className="contentColumn topicText">
+                                        {row.limit}
+                                    </th>
+                                </tr>)
+                            })}
+
+                        </tbody>
+                    </table>
+                </div>
 
             </div>
         );

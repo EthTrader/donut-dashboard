@@ -529,6 +529,12 @@ html {
   margin-right: auto;
 }
 
+.topic-table {
+  margin-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 a {
   color: #fe6d72;
   text-decoration: none;
@@ -1581,4 +1587,22 @@ a {
   .membership-card {
     width: 90%;
   }
+}
+
+.topicText {
+  font-size: 24px;
+}
+
+.exclamation {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 24px;
+}
+
+.topic-row-full {
+  background: #5d2a50;
+}
+
+.topic-row-almost-full {
+  background: #47263f;
 }
