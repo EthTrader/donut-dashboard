@@ -533,6 +533,8 @@ html {
   margin-left: 20px;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
+  table-layout: fixed;
 }
 
 a {
@@ -1605,4 +1607,13 @@ a {
 
 .topic-row-almost-full {
   background: #47263f;
+}
+
+.topic-image {
+  width: 50%;
+  filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(254deg) brightness(95%) contrast(80%);
+}
+
+.topic-card {
+  width: 50%;
 }
