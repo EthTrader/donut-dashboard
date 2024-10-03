@@ -1612,8 +1612,15 @@ a {
 .topic-image {
   width: 50%;
   filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(254deg) brightness(95%) contrast(80%);
+  max-width: 100px;
 }
 
 .topic-card {
-  width: 50%;
+  width: 70%;
+  word-break: break-word;
+}
+
+.topic-header {
+  font-weight: bold;
+  padding-top: 15px;
 }

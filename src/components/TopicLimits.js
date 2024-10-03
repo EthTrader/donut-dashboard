@@ -2,14 +2,21 @@ import React from 'react';
 import Title from '../img/title-topiclimits.png';
 import tlAirdrop from '../img/tl-airdrop.png';
 import tlBridge from '../img/tl-bridge.png';
+import tlChainlink from '../img/tl-chainlink.png';
+import tlDonut from '../img/tl-donut.png';
 import tlETF from '../img/tl-etf.png';
+import tlEthereum from '../img/tl-ethereum.png';
 import tlInfluencer from '../img/tl-influencer.png';
 import tlLayerTwo from '../img/tl-layertwo.png';
+import tlMacroeconomics from '../img/tl-macroeconomics.png';
 import tlMemecoins from '../img/tl-memecoins.png';
+import tlNFT from '../img/tl-nft.png';
 import tlPolitics from '../img/tl-politics.png';
 import tlExchanges from '../img/tl-exchanges.png';
 import tlRegulation from '../img/tl-regulation.png';
+import tlSEC from '../img/tl-sec.png';
 import tlStake from '../img/tl-stake.png';
+import tlStables from '../img/tl-stake.png';
 import tlWallet from '../img/tl-wallet.png';
 import axios from 'axios';
 import Tippy from '@tippyjs/react';
@@ -39,13 +46,11 @@ class TopicLimits extends React.Component {
 
         let result = await axios.get("https://raw.githubusercontent.com/EthTrader/topic-limiting/main/topic_limits.json");
 
-        console.log(result);
-
         let lastUpdate = new Date(result.data.last_update * 1000);
 
-        console.log(lastUpdate);
+        console.log(result.data.data)
 
-        console.log(result.data.data);
+        result.data.data.sort((a, b) => b.current - a.current);
 
         this.setState({
             lastUpdate: lastUpdate.toString(),
@@ -81,17 +86,24 @@ class TopicLimits extends React.Component {
                 <div className="membership-card topic-card">
 
                     <table className="topic-table">
+                        <colgroup>
+                            <col style={{ width: '20%' }} />
+                            <col style={{ width: '40%' }} />
+                            <col style={{ width: '20%' }} />
+                            <col style={{ width: '20%' }} />
+                        </colgroup>
+
                         <thead>
                             <tr>
                                 <th></th>
-                                <th className="donut-header topicText">
+                                <th className="topic-header topicText">
                                     Topic
                                 </th>
-                                <th className="donut-header topicText">
+                                <th className="topic-header topicText">
                                     Current Posts
                                 </th>
-                                <th className="donut-header topicText">
-                                    Maximum Limit
+                                <th className="topic-header topicText">
+                                    Limit
                                 </th>
                             </tr>
                         </thead>
@@ -108,14 +120,21 @@ class TopicLimits extends React.Component {
                                     <th>
                                         { row.display_name === 'Airdrops' ? <img src={tlAirdrop} alt="Airdrops" className="topic-image" /> : <span />}
                                         { row.display_name === 'Bridges' ? <img src={tlBridge} alt="Bridges" className="topic-image" /> : <span />}                                        
+                                        { row.display_name === 'Chainlink' ? <img src={tlChainlink} alt="Chainlink" className="topic-image" /> : <span />}                                        
+                                        { row.display_name === 'EthTrader' ? <img src={tlDonut} alt="Donut" className="topic-image" /> : <span />}
                                         { row.display_name === 'ETF' ? <img src={tlETF} alt="ETF" className="topic-image" /> : <span />}
+                                        { row.display_name === 'ETH Trading' ? <img src={tlEthereum} alt="ETH Trading" className="topic-image" /> : <span />}
                                         { row.display_name === 'Influencers' ? <img src={tlInfluencer} alt="Influencers" className="topic-image" /> : <span />}
-                                        { row.display_name === 'Layer 2\'s' ? <img src={tlLayerTwo} alt="LayerTwo" className="topic-image" /> : <span />}
+                                        { row.display_name === 'Side Chains/Layer 2\'s' ? <img src={tlLayerTwo} alt="LayerTwo" className="topic-image" /> : <span />}
+                                        { row.display_name === 'Macroeconomics' ? <img src={tlMacroeconomics} alt="Macroeconomics" className="topic-image" /> : <span />}
                                         { row.display_name === 'Meme Coins' ? <img src={tlMemecoins} alt="Memecoins" className="topic-image" /> : <span />}
+                                        { row.display_name === 'NFT' ? <img src={tlNFT} alt="NFT" className="topic-image" /> : <span />}
                                         { row.display_name === 'Politics' ? <img src={tlPolitics} alt="Politics" className="topic-image" /> : <span />}
                                         { row.display_name === 'Exchanges' ? <img src={tlExchanges} alt="Exchanges" className="topic-image" /> : <span />}
                                         { row.display_name === 'Regulation' ? <img src={tlRegulation} alt="Regulation" className="topic-image" /> : <span />}
+                                        { row.display_name === 'SEC' ? <img src={tlSEC} alt="SEC" className="topic-image" /> : <span />}
                                         { row.display_name === 'Staking/Restaking' ? <img src={tlStake} alt="Stake" className="topic-image" /> : <span />}
+                                        { row.display_name === 'Stables' ? <img src={tlStables} alt="Stables" className="topic-image" /> : <span />}    
                                         { row.display_name === 'Wallets' ? <img src={tlWallet} alt="Wallet" className="topic-image" /> : <span />}                                                                                                                                                                                                                                                                                                                                
                                     </th>
                                     <th className="contentColumn pinkText topicText">
