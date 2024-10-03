@@ -48,8 +48,6 @@ class TopicLimits extends React.Component {
 
         let lastUpdate = new Date(result.data.last_update * 1000);
 
-        console.log(result.data.data)
-
         result.data.data.sort((a, b) => b.current - a.current);
 
         this.setState({
