@@ -6,6 +6,7 @@ import tlChainlink from '../img/tl-chainlink.png';
 import tlDonut from '../img/tl-donut.png';
 import tlETF from '../img/tl-etf.png';
 import tlEthereum from '../img/tl-ethereum.png';
+import tlHands from '../img/tl-hands.png';
 import tlInfluencer from '../img/tl-influencer.png';
 import tlLayerTwo from '../img/tl-layertwo.png';
 import tlMacroeconomics from '../img/tl-macroeconomics.png';
@@ -16,7 +17,7 @@ import tlExchanges from '../img/tl-exchanges.png';
 import tlRegulation from '../img/tl-regulation.png';
 import tlSEC from '../img/tl-sec.png';
 import tlStake from '../img/tl-stake.png';
-import tlStables from '../img/tl-stake.png';
+import tlStables from '../img/tl-stable.png';
 import tlWallet from '../img/tl-wallet.png';
 import axios from 'axios';
 import Tippy from '@tippyjs/react';
@@ -118,17 +119,17 @@ class TopicLimits extends React.Component {
                                     <th>
                                         { row.display_name === 'Airdrops' ? <img src={tlAirdrop} alt="Airdrops" className="topic-image" /> : <span />}
                                         { row.display_name === 'Bridges' ? <img src={tlBridge} alt="Bridges" className="topic-image" /> : <span />}                                        
-                                        { row.display_name === 'Chainlink' ? <img src={tlChainlink} alt="Chainlink" className="topic-image" /> : <span />}                                        
-                                        { row.display_name === 'EthTrader' ? <img src={tlDonut} alt="Donut" className="topic-image" /> : <span />}
+                                        { row.display_name === 'Chainlink' ? <img src={tlChainlink} alt="Chainlink" className="topic-image topic-image-small" /> : <span />}                                        
+                                        { row.display_name === 'EthTrader' ? <img src={tlDonut} alt="Donut" className="topic-image topic-image-small" /> : <span />}
                                         { row.display_name === 'ETF' ? <img src={tlETF} alt="ETF" className="topic-image" /> : <span />}
-                                        { row.display_name === 'ETH Trading' ? <img src={tlEthereum} alt="ETH Trading" className="topic-image" /> : <span />}
+                                        { row.display_name === 'ETH Trading' ? <img src={tlExchanges} alt="ETH Trading" className="topic-image" /> : <span />}
                                         { row.display_name === 'Influencers' ? <img src={tlInfluencer} alt="Influencers" className="topic-image" /> : <span />}
-                                        { row.display_name === 'Side Chains/Layer 2\'s' ? <img src={tlLayerTwo} alt="LayerTwo" className="topic-image" /> : <span />}
+                                        { row.display_name === 'Side Chains/Layer 2\'s' ? <img src={tlLayerTwo} alt="LayerTwo" className="topic-image topic-image-large" /> : <span />}
                                         { row.display_name === 'Macroeconomics' ? <img src={tlMacroeconomics} alt="Macroeconomics" className="topic-image" /> : <span />}
                                         { row.display_name === 'Meme Coins' ? <img src={tlMemecoins} alt="Memecoins" className="topic-image" /> : <span />}
-                                        { row.display_name === 'NFT' ? <img src={tlNFT} alt="NFT" className="topic-image" /> : <span />}
+                                        { row.display_name === 'NFT' ? <img src={tlNFT} alt="NFT" className="topic-image topic-image-small" /> : <span />}
                                         { row.display_name === 'Politics' ? <img src={tlPolitics} alt="Politics" className="topic-image" /> : <span />}
-                                        { row.display_name === 'Exchanges' ? <img src={tlExchanges} alt="Exchanges" className="topic-image" /> : <span />}
+                                        { row.display_name === 'Exchanges' ? <img src={tlHands} alt="Exchanges" className="topic-image" /> : <span />}
                                         { row.display_name === 'Regulation' ? <img src={tlRegulation} alt="Regulation" className="topic-image" /> : <span />}
                                         { row.display_name === 'SEC' ? <img src={tlSEC} alt="SEC" className="topic-image" /> : <span />}
                                         { row.display_name === 'Staking/Restaking' ? <img src={tlStake} alt="Stake" className="topic-image" /> : <span />}

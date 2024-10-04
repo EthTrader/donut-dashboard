@@ -1615,6 +1615,17 @@ a {
   max-width: 100px;
 }
 
+.topic-image-small {
+  width: 40%;
+  max-width: 80px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.topic-image-large {
+  transform: scale(1.2);
+}
+
 .topic-card {
   width: 70%;
   word-break: break-word;
