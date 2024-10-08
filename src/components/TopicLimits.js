@@ -5,7 +5,6 @@ import tlBridge from '../img/tl-bridge.png';
 import tlChainlink from '../img/tl-chainlink.png';
 import tlDonut from '../img/tl-donut.png';
 import tlETF from '../img/tl-etf.png';
-import tlEthereum from '../img/tl-ethereum.png';
 import tlHands from '../img/tl-hands.png';
 import tlInfluencer from '../img/tl-influencer.png';
 import tlLayerTwo from '../img/tl-layertwo.png';
@@ -73,7 +72,10 @@ class TopicLimits extends React.Component {
                         <AccordionItemPanel>
                             <p className="left-body-middle">The topic limiter is a feature designed to improve content organization on r/EthTrader, by automatically limiting the number of posts about specific topics.
 
-                                The limiter works by detecting and removing posts that exceed the allowed limit. This helps reduce duplicate content, spam, and creates a more diverse and engaging feed for all users.</p>
+                                The limiter works by detecting and removing posts that exceed the allowed limit. This helps reduce duplicate content, spam, and creates a more diverse and engaging feed for all users.
+                                <br /><br />
+                                For more details and FAQ about the topic limiter, see <a href="https://www.reddit.com/r/ethtrader/comments/1fyb8rv/rethtrader_automated_topic_limiter_topics_allowed/" target="_blank" rel="noreferrer">this post</a>.
+                                </p>
                         </AccordionItemPanel>
                     </AccordionItem>
                 </Accordion>
