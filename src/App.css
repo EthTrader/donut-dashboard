@@ -1578,19 +1578,6 @@ a {
   inherits: false;
 }
 
-@media only screen and (max-width: 768px) {
-  .membership-nft-image {
-    width: 100%;
-    height: auto;
-  }
-  .purchase-box {
-    width: 90%;
-  }
-  .membership-card {
-    width: 90%;
-  }
-}
-
 .topicText {
   font-size: 24px;
 }
@@ -1634,4 +1621,20 @@ a {
 .topic-header {
   font-weight: bold;
   padding-top: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .membership-nft-image {
+    width: 100%;
+    height: auto;
+  }
+  .purchase-box {
+    width: 90%;
+  }
+  .membership-card {
+    width: 90%;
+  }
+  .topicText {
+    font-size: 18px;
+  }
 }
