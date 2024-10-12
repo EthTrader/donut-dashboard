@@ -4,6 +4,7 @@ import tlAirdrop from '../img/tl-airdrop.png';
 import tlBridge from '../img/tl-bridge.png';
 import tlChainlink from '../img/tl-chainlink.png';
 import tlDonut from '../img/tl-donut.png';
+import tlDeFi from '../img/tl-defi.png';
 import tlETF from '../img/tl-etf.png';
 import tlHands from '../img/tl-hands.png';
 import tlInfluencer from '../img/tl-influencer.png';
@@ -48,7 +49,20 @@ class TopicLimits extends React.Component {
 
         let lastUpdate = new Date(result.data.last_update * 1000);
 
-        result.data.data.sort((a, b) => b.current - a.current);
+        //result.data.data.sort((a, b) => b.current - a.current);
+
+
+        result.data.data.sort((a, b) => {
+            // First, check if `current` is equal to `limit`
+            if (a.current === a.limit && b.current !== b.limit) {
+            return -1; 
+            } else if (a.current !== a.limit && b.current === b.limit) {
+            return 1; 
+            }
+        
+            // Secondarily, sort by `current` in descending order
+            return b.current - a.current;
+        });
 
         this.setState({
             lastUpdate: lastUpdate.toString(),
@@ -113,7 +127,7 @@ class TopicLimits extends React.Component {
                             <tr></tr>
                             {this.state.topicLimits.map((row) => {
                                 let rowClass = row.current >= row.limit ? "topic-row-full" : "";
-                                if (row.current + 1 === row.limit) {
+                                if (row.current >= 1 && row.current < row.limit) {
                                     rowClass = "topic-row-almost-full";
                                 }
 
@@ -125,6 +139,7 @@ class TopicLimits extends React.Component {
                                         { row.display_name === 'EthTrader' ? <img src={tlDonut} alt="Donut" className="topic-image topic-image-small" /> : <span />}
                                         { row.display_name === 'ETF' ? <img src={tlETF} alt="ETF" className="topic-image" /> : <span />}
                                         { row.display_name === 'ETH Trading' ? <img src={tlExchanges} alt="ETH Trading" className="topic-image" /> : <span />}
+                                        { row.display_name === 'DeFi' ? <img src={tlDeFi} alt="DeFi" className="topic-image" /> : <span />}
                                         { row.display_name === 'Influencers' ? <img src={tlInfluencer} alt="Influencers" className="topic-image" /> : <span />}
                                         { row.display_name === 'Side Chains/Layer 2\'s' ? <img src={tlLayerTwo} alt="LayerTwo" className="topic-image topic-image-large" /> : <span />}
                                         { row.display_name === 'Macroeconomics' ? <img src={tlMacroeconomics} alt="Macroeconomics" className="topic-image" /> : <span />}
