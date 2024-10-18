@@ -16,6 +16,7 @@ import Track from './components/Track'
 import Liquidity from './components/Liquidity'
 import DeliciousDonuts from './components/DeliciousDonuts'
 import Membership from './components/Membership'
+import NextMembership from './components/NextMembership'
 import TopicLimits from './components/TopicLimits'
 import './App.css';
 
@@ -48,6 +49,7 @@ function App() {
               <Route path="/liquidity"><Liquidity></Liquidity></Route>
               <Route path="/stake"><Stake></Stake></Route>
               <Route path="/membership"><Membership></Membership></Route>
+              <Route path="/next-membership"><NextMembership></NextMembership></Route>
               <Route path="/topiclimits"><TopicLimits></TopicLimits></Route>
             </Switch>
           </div>
