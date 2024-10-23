@@ -2,7 +2,7 @@ import React from 'react';
 import { ethers } from 'ethers';
 import Loading from '../img/loading.gif';
 import Title from '../img/title-membership.png';
-import MembershipNFTSeason01 from '../img/membership-nft-season-01.png';
+import MembershipNFT from '../img/membership-nft-season-02.png';
 import membershipABI from '../abi/membershipABI.json'
 import erc20ABI from '../abi/erc20ABI.json'
 import {
@@ -272,7 +272,7 @@ class NextMembership extends React.Component {
             <div>
                 { this.state.membershipsOwned > 0 ? <Snowfall snowflakeCount={300} color="#fe6dda" style={{ height: '200vh' }} /> : <span />}
                 <div className="membership-card">
-                    <img src={MembershipNFTSeason01} alt="Membership NFT, Season 2" className="membership-nft-image" />
+                    <img src={MembershipNFT} alt="Membership NFT, Season 2" className="membership-nft-image" />
                     <br />
                     {
                         this.state.membershipsOwned >= 1 ?
