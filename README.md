@@ -19,3 +19,4 @@ To run locally:
 
 This project is deployed using Fleek on IPFS.  It will build and deploy automatically upon `git push`
 
+A hidden .env file is needed for email functionality on the Contact page.

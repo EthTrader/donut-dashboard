@@ -18,7 +18,9 @@ import DeliciousDonuts from './components/DeliciousDonuts'
 import Membership from './components/Membership'
 import NextMembership from './components/NextMembership'
 import TopicLimits from './components/TopicLimits'
+import Contact from './components/Contact'
 import './App.css';
+require('dotenv').config();
 
 function App() {
   return (
@@ -51,6 +53,7 @@ function App() {
               <Route path="/membership"><Membership></Membership></Route>
               <Route path="/next-membership"><NextMembership></NextMembership></Route>
               <Route path="/topiclimits"><TopicLimits></TopicLimits></Route>
+              <Route path="/contact"><Contact></Contact></Route>
             </Switch>
           </div>
           <div className="links-container">
