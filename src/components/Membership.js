@@ -2,7 +2,7 @@ import React from 'react';
 import { ethers } from 'ethers';
 import Loading from '../img/loading.gif';
 import Title from '../img/title-membership.png';
-import MembershipNFT from '../img/membership-nft-season-02.png';
+import MembershipNFT from '../img/membership-nft-season-03.png';
 import membershipABI from '../abi/membershipABI.json'
 import erc20ABI from '../abi/erc20ABI.json'
 import {
