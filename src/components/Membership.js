@@ -132,7 +132,7 @@ class Membership extends React.Component {
         // Arbitrum One
         if (this.state.network === 42161) {
             donutTokenAddress = "0xF42e2B8bc2aF8B110b65be98dB1321B1ab8D44f5";
-            membershipContractAddress = "0xBe3860339c9c6c1851A5566919F4AeF8e51cedF2";
+            membershipContractAddress = "0xd0C2bB20c1fa8447B38756F16dD041b0C05f88B6";
         }
         // Arbitrum Sepolia Testnet
         else if (this.state.network === 421614) {
@@ -226,7 +226,7 @@ class Membership extends React.Component {
     }
 
     async membershipPurchasedCelebration(amount) {
-        new Snackbar(("<b>Membership successfully purchased!</b><br /> You have attained the rank of Donuteer."), {
+        new Snackbar(("<b>Membership successfully purchased!</b>"), {
           iconSrc: 'donut-logo.png',
           actionText: 'Close',
           timeout: 9000,
@@ -272,7 +272,7 @@ class Membership extends React.Component {
             <div>
                 { this.state.membershipsOwned > 0 ? <Snowfall snowflakeCount={300} color="#fe6dda" style={{ height: '200vh' }} /> : <span />}
                 <div className="membership-card">
-                    <img src={MembershipNFT} alt="Membership NFT, Season 2" className="membership-nft-image" />
+                    <img src={MembershipNFT} alt="Membership NFT, Season 3" className="membership-nft-image" />
                     <br />
                     {
                         this.state.membershipsOwned >= 1 ?
