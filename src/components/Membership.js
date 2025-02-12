@@ -2,7 +2,7 @@ import React from 'react';
 import { ethers } from 'ethers';
 import Loading from '../img/loading.gif';
 import Title from '../img/title-membership.png';
-import MembershipNFT from '../img/membership-nft-season-03.png';
+import MembershipNFT from '../img/membership-nft-season-04.png';
 import membershipABI from '../abi/membershipABI.json'
 import erc20ABI from '../abi/erc20ABI.json'
 import {
@@ -132,7 +132,7 @@ class Membership extends React.Component {
         // Arbitrum One
         if (this.state.network === 42161) {
             donutTokenAddress = "0xF42e2B8bc2aF8B110b65be98dB1321B1ab8D44f5";
-            membershipContractAddress = "0xd0C2bB20c1fa8447B38756F16dD041b0C05f88B6";
+            membershipContractAddress = "0x2871E7eEd05B9288541756b736cc5962427bD481";
         }
         // Arbitrum Sepolia Testnet
         else if (this.state.network === 421614) {
@@ -272,7 +272,7 @@ class Membership extends React.Component {
             <div>
                 { this.state.membershipsOwned > 0 ? <Snowfall snowflakeCount={300} color="#fe6dda" style={{ height: '200vh' }} /> : <span />}
                 <div className="membership-card">
-                    <img src={MembershipNFT} alt="Membership NFT, Season 3" className="membership-nft-image" />
+                    <img src={MembershipNFT} alt="Membership NFT, Season 4" className="membership-nft-image" />
                     <br />
                     {
                         this.state.membershipsOwned >= 1 ?
@@ -349,7 +349,7 @@ class Membership extends React.Component {
                         <hr />
 
                         <p className="left-body faq-q">How much does a subscription cost?</p>
-                        <p className="left-body faq-a">The cost is pegged to USD, it is $10 worth of DONUT.</p>
+                        <p className="left-body faq-a">The cost is generally $10 worth of DONUT, though the price may decrease as the season wears on.</p>
                         <hr />
 
                         <p className="left-body faq-q">What perks do subscribers receive?</p>
