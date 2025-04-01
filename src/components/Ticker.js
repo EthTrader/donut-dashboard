@@ -35,8 +35,8 @@ class Ticker extends React.Component {
         this.setState({
              donutUSD: donutStats.donutUSD,
              donutETH: donutStats.donutETH,
-             donutBURRITO: (donutStats.donutUSD / 11).toFixed(8),
-             donutLAMBO: (donutStats.donutUSD / 467617).toFixed(8),
+             donutBURRITO: ((donutStats?.donutUSD ?? 0) / 11).toFixed(8),
+             donutLAMBO: ((donutStats?.donutUSD ?? 0) / 467617).toFixed(8),
              usdDonut: donutStats.usdDonut,
              ethDonut: donutStats.ethDonut,
              burritoDonut: donutStats.usdDonut * 11,
