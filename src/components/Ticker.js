@@ -66,7 +66,15 @@ class Ticker extends React.Component {
                         ${this.state.donutUSD} <b>USD</b> 
                         &nbsp;
                         {this.state.usd24hr >= 0 ? <img src={UpArrow} alt="Up arrow" className="green-arrow" /> : <img src={DownArrow} alt="Down arrow" className="red-arrow" />} 
-                        {this.state.usd24hr >= 0 ? <span className="upArrow">+{this.state.usd24hr.toFixed(2)}%</span> : <span className="downArrow">{this.state.usd24hr.toFixed(2)}%</span>} 
+                        {typeof this.state.usd24hr === 'number' ? (
+                            this.state.usd24hr >= 0 ? (
+                                <span className="upArrow">+{this.state.usd24hr.toFixed(2)}%</span>
+                            ) : (
+                                <span className="downArrow">{this.state.usd24hr.toFixed(2)}%</span>
+                            )
+                            ) : (
+                            <span className="neutral">0.00%</span>
+                        )}
                         &nbsp;
                         (1 <b>USD</b> = {this.formatNumber(Math.ceil(this.state.usdDonut))} <b>DONUT</b>)
                     </div>
@@ -76,7 +84,15 @@ class Ticker extends React.Component {
                         {this.state.donutETH} <b>ETH</b>
                         &nbsp;
                         {this.state.eth24hr >= 0 ? <img src={UpArrow} alt="Up arrow" className="green-arrow" /> : <img src={DownArrow} alt="Down arrow" className="red-arrow" />}
-                        {this.state.eth24hr >= 0 ? <span className="upArrow">+{this.state.eth24hr.toFixed(2)}%</span> : <span className="downArrow">{this.state.eth24hr.toFixed(2)}%</span>}                
+                        {typeof this.state.usd24hr === 'number' ? (
+                            this.state.usd24hr >= 0 ? (
+                                <span className="upArrow">+{this.state.eth24hr.toFixed(2)}%</span>
+                            ) : (
+                                <span className="downArrow">{this.state.eth24hr.toFixed(2)}%</span>
+                            )
+                            ) : (
+                            <span className="neutral">0.00%</span>
+                        )}
                         &nbsp;
                         (1 <b>ETH</b> = {this.formatNumber(Math.ceil(this.state.ethDonut))} <b>DONUT</b>)
                     </div>
@@ -86,7 +102,15 @@ class Ticker extends React.Component {
                         {this.state.donutBURRITO} <b>Burrito</b>
                         &nbsp;
                         {this.state.usd24hr >= 0 ? <img src={UpArrow} alt="Up arrow" className="green-arrow" /> : <img src={DownArrow} alt="Down arrow" className="red-arrow" />}
-                        {this.state.usd24hr >= 0 ? <span className="upArrow">+{this.state.usd24hr.toFixed(2)}%</span> : <span className="downArrow">{this.state.usd24hr.toFixed(2)}%</span>}                
+                        {typeof this.state.usd24hr === 'number' ? (
+                            this.state.usd24hr >= 0 ? (
+                                <span className="upArrow">+{this.state.usd24hr.toFixed(2)}%</span>
+                            ) : (
+                                <span className="downArrow">{this.state.usd24hr.toFixed(2)}%</span>
+                            )
+                            ) : (
+                            <span className="neutral">0.00%</span>
+                        )}
                         &nbsp;
                         (1 <b>Burrito</b> = {this.formatNumber(Math.ceil(this.state.burritoDonut))} <b>DONUT</b>)
                     </div>
