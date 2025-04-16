@@ -151,12 +151,9 @@ class Membership extends React.Component {
         // let isSeasonActive = await membershipContract.isSeasonActive();
         let isSeasonActive = true;
 
-        console.log(isSeasonActive);
         let membershipPrice = await membershipContract.getMintPriceInDonut();
-        console.log("membershipPrice: ", membershipPrice);
 
         let membershipsOwned = await membershipContract.balanceOf(this.state.currentAddress);
-        console.log("membershipsOwned: ", membershipsOwned);
 
         let donutSpendingIsApproved = false;
         let allowance = await donutTokenContract.allowance(this.state.currentAddress, membershipContractAddress);
@@ -186,6 +183,8 @@ class Membership extends React.Component {
             addressToPurchaseFor: addressToPurchaseFor,
             isLoading: false
           });
+
+        console.log(this.state.membershipContract);
     }
 
     async buttonApproveSpending() {
