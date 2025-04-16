@@ -87,7 +87,9 @@ class Membership extends React.Component {
                 this.eventListeners();
                 this.run();
             }
-            catch (e) {}
+            catch (e) {
+                console.error("Error in setWallet():", e);
+            }
           }
       }    
 
@@ -132,7 +134,7 @@ class Membership extends React.Component {
         // Arbitrum One
         if (this.state.network === 42161) {
             donutTokenAddress = "0xF42e2B8bc2aF8B110b65be98dB1321B1ab8D44f5";
-            membershipContractAddress = "0x260aed1a1a99b0ed6d666227f65733fb0254094d";
+            membershipContractAddress = "0xea63d31dd18758d46e40211b9229d63960d4281f";
         }
         // Arbitrum Sepolia Testnet
         else if (this.state.network === 421614) {
@@ -146,11 +148,15 @@ class Membership extends React.Component {
         let donutTokenContract = new ethers.Contract(donutTokenAddress, erc20ABI, this.state.signer);
         let membershipContract = new ethers.Contract(membershipContractAddress, membershipABI, this.state.signer);
 
-        let isSeasonActive = await membershipContract.isSeasonActive();
+        // let isSeasonActive = await membershipContract.isSeasonActive();
+        let isSeasonActive = true;
 
+        console.log(isSeasonActive);
         let membershipPrice = await membershipContract.getMintPriceInDonut();
+        console.log("membershipPrice: ", membershipPrice);
 
         let membershipsOwned = await membershipContract.balanceOf(this.state.currentAddress);
+        console.log("membershipsOwned: ", membershipsOwned);
 
         let donutSpendingIsApproved = false;
         let allowance = await donutTokenContract.allowance(this.state.currentAddress, membershipContractAddress);

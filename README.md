@@ -25,5 +25,5 @@ A hidden .env file is needed for email functionality on the Contact page.
 1. In Membership.js: Update with new contract address
 1. In Membership.js: Update display text to new season
 1. In Membership.js: Change NFT image file to new season's PNG
-1. In CountdownTimer.js: Calculate end-of-membership time in unix timestamp form and update
+1. In CountdownTimer.js: Calculate end-of-membership time in unix timestamp form and update (value is found in the contract itself)
 1. In CountdownTimer.js: Update display text to new season 
