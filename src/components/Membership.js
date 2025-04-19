@@ -184,6 +184,7 @@ class Membership extends React.Component {
             isLoading: false
           });
 
+        console.log("Contract after load:")
         console.log(this.state.membershipContract);
     }
 
@@ -216,6 +217,8 @@ class Membership extends React.Component {
             return;
         }
 
+        console.log("Contract before mint:")
+        console.log(this.state.membershipContract);
         let transactionResponse = await this.state.membershipContract.safeMint(this.state.addressToPurchaseFor);
         this.setState({
             isLoading: true
