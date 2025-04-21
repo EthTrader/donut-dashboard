@@ -219,6 +219,9 @@ class Membership extends React.Component {
 
         console.log("Contract before mint:")
         console.log(this.state.membershipContract);
+        let tx = await this.state.membershipContract.callStatic["safeMint(address)"](this.state.addressToPurchaseFor);
+        console.log(tx);
+
         //let transactionResponse = await this.state.membershipContract.safeMint(this.state.addressToPurchaseFor);
         let transactionResponse = await this.state.membershipContract["safeMint(address)"](this.state.addressToPurchaseFor);
         this.setState({
