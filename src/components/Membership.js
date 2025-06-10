@@ -2,7 +2,7 @@ import React from 'react';
 import { ethers } from 'ethers';
 import Loading from '../img/loading.gif';
 import Title from '../img/title-membership.png';
-import MembershipNFT from '../img/membership-nft-season-05.png';
+import MembershipNFT from '../img/membership-nft-season-06.png';
 import membershipABI from '../abi/membershipABI.json'
 import erc20ABI from '../abi/erc20ABI.json'
 import {
@@ -134,7 +134,7 @@ class Membership extends React.Component {
         // Arbitrum One
         if (this.state.network === 42161) {
             donutTokenAddress = "0xF42e2B8bc2aF8B110b65be98dB1321B1ab8D44f5";
-            membershipContractAddress = "0xea63d31dd18758d46e40211b9229d63960d4281f";
+            membershipContractAddress = "0x1fc1C9c6883547143bf725061CE6f3735eB7d391";
         }
         // Arbitrum Sepolia Testnet
         else if (this.state.network === 421614) {
@@ -183,9 +183,6 @@ class Membership extends React.Component {
             addressToPurchaseFor: addressToPurchaseFor,
             isLoading: false
           });
-
-        console.log("Contract after load:")
-        console.log(this.state.membershipContract);
     }
 
     async buttonApproveSpending() {
@@ -217,10 +214,7 @@ class Membership extends React.Component {
             return;
         }
 
-        console.log("Contract before mint:")
-        console.log(this.state.membershipContract);
         let tx = await this.state.membershipContract.callStatic["safeMint(address)"](this.state.addressToPurchaseFor);
-        console.log(tx);
 
         //let transactionResponse = await this.state.membershipContract.safeMint(this.state.addressToPurchaseFor);
         let transactionResponse = await this.state.membershipContract["safeMint(address)"](this.state.addressToPurchaseFor);
@@ -284,7 +278,7 @@ class Membership extends React.Component {
             <div>
                 { this.state.membershipsOwned > 0 ? <Snowfall snowflakeCount={300} color="#fe6dda" style={{ height: '200vh' }} /> : <span />}
                 <div className="membership-card">
-                    <img src={MembershipNFT} alt="Membership NFT, Season 5" className="membership-nft-image" />
+                    <img src={MembershipNFT} alt="Membership NFT, Season 6" className="membership-nft-image" />
                     <br />
                     {
                         this.state.membershipsOwned >= 1 ?

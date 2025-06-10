@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 const NextCountdownTimer = () => {
-  // Season End Time - Jun 13, 2025
-  let seasonEndTime = 1749774078;
+  // Season End Time - July
+  let seasonEndTime = 1753855200;
   let currentTime = Math.floor(Date.now() / 1000);
 
   let initialTime = seasonEndTime - currentTime;
@@ -38,7 +38,7 @@ const NextCountdownTimer = () => {
 
   return (
     <div>
-      <p className="pinkText boldText">Time Remaining in Season 5:<br />
+      <p className="pinkText boldText">Time Remaining in Season 6:<br />
       <span className="whiteText"> {`${days}d ${hours}h ${minutes}m ${seconds}s`}</span></p>
     </div>
   );
