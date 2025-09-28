@@ -346,12 +346,25 @@
     },
     {
         "inputs": [],
-        "name": "DONUT_ORACLE_ADDRESS",
+        "name": "DonutCostToMint",
         "outputs": [
             {
-                "internalType": "address",
+                "internalType": "uint256",
                 "name": "",
-                "type": "address"
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "TotalBurned",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
             }
         ],
         "stateMutability": "view",
@@ -395,86 +408,6 @@
         "type": "function"
     },
     {
-        "inputs": [],
-        "name": "getActiveMemberships",
-        "outputs": [
-            {
-                "components": [
-                    {
-                        "internalType": "uint256",
-                        "name": "tokenId",
-                        "type": "uint256"
-                    },
-                    {
-                        "internalType": "address",
-                        "name": "minter",
-                        "type": "address"
-                    },
-                    {
-                        "internalType": "uint256",
-                        "name": "created",
-                        "type": "uint256"
-                    },
-                    {
-                        "internalType": "uint256",
-                        "name": "expires",
-                        "type": "uint256"
-                    },
-                    {
-                        "internalType": "uint256",
-                        "name": "mintCost",
-                        "type": "uint256"
-                    }
-                ],
-                "internalType": "struct EthTraderSpecialMembership.MintRecord[]",
-                "name": "",
-                "type": "tuple[]"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [],
-        "name": "getAllMintRecords",
-        "outputs": [
-            {
-                "components": [
-                    {
-                        "internalType": "uint256",
-                        "name": "tokenId",
-                        "type": "uint256"
-                    },
-                    {
-                        "internalType": "address",
-                        "name": "minter",
-                        "type": "address"
-                    },
-                    {
-                        "internalType": "uint256",
-                        "name": "created",
-                        "type": "uint256"
-                    },
-                    {
-                        "internalType": "uint256",
-                        "name": "expires",
-                        "type": "uint256"
-                    },
-                    {
-                        "internalType": "uint256",
-                        "name": "mintCost",
-                        "type": "uint256"
-                    }
-                ],
-                "internalType": "struct EthTraderSpecialMembership.MintRecord[]",
-                "name": "",
-                "type": "tuple[]"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
         "inputs": [
             {
                 "internalType": "uint256",
@@ -495,84 +428,12 @@
     },
     {
         "inputs": [],
-        "name": "getCurrentMembershipPrice",
-        "outputs": [
-            {
-                "internalType": "uint256",
-                "name": "donutUsdPrice",
-                "type": "uint256"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [],
-        "name": "getMembershipLength",
+        "name": "getMintPriceInDonut",
         "outputs": [
             {
                 "internalType": "uint256",
                 "name": "",
                 "type": "uint256"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [],
-        "name": "getMembershipPriceUSD",
-        "outputs": [
-            {
-                "internalType": "uint256",
-                "name": "",
-                "type": "uint256"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "inputs": [
-            {
-                "internalType": "address",
-                "name": "user",
-                "type": "address"
-            }
-        ],
-        "name": "getMostRecentMembershipForAddress",
-        "outputs": [
-            {
-                "components": [
-                    {
-                        "internalType": "uint256",
-                        "name": "tokenId",
-                        "type": "uint256"
-                    },
-                    {
-                        "internalType": "address",
-                        "name": "minter",
-                        "type": "address"
-                    },
-                    {
-                        "internalType": "uint256",
-                        "name": "created",
-                        "type": "uint256"
-                    },
-                    {
-                        "internalType": "uint256",
-                        "name": "expires",
-                        "type": "uint256"
-                    },
-                    {
-                        "internalType": "uint256",
-                        "name": "mintCost",
-                        "type": "uint256"
-                    }
-                ],
-                "internalType": "struct EthTraderSpecialMembership.MintRecord",
-                "name": "",
-                "type": "tuple"
             }
         ],
         "stateMutability": "view",
@@ -598,19 +459,6 @@
         "type": "function"
     },
     {
-        "inputs": [],
-        "name": "getTotalBurned",
-        "outputs": [
-            {
-                "internalType": "uint256",
-                "name": "",
-                "type": "uint256"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
         "inputs": [
             {
                 "internalType": "bytes32",
@@ -626,25 +474,6 @@
         "name": "grantRole",
         "outputs": [],
         "stateMutability": "nonpayable",
-        "type": "function"
-    },
-    {
-        "inputs": [
-            {
-                "internalType": "address",
-                "name": "user",
-                "type": "address"
-            }
-        ],
-        "name": "hasActiveMembership",
-        "outputs": [
-            {
-                "internalType": "bool",
-                "name": "",
-                "type": "bool"
-            }
-        ],
-        "stateMutability": "view",
         "type": "function"
     },
     {
@@ -697,6 +526,19 @@
     },
     {
         "inputs": [],
+        "name": "isSeasonActive",
+        "outputs": [
+            {
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
         "name": "name",
         "outputs": [
             {
@@ -722,6 +564,19 @@
                 "internalType": "address",
                 "name": "",
                 "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "owners",
+        "outputs": [
+            {
+                "internalType": "address[]",
+                "name": "",
+                "type": "address[]"
             }
         ],
         "stateMutability": "view",
@@ -869,24 +724,11 @@
         "inputs": [
             {
                 "internalType": "uint256",
-                "name": "numberOfDays",
+                "name": "newPrice",
                 "type": "uint256"
             }
         ],
-        "name": "setMembershipLength",
-        "outputs": [],
-        "stateMutability": "nonpayable",
-        "type": "function"
-    },
-    {
-        "inputs": [
-            {
-                "internalType": "uint256",
-                "name": "membershipPriceUSD",
-                "type": "uint256"
-            }
-        ],
-        "name": "setMembershipPriceUSD",
+        "name": "setMintPriceInDonut",
         "outputs": [],
         "stateMutability": "nonpayable",
         "type": "function"

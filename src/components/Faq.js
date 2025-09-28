@@ -49,8 +49,6 @@ class Faq extends React.Component {
                     <p className="faq-a">A: Donuts are automatically deposited into your account on Arbitrum One every month.  You don't have to manually claim or pay any gas costs to acquire them!</p>
                 </div>
 
-                <img src={Donut05} alt="Flying donuts" className="splash-image" />
-
                 <p className="faq-title">Donut Tokenomics</p>
 
                 <div className="faq-odd">
@@ -79,7 +77,7 @@ class Faq extends React.Component {
                     <p className="faq-a">A: Donuts spent on banner purchases are burned.</p>
                 </div>                
 
-                <img src={Donut06} alt="Flying donuts" className="splash-image" />
+                <img src={Donut05} alt="Flying donuts" className="splash-image" />
 
                 <p className="faq-title">Banner</p>
 
@@ -93,10 +91,74 @@ class Faq extends React.Component {
                     <p className="faq-q">Q: What types of content are appropriate for the banner?</p>
 
                     <p className="faq-a">A: Generally, any type of Ethereum-based project is a good fit for the /r/ethtrader banner.  Advertisements may be removed at moderator discretion if they are not appropriate for the subreddit (example: an ad for a rival Layer 1 blockchain).  Explicit images are not allowed.</p>
-                </div>
+                </div>                
 
                 <img src={Donut07} alt="Flying donuts" className="splash-image" />
+
+                <p className="faq-title">Memberships</p>
+
+                <div className="faq-odd">
+                    <p className="faq-q">What are r/EthTrader Special Memberships?</p>
+                    <p className="faq-a">Special Memberships are monthly subscriptions represented by tradable NFT "cards" that offer different perks to subscribers within the r/EthTrader subreddit. Each subscription lasts for 1 month and has its own card (NFT).</p>
+                </div>
+
+                <div className="faq-even">
+                    <p className="faq-q">How do I purchase a Special Membership?</p>
+                    <p className="faq-a">You can purchase a Special Membership by minting the NFT on the Donut Dashboard.</p>
+                </div>
+
+                <div className="faq-odd">
+                    <p className="faq-q">How much does a subscription cost?</p>
+                    <p className="faq-a">The cost is $5 worth of DONUT.</p>
+                </div>
+
+                <div className="faq-even">            
+                    <p className="faq-q">What perks do subscribers receive?</p>
+                    <p className="faq-a">Subscribers have access to several perks, including customizable user flairs and the ability to post GIFs. Additionally, a golden donut will appear in your user flair.</p>
+                </div>
+
+                <div className="faq-odd">
+                    <p className="faq-q">How do subscriptions work?</p>
+                    <p className="faq-a">Subscriptions last for 1 month and have an expiration date, which depends on when you minted the NFT.</p>
+                </div>
                 
+                <div className="faq-even">
+                    <p className="faq-q">Can I stack my subscriptions?</p>
+                    <p className="faq-a">No, subscriptions do not stack. If you buy multiple memberships, the duration will remain the same (30 days).</p>
+                </div>
+
+                <div className="faq-odd">
+                    <p className="faq-q">What happens when the subscription ends?</p>
+                    <p className="faq-a">When your subscription ends, the NFT will expire. As such, you will need to mint a new NFT to maintain your membership perks.</p>
+                </div>
+
+                <div className="faq-even">
+                    <p className="faq-q">How do I unlock the subreddit perks?</p>
+                    <p className="faq-a">The entire process is automated. Once you mint the NFT, your perks will unlock within a few minutes. To customize your user flair, you can use the !flair command, followed by your desired flair description. Example: !flair my customized flair</p>
+                </div>
+
+                <div className="faq-odd">
+                    <p className="faq-q">What happens if I transfer my membership card?</p>
+                    <p className="faq-a">If you sell or transfer your NFT, the associated perks will automatically end.</p>
+                </div>
+
+                <div className="faq-even">
+                    <p className="faq-q">Can I gift memberships?</p>
+                    <p className="faq-a">Yes, subscriptions can be gifted to other users.</p>
+                </div>
+
+                <div className="faq-odd">
+                    <p className="faq-q">Can I still keep my old membership card?</p>
+                    <p className="faq-a">Yes, previously minted membership cards (NFTs) are yours to keep, even after they expire. They are a collectible record of your participation in the ecosystem.</p>
+                </div>                    
+
+                <div className="faq-even">
+                    <p className="faq-q">Does the wallet used to hold the membership NFT need to be the same as the one registered in the subreddit?</p>
+                    <p className="faq-a">Yes, the wallet used to hold the membership card must be the same wallet registered in the subreddit, to ensure you have access to all the associated perks.                </p>
+                </div>
+
+                <img src={Donut06} alt="Parachute donuts" className="splash-image" />
+                                
                 <p className="faq-title">Miscellaneous</p>
 
                 <div className="faq-even">
