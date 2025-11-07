@@ -158,6 +158,8 @@ class Membership extends React.Component {
         let donutSpendingIsApproved = false;
         let allowance = await donutTokenContract.allowance(this.state.currentAddress, membershipContractAddress);
 
+        console.log("allowance", allowance);
+        console.log("membershipPrice", membershipPrice);
         if(allowance.gte(membershipPrice)) {
             donutSpendingIsApproved = true;
         }
@@ -186,7 +188,7 @@ class Membership extends React.Component {
     }
 
     async buttonApproveSpending() {
-        let membershipPrice = this.state.membershipPrice * 2;
+        let membershipPrice = this.state.membershipPrice * 10;
         let transactionResponse = await this.state.donutTokenContract.approve(this.state.membershipContractAddress, membershipPrice.toString() + "000000000000000000");
         this.setState({
             isLoading: true
