@@ -1,5 +1,5 @@
 import React from 'react';
-import { ethers } from 'ethers';
+import { ethers, BigNumber } from 'ethers';
 import Loading from '../img/loading.gif';
 import Title from '../img/title-membership.png';
 import MembershipNFT from '../img/NFT.png';
@@ -157,6 +157,9 @@ class Membership extends React.Component {
 
         let donutSpendingIsApproved = false;
         let allowance = await donutTokenContract.allowance(this.state.currentAddress, membershipContractAddress);
+
+        const WEI_PER_ETHER = BigNumber.from("1000000000000000000");
+        allowance = allowance.div(WEI_PER_ETHER);
 
         console.log("allowance", allowance);
         console.log("membershipPrice", membershipPrice);
